@@ -1,17 +1,10 @@
 # Retail Analytics Platform
 
-An end-to-end Azure Data Engineering project built using Azure Data Factory, Databricks, Azure Data Lake Storage, and SQL.
+## Overview
 
-## Project Goals
+Retail Analytics Platform is an end-to-end Azure Data Engineering project demonstrating data ingestion, transformation, and analytics using Azure services.
 
-- Build a modern retail analytics data platform
-- Design Bronze, Silver, Gold architecture
-- Create ETL pipelines using ADF
-- Process data using Databricks
-- Store curated data for reporting
-- Demonstrate production-style Data Engineering practices
-
-## Tech Stack
+## Technologies
 
 - Azure Data Factory
 - Azure Data Lake Storage Gen2
@@ -19,8 +12,17 @@ An end-to-end Azure Data Engineering project built using Azure Data Factory, Dat
 - SQL
 - Python
 - PySpark
-- GitHub
 
-## Project Status
+## Project Structure
+
+datasets/
+adf/
+databricks/
+sql/
+architecture/
+screenshots/
+docs/
+
+## Status
 
 Phase 1 - Project Initialization
