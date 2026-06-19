@@ -37,3 +37,19 @@ Phase 1 - Project Initialization
 - Orders fact dataset
 - Order Items fact dataset
 - Architecture v1
+
+## Phase 1.5 - Sprint 1 Completed
+
+### Business Realism Enhancements
+
+- Weighted payment method distribution
+- Customer segment influence on order generation
+- City-based order concentration
+- Pareto product sales distribution
+
+### Validation Results
+
+- UPI ≈ 55% of transactions
+- Platinum customers generate highest order volume
+- Tier-1 cities generate most sales
+- Top 20% products contribute ≈ 83% of revenue
