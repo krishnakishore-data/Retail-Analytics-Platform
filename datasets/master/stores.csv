@@ -1,51 +1,51 @@
 store_id,store_name,city,state,country,store_type,opened_date,manager_name,created_date,updated_date
-1,MegaStore Udaipur,Udaipur,Rajasthan,India,Airport,2022-02-13,Vamsi Chatterjee,2022-02-13,2022-02-13
-2,RetailHub Cuttack,Cuttack,Odisha,India,Mall,2026-04-11,Anusha Patel,2026-04-11,2026-04-11
-3,UrbanCart Coimbatore,Coimbatore,Tamil Nadu,India,Online Fulfillment,2018-04-21,Sana Nair,2018-04-21,2018-04-21
-4,SmartMart Indore,Indore,Madhya Pradesh,India,Online Fulfillment,2025-02-07,Ritu Nair,2025-02-07,2025-02-07
-5,RetailHub Thiruvananthapuram,Thiruvananthapuram,Kerala,India,Airport,2021-01-07,Mounika Sharma,2021-01-07,2021-01-07
-6,ShopSphere Hyderabad,Hyderabad,Telangana,India,Standalone,2024-03-05,Bhanu Gupta,2024-03-05,2024-03-05
-7,UrbanCart Howrah,Howrah,West Bengal,India,Online Fulfillment,2022-07-26,Ayaan Gupta,2022-07-26,2022-07-26
-8,SmartMart Nagpur,Nagpur,Maharashtra,India,Online Fulfillment,2018-01-14,Bhargavi Reddy,2018-01-14,2018-01-14
-9,SmartMart Indore 9,Indore,Madhya Pradesh,India,Standalone,2018-02-28,Gokul Reddy,2018-02-28,2018-02-28
-10,SmartMart Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Airport,2024-11-08,Sana Kumar,2024-11-08,2024-11-08
-11,UrbanCart Chennai,Chennai,Tamil Nadu,India,Online Fulfillment,2026-04-12,Pavan Kumar,2026-04-12,2026-04-12
-12,UrbanCart Jaipur,Jaipur,Rajasthan,India,Mall,2019-12-31,Kiran Joshi,2019-12-31,2019-12-31
-13,RetailHub Mysore,Mysore,Karnataka,India,Standalone,2023-08-14,Yamini Mehta,2023-08-14,2023-08-14
-14,RetailHub Hyderabad,Hyderabad,Telangana,India,Airport,2023-10-02,Shiva Agarwal,2023-10-02,2023-10-02
-15,SmartMart Cuttack,Cuttack,Odisha,India,Standalone,2017-12-27,Shiva Reddy,2017-12-27,2017-12-27
-16,RetailHub Vijayawada,Vijayawada,Andhra Pradesh,India,Airport,2023-08-15,Ayaan Yadav,2023-08-15,2023-08-15
-17,MegaStore Chennai,Chennai,Tamil Nadu,India,Airport,2018-05-11,Jagadeesh Kumar,2018-05-11,2018-05-11
-18,UrbanCart Howrah 18,Howrah,West Bengal,India,Mall,2016-10-29,Madhav Sharma,2016-10-29,2016-10-29
-19,SmartMart Visakhapatnam 19,Visakhapatnam,Andhra Pradesh,India,Standalone,2018-09-25,Sana Das,2018-09-25,2018-09-25
-20,ShopSphere Indore,Indore,Madhya Pradesh,India,Online Fulfillment,2026-03-04,Manoj Kumar,2026-03-04,2026-03-04
-21,MegaStore Lucknow,Lucknow,Uttar Pradesh,India,Mall,2024-07-04,Mohan Gupta,2024-07-04,2024-07-04
-22,MegaStore Salem,Salem,Tamil Nadu,India,Airport,2016-08-21,Madhav Pandey,2016-08-21,2016-08-21
-23,ShopSphere Aurangabad,Aurangabad,Maharashtra,India,Standalone,2016-11-25,Rahul Shetty,2016-11-25,2016-11-25
-24,MegaStore Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Mall,2020-11-21,Ishita Iyer,2020-11-21,2020-11-21
-25,UrbanCart Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Mall,2018-10-23,Madhav Jain,2018-10-23,2018-10-23
-26,ShopSphere Delhi,Delhi,Delhi,India,Airport,2019-07-13,Sneha Kumar,2019-07-13,2019-07-13
-27,UrbanCart Salem,Salem,Tamil Nadu,India,Standalone,2018-12-14,Tanya Kapoor,2018-12-14,2018-12-14
-28,MegaStore Madurai,Madurai,Tamil Nadu,India,Online Fulfillment,2018-03-01,Revathi Reddy,2018-03-01,2018-03-01
-29,ShopSphere Bhopal,Bhopal,Madhya Pradesh,India,Mall,2021-03-16,Indu Bhat,2021-03-16,2021-03-16
-30,ShopSphere Ranchi,Ranchi,Jharkhand,India,Standalone,2018-09-14,Vikram Pillai,2018-09-14,2018-09-14
-31,UrbanCart Agra,Agra,Uttar Pradesh,India,Airport,2021-08-13,Venkat Pandey,2021-08-13,2021-08-13
-32,SmartMart Madurai,Madurai,Tamil Nadu,India,Standalone,2023-05-26,Bhavya Joshi,2023-05-26,2023-05-26
-33,UrbanCart Bhubaneswar,Bhubaneswar,Odisha,India,Airport,2020-05-11,Ashwin Mishra,2020-05-11,2020-05-11
-34,RetailHub Thiruvananthapuram 34,Thiruvananthapuram,Kerala,India,Mall,2018-12-25,Ramesh Mehta,2018-12-25,2018-12-25
-35,RetailHub Madurai,Madurai,Tamil Nadu,India,Airport,2022-10-04,Ajay Joshi,2022-10-04,2022-10-04
-36,RetailHub Chennai,Chennai,Tamil Nadu,India,Standalone,2018-04-16,Ayaan Das,2018-04-16,2018-04-16
-37,ShopSphere Nagpur,Nagpur,Maharashtra,India,Standalone,2019-08-21,Reshma Mehta,2019-08-21,2019-08-21
-38,RetailHub Pune,Pune,Maharashtra,India,Online Fulfillment,2025-11-02,Ravindra Chatterjee,2025-11-02,2025-11-02
-39,MegaStore Nashik,Nashik,Maharashtra,India,Airport,2018-03-14,Archana Rao,2018-03-14,2018-03-14
-40,SmartMart Mysore,Mysore,Karnataka,India,Airport,2024-01-26,Pavithra Mishra,2024-01-26,2024-01-26
-41,UrbanCart Karimnagar,Karimnagar,Telangana,India,Online Fulfillment,2020-04-18,Pradeep Iyer,2020-04-18,2020-04-18
-42,UrbanCart Madurai,Madurai,Tamil Nadu,India,Standalone,2019-07-04,Rakesh Bhat,2019-07-04,2019-07-04
-43,UrbanCart Bhopal,Bhopal,Madhya Pradesh,India,Standalone,2026-02-18,Pavan Rao,2026-02-18,2026-02-18
-44,UrbanCart Salem 44,Salem,Tamil Nadu,India,Airport,2022-02-08,Zubair Reddy,2022-02-08,2022-02-08
-45,MegaStore Karimnagar,Karimnagar,Telangana,India,Standalone,2018-02-18,Ritik Bhat,2018-02-18,2018-02-18
-46,SmartMart Ahmedabad,Ahmedabad,Gujarat,India,Mall,2019-04-10,Tejas Agarwal,2019-04-10,2019-04-10
-47,ShopSphere Mumbai,Mumbai,Maharashtra,India,Online Fulfillment,2016-12-20,Abhishek Kumar,2016-12-20,2016-12-20
-48,UrbanCart Lucknow,Lucknow,Uttar Pradesh,India,Standalone,2026-05-23,Amit Choudhary,2026-05-23,2026-05-23
-49,SmartMart Mumbai,Mumbai,Maharashtra,India,Mall,2019-07-03,Pallavi Reddy,2019-07-03,2019-07-03
-50,UrbanCart Kochi,Kochi,Kerala,India,Online Fulfillment,2018-10-29,Aditya Verma,2018-10-29,2018-10-29
+1,UrbanCart Varanasi,Varanasi,Uttar Pradesh,India,Mall,2019-08-14,Nazia Jain,2019-08-14,2019-08-14
+2,ShopSphere Ranchi,Ranchi,Jharkhand,India,Airport,2020-12-05,Lakshmi Singh,2020-12-05,2020-12-05
+3,RetailHub Delhi,Delhi,Delhi,India,Standalone,2017-03-20,Ritik Sharma,2017-03-20,2017-03-20
+4,RetailHub Madurai,Madurai,Tamil Nadu,India,Airport,2025-10-03,Rakesh Sharma,2025-10-03,2025-10-03
+5,MegaStore Bhubaneswar,Bhubaneswar,Odisha,India,Mall,2025-11-02,Pooja Iyer,2025-11-02,2025-11-02
+6,RetailHub Hubli,Hubli,Karnataka,India,Mall,2018-12-24,Anjali Joshi,2018-12-24,2018-12-24
+7,SmartMart Lucknow,Lucknow,Uttar Pradesh,India,Online Fulfillment,2022-08-19,Rashmi Pandey,2022-08-19,2022-08-19
+8,MegaStore Chennai,Chennai,Tamil Nadu,India,Online Fulfillment,2020-06-28,Sravani Iyer,2020-06-28,2020-06-28
+9,MegaStore Warangal,Warangal,Telangana,India,Standalone,2021-02-26,Meera Pillai,2021-02-26,2021-02-26
+10,UrbanCart Hubli,Hubli,Karnataka,India,Airport,2021-02-23,Ananya Verma,2021-02-23,2021-02-23
+11,RetailHub Kanpur,Kanpur,Uttar Pradesh,India,Online Fulfillment,2019-03-21,Krishna Verma,2019-03-21,2019-03-21
+12,RetailHub Nagpur,Nagpur,Maharashtra,India,Standalone,2016-11-03,Khushi Sharma,2016-11-03,2016-11-03
+13,SmartMart Nagpur,Nagpur,Maharashtra,India,Airport,2018-07-09,Pavan Singh,2018-07-09,2018-07-09
+14,UrbanCart Indore,Indore,Madhya Pradesh,India,Mall,2024-01-16,Prakash Chatterjee,2024-01-16,2024-01-16
+15,ShopSphere Ranchi 15,Ranchi,Jharkhand,India,Standalone,2021-10-04,Gokul Shetty,2021-10-04,2021-10-04
+16,UrbanCart Salem,Salem,Tamil Nadu,India,Online Fulfillment,2017-07-14,Priya Kulkarni,2017-07-14,2017-07-14
+17,UrbanCart Pune,Pune,Maharashtra,India,Online Fulfillment,2024-02-03,Trisha Sharma,2024-02-03,2024-02-03
+18,ShopSphere Nagpur,Nagpur,Maharashtra,India,Airport,2020-11-29,Mohan Jain,2020-11-29,2020-11-29
+19,UrbanCart Varanasi 19,Varanasi,Uttar Pradesh,India,Mall,2025-09-17,Manoj Singh,2025-09-17,2025-09-17
+20,UrbanCart Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Airport,2025-05-01,Preethi Chatterjee,2025-05-01,2025-05-01
+21,UrbanCart Karimnagar,Karimnagar,Telangana,India,Online Fulfillment,2025-09-12,Pradeep Choudhary,2025-09-12,2025-09-12
+22,MegaStore Aurangabad,Aurangabad,Maharashtra,India,Airport,2024-10-11,Reshma Reddy,2024-10-11,2024-10-11
+23,MegaStore Vijayawada,Vijayawada,Andhra Pradesh,India,Online Fulfillment,2022-06-26,Manoj Jain,2022-06-26,2022-06-26
+24,RetailHub Kochi,Kochi,Kerala,India,Mall,2024-01-20,Chandana Bhat,2024-01-20,2024-01-20
+25,RetailHub Vijayawada,Vijayawada,Andhra Pradesh,India,Online Fulfillment,2024-04-04,Divya Joshi,2024-04-04,2024-04-04
+26,ShopSphere Bhopal,Bhopal,Madhya Pradesh,India,Standalone,2019-09-10,Venkat Chatterjee,2019-09-10,2019-09-10
+27,ShopSphere Hubli,Hubli,Karnataka,India,Standalone,2021-12-13,Faizan Kumar,2021-12-13,2021-12-13
+28,MegaStore Vijayawada 28,Vijayawada,Andhra Pradesh,India,Online Fulfillment,2026-02-02,Geetha Agarwal,2026-02-02,2026-02-02
+29,ShopSphere New Delhi,New Delhi,Delhi,India,Airport,2022-02-15,Pallavi Gupta,2022-02-15,2022-02-15
+30,RetailHub Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Standalone,2025-05-22,Pranav Gupta,2025-05-22,2025-05-22
+31,MegaStore Mysore,Mysore,Karnataka,India,Mall,2018-08-25,Aditya Iyer,2018-08-25,2018-08-25
+32,MegaStore Varanasi,Varanasi,Uttar Pradesh,India,Standalone,2023-10-10,Reshma Patel,2023-10-10,2023-10-10
+33,ShopSphere Pune,Pune,Maharashtra,India,Standalone,2026-05-15,Shruti Sharma,2026-05-15,2026-05-15
+34,MegaStore Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Online Fulfillment,2019-08-30,Swathi Iyer,2019-08-30,2019-08-30
+35,SmartMart Varanasi,Varanasi,Uttar Pradesh,India,Online Fulfillment,2020-07-21,Kalyani Iyer,2020-07-21,2020-07-21
+36,UrbanCart Visakhapatnam 36,Visakhapatnam,Andhra Pradesh,India,Standalone,2018-05-27,Yamini Verma,2018-05-27,2018-05-27
+37,UrbanCart Bangalore,Bangalore,Karnataka,India,Standalone,2024-09-15,Diya Chatterjee,2024-09-15,2024-09-15
+38,SmartMart Nagpur 38,Nagpur,Maharashtra,India,Mall,2017-10-14,Murali Das,2017-10-14,2017-10-14
+39,UrbanCart Kolkata,Kolkata,West Bengal,India,Airport,2019-07-24,Krishna Shetty,2019-07-24,2019-07-24
+40,ShopSphere Kochi,Kochi,Kerala,India,Online Fulfillment,2024-06-06,Naresh Shetty,2024-06-06,2024-06-06
+41,ShopSphere Visakhapatnam,Visakhapatnam,Andhra Pradesh,India,Standalone,2022-12-03,Lokesh Nair,2022-12-03,2022-12-03
+42,MegaStore Udaipur,Udaipur,Rajasthan,India,Standalone,2018-03-15,Varun Kumar,2018-03-15,2018-03-15
+43,MegaStore Delhi,Delhi,Delhi,India,Online Fulfillment,2024-10-15,Kunal Verma,2024-10-15,2024-10-15
+44,SmartMart Chennai,Chennai,Tamil Nadu,India,Standalone,2018-07-02,Santosh Shetty,2018-07-02,2018-07-02
+45,UrbanCart Bangalore 45,Bangalore,Karnataka,India,Standalone,2022-01-21,Vaishnavi Iyer,2022-01-21,2022-01-21
+46,RetailHub Lucknow,Lucknow,Uttar Pradesh,India,Online Fulfillment,2020-03-22,Ritu Shetty,2020-03-22,2020-03-22
+47,ShopSphere Hyderabad,Hyderabad,Telangana,India,Online Fulfillment,2017-04-18,Vikram Bhat,2017-04-18,2017-04-18
+48,SmartMart Howrah,Howrah,West Bengal,India,Mall,2026-04-08,Mounika Pillai,2026-04-08,2026-04-08
+49,UrbanCart Indore 49,Indore,Madhya Pradesh,India,Standalone,2020-05-20,Pradeep Pillai,2020-05-20,2020-05-20
+50,RetailHub Mangalore,Mangalore,Karnataka,India,Online Fulfillment,2025-04-04,Sana Shetty,2025-04-04,2025-04-04

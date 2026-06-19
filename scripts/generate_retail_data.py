@@ -405,6 +405,14 @@ PAYMENT_METHODS = [
     "Cash"
 ]
 
+PAYMENT_METHOD_WEIGHTS = {
+    "UPI": 55,
+    "Credit Card": 18,
+    "Debit Card": 15,
+    "Net Banking": 8,
+    "Cash": 4
+}
+
 DISCOUNTS = [
     0.00,
     0.05,
@@ -610,6 +618,7 @@ SUPPLIERS = [
     "Future Retail Distribution"
 ]
 #sku genertaor
+
 def generate_sku(category, subcategory, product_id):
 
     category_code = {
@@ -662,6 +671,18 @@ def get_order_status():
             5,
             2
         ],
+        k=1
+    )[0]
+
+def get_payment_method():
+
+    return random.choices(
+        population=list(
+            PAYMENT_METHOD_WEIGHTS.keys()
+        ),
+        weights=list(
+            PAYMENT_METHOD_WEIGHTS.values()
+        ),
         k=1
     )[0]
 
@@ -1030,32 +1051,64 @@ def generate_stores():
 #generate orders and items
 def generate_orders_and_items():
 
-    customers_df = pd.read_csv(
-        MASTER_DIR / "customers.csv"
+    customers_df = pd.read_csv(MASTER_DIR / "customers.csv")
+
+    SEGMENT_WEIGHTS = {
+        "Bronze": 1,
+        "Silver": 2,
+        "Gold": 3,
+        "Platinum": 5
+    }
+    
+    products_df = pd.read_csv(MASTER_DIR / "products.csv")
+
+    stores_df = pd.read_csv(MASTER_DIR / "stores.csv")
+
+    CITY_WEIGHTS = {
+        "Mumbai": 15,
+        "Bangalore": 15,
+        "Hyderabad": 12,
+        "Delhi": 12,
+        "Chennai": 8,
+        "Pune": 8
+    }
+
+    weighted_customers = []
+    for _, row in customers_df.iterrows():
+        weight = SEGMENT_WEIGHTS[row["customer_segment"]]
+        weighted_customers.extend([row["customer_id"]] * weight)
+
+
+    product_ids = (products_df["product_id"].tolist())
+
+    TOP_PRODUCT_PERCENT = 0.20
+
+    top_product_count = int(
+        len(product_ids)
+        * TOP_PRODUCT_PERCENT
     )
 
-    products_df = pd.read_csv(
-        MASTER_DIR / "products.csv"
+    top_products = product_ids[
+        :top_product_count
+    ]
+
+    remaining_products = product_ids[
+        top_product_count:
+    ]
+
+    weighted_products = (
+        top_products * 3
+        +
+        remaining_products * 1
     )
 
-    stores_df = pd.read_csv(
-        MASTER_DIR / "stores.csv"
-    )
+    store_ids = (stores_df["store_id"].tolist())
 
-    customer_ids = (
-        customers_df["customer_id"]
-        .tolist()
-    )
-
-    product_ids = (
-        products_df["product_id"]
-        .tolist()
-    )
-
-    store_ids = (
-        stores_df["store_id"]
-        .tolist()
-    )
+    weighted_stores = []
+    for _, row in stores_df.iterrows():
+        city = row["city"]
+        weight = CITY_WEIGHTS.get(city,2)
+        weighted_stores.extend([row["store_id"]] * weight)
 
     product_price_lookup = dict(
         zip(
@@ -1075,45 +1128,24 @@ def generate_orders_and_items():
         INITIAL_ORDERS + 1
     ):
 
-        order_timestamp = (
-            generate_order_timestamp()
-        )
+        order_timestamp = (generate_order_timestamp())
 
-        order_status = (
-            get_order_status()
-        )
+        order_status = (get_order_status())
 
-        payment_method = (
-            random.choice(
-                PAYMENT_METHODS
-            )
-        )
+        payment_method = get_payment_method()
 
-        customer_id = (
-            random.choice(
-                customer_ids
-            )
-        )
+        customer_id = (random.choice(weighted_customers))
 
-        store_id = (
-            random.choice(
-                store_ids
-            )
-        )
+        store_id = (random.choice(weighted_stores))
 
-        number_of_items = (
-            random.randint(1, 5)
-        )
+        number_of_items = (random.randint(1, 5))
 
-        selected_products = (
-            random.sample(
-                product_ids,
-                min(
-                    number_of_items,
-                    len(product_ids)
-                )
-            )
-        )
+        selected_products = []
+        while len(selected_products) < number_of_items:
+            product = random.choice(weighted_products)
+
+            if product not in selected_products:
+                selected_products.append(product)
 
         order_total = 0
 
