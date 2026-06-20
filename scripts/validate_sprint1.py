@@ -148,3 +148,26 @@ orders_inc = pd.read_csv(
 print(orders.columns.tolist())
 print(orders.shape)
 print(orders_inc.shape)
+
+#increemntal order items validation
+
+orders_inc = pd.read_csv(
+    "datasets/transactions/orders_incremental.csv"
+)
+
+items_inc = pd.read_csv(
+    "datasets/transactions/order_items_incremental.csv"
+)
+
+items = pd.read_csv(
+    "datasets/transactions/order_items.csv"
+)
+
+print(items.columns.tolist())
+
+print(items.shape)
+
+print(orders_inc.shape)
+print(items_inc.shape)
+
+

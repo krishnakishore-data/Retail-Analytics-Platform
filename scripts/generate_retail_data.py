@@ -1261,7 +1261,146 @@ def generate_incremental_orders():
 
     print(f"New Orders Generated: "f"{new_order_count:,}")
 
-    
+def generate_incremental_order_items():
+
+    orders_inc_df = pd.read_csv(
+        TRANSACTION_DIR / "orders_incremental.csv"
+    )
+
+    products_df = pd.read_csv(
+        MASTER_DIR / "products.csv"
+    )
+
+    order_items_file = (
+        TRANSACTION_DIR / "order_items.csv"
+    )
+
+    order_items_df = pd.read_csv(
+        order_items_file
+    )
+
+    max_order_item_id = (
+        order_items_df["order_item_id"]
+        .max()
+    )
+
+    incremental_order_items = []
+
+    next_item_id = max_order_item_id + 1
+
+    for _, order in orders_inc_df.iterrows():
+
+        order_id = order["order_id"]
+
+        item_count = random.randint(1, 5)
+
+        for _ in range(item_count):
+
+            product = (
+                products_df
+                .sample(1)
+                .iloc[0]
+            )
+
+            product_id = product["product_id"]
+
+            quantity = random.randint(1, 3)
+
+            unit_price = product["price"]
+
+            discount = random.choice(DISCOUNTS)
+
+            discount_amount = unit_price * discount
+
+            line_total = round((unit_price - discount_amount)* quantity,2)
+
+            created_timestamp = datetime.now()
+
+            updated_timestamp = created_timestamp
+
+            incremental_order_items.append(
+                [
+                    next_item_id,
+                    order_id,
+                    product_id,
+                    quantity,
+                    unit_price,
+                    discount,
+                    line_total,
+                    created_timestamp,
+                    updated_timestamp
+                ]
+            )
+
+            next_item_id += 1
+
+    incremental_items_df = pd.DataFrame(
+        incremental_order_items,
+        columns=[
+            "order_item_id",
+            "order_id",
+            "product_id",
+            "quantity",
+            "unit_price",
+            "discount",
+            "line_total",
+            "created_timestamp",
+            "updated_timestamp"
+        ]
+    )
+
+    incremental_items_df.to_csv(
+        TRANSACTION_DIR /
+        "order_items_incremental.csv",
+        index=False
+    )
+
+    updated_items_df = pd.concat(
+        [
+            order_items_df,
+            incremental_items_df
+        ],
+        ignore_index=True
+    )
+
+    updated_items_df.to_csv(
+        order_items_file,
+        index=False
+    )
+
+    print(
+        f"New Order Items Generated: "
+        f"{len(incremental_items_df):,}"
+    )       
+
+def run_validation():
+
+    customers_inc = pd.read_csv(MASTER_DIR /"customers_incremental.csv")
+
+    orders_inc = pd.read_csv(TRANSACTION_DIR /"orders_incremental.csv")
+
+    order_items_inc = pd.read_csv(TRANSACTION_DIR /"order_items_incremental.csv")
+
+    assert (customers_inc["customer_id"].isnull().sum()== 0)
+
+    assert (orders_inc["order_id"].is_unique)
+
+    assert (order_items_inc["order_item_id"].is_unique)
+
+    print("\nValidation Passed")
+
+def update_incremental_watermark():
+
+    watermark = (load_watermark())
+
+    last_load_date = (datetime.strptime(watermark["last_load_date"],"%Y-%m-%d").date())
+
+    next_load_date = (last_load_date+ timedelta(days=1))
+
+    update_watermark(next_load_date)
+
+    print(f"Watermark Updated: "f"{next_load_date}")
+
 
 #generate orders and items
 def generate_orders_and_items():
@@ -1490,10 +1629,36 @@ def run_full_load():
     generate_orders_and_items()
     update_watermark(datetime.today().date())
 
-    generate_incremental_orders()
-    generate_incremental_customers()
-
     print("\nFull load completed.")
 
+def run_incremental_load():
+    generate_incremental_customers()
+    generate_incremental_orders()
+    generate_incremental_order_items()
+    run_validation()
+    update_incremental_watermark()
+
+    print("\nIncremental Load Completed")
+
 if __name__ == "__main__":
-    run_full_load()
+    #run_full_load()
+
+    mode = (
+        sys.argv[1].lower()
+        if len(sys.argv) > 1
+        else "full"
+    )
+
+    if mode == "full":
+        run_full_load()
+
+    elif mode == "incremental":
+        run_incremental_load()
+
+    elif mode == "validate":
+        run_validation()
+
+    else:
+        print(
+            "Invalid mode"
+        )
