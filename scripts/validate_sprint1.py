@@ -113,3 +113,38 @@ print(
     f"\nTop 20% Products Revenue Share: "
     f"{share}%"
 )
+
+#customers validation
+
+df = pd.read_csv(
+    "datasets/master/customers.csv"
+)
+
+print(df.columns.tolist())
+
+#incremental customers validation
+
+customers = pd.read_csv(
+    "datasets/master/customers.csv"
+)
+
+print(customers.shape)
+
+incremental = pd.read_csv(
+    "datasets/master/customers_incremental.csv"
+)
+
+print(incremental.shape)
+
+#incremental orders validation
+
+orders = pd.read_csv(
+    "datasets/transactions/orders.csv"
+)
+
+orders_inc = pd.read_csv(
+    "datasets/transactions/orders_incremental.csv"
+)
+print(orders.columns.tolist())
+print(orders.shape)
+print(orders_inc.shape)

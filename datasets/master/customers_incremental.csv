@@ -1,0 +1,16 @@
+customer_id,first_name,last_name,email,phone,gender,date_of_birth,city,state,country,customer_segment,signup_date,created_date,updated_date
+5001,Padma,Joshi,padmajoshi896@yahoo.com,9843006176,Female,1988-04-22,Lucknow,Uttar Pradesh,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5002,Shruti,Jain,shrutijain862@yahoo.com,9349525769,Female,1980-07-04,Pune,Maharashtra,India,Silver,2026-06-20,2026-06-20,2026-06-20
+5003,Yamini,Sharma,yaminisharma853@outlook.com,9660472444,Female,2003-07-28,Howrah,West Bengal,India,Silver,2026-06-20,2026-06-20,2026-06-20
+5004,Komal,Pandey,komalpandey596@hotmail.com,9965483075,Female,1988-11-27,Visakhapatnam,Andhra Pradesh,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5005,Padma,Singh,padmasingh731@hotmail.com,9208358609,Female,1960-04-12,Kochi,Kerala,India,Platinum,2026-06-20,2026-06-20,2026-06-20
+5006,Rekha,Das,rekhadas699@outlook.com,9623312377,Female,2008-06-18,New Delhi,Delhi,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5007,Ayaan,Kumar,ayaankumar786@gmail.com,9243097075,Male,1985-05-12,Vadodara,Gujarat,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5008,Surya,Verma,suryaverma569@outlook.com,9257808655,Male,1993-07-27,Ahmedabad,Gujarat,India,Gold,2026-06-20,2026-06-20,2026-06-20
+5009,Uma,Yadav,umayadav284@yahoo.com,9263222011,Female,1990-10-09,Surat,Gujarat,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5010,Rohit,Rao,rohitrao156@gmail.com,9250280791,Male,1975-10-19,Nagpur,Maharashtra,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5011,Ananya,Kulkarni,ananyakulkarni573@gmail.com,9350063451,Female,2001-03-08,Varanasi,Uttar Pradesh,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5012,Surya,Shetty,suryashetty358@hotmail.com,9119080940,Male,1971-12-31,Indore,Madhya Pradesh,India,Gold,2026-06-20,2026-06-20,2026-06-20
+5013,Tejaswini,Verma,tejaswiniverma429@outlook.com,9690091990,Female,1979-08-14,Surat,Gujarat,India,Silver,2026-06-20,2026-06-20,2026-06-20
+5014,Raghav,Joshi,raghavjoshi672@hotmail.com,9601678950,Male,1999-08-08,Ahmedabad,Gujarat,India,Bronze,2026-06-20,2026-06-20,2026-06-20
+5015,Manasa,Gupta,manasagupta715@yahoo.com,9179226592,Female,1991-02-03,Patna,Bihar,India,Silver,2026-06-20,2026-06-20,2026-06-20

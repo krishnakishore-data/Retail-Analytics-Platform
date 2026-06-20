@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import random
 import sys
+import json
 from faker import Faker
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -617,8 +618,8 @@ SUPPLIERS = [
     "Snowman Logistics",
     "Future Retail Distribution"
 ]
-#sku genertaor
 
+#sku genertaor
 def generate_sku(category, subcategory, product_id):
 
     category_code = {
@@ -639,7 +640,7 @@ def generate_sku(category, subcategory, product_id):
         f"{subcategory_code}-"
         f"{str(product_id).zfill(4)}"
     )
-    
+
 #price generator
 def get_price_range(category):
 
@@ -686,7 +687,7 @@ def get_payment_method():
         k=1
     )[0]
 
-#helper function
+#helper functions
 def generate_order_timestamp():
 
     start_date = datetime(
@@ -712,6 +713,25 @@ def generate_order_timestamp():
             seconds=random_seconds
         )
     )
+
+def load_watermark(): #fetches the watermark.json file and displays load date
+
+    watermark_file = (LOG_DIR /"watermark.json")
+
+    if not watermark_file.exists():
+        return None
+
+    with open(watermark_file,"r") as f:
+
+        return json.load(f)
+
+def update_watermark(load_date):
+
+    watermark_file = (LOG_DIR /"watermark.json")
+
+    with open(watermark_file,"w") as f:
+
+        json.dump({"last_load_date":str(load_date)},f,indent=4)
 
 #generate_customers
 def generate_customers():
@@ -740,7 +760,7 @@ def generate_customers():
         )
 
         dob = fake.date_between(
-            start_date="-60y",
+            start_date="-70y",
             end_date="-18y"
         )
 
@@ -789,6 +809,107 @@ def generate_customers():
         f"Customers generated: {len(customers_df):,}"
     )
 
+def generate_incremental_customers():
+
+    customers_file = (MASTER_DIR /"customers.csv")
+
+    customers_df = pd.read_csv(customers_file)
+
+    max_customer_id = (customers_df["customer_id"].max())
+
+    new_customer_count = (random.randint(10, 50))
+
+    incremental_customers = []
+
+    for i in range(1,new_customer_count + 1):
+
+        customer_id = (max_customer_id + i)
+
+        gender = random.choice(["Male", "Female"])
+
+        if gender == "Male":
+            first_name = random.choice(MALE_FIRST_NAMES)
+
+        else:
+            first_name = random.choice(FEMALE_FIRST_NAMES)
+
+        last_name = random.choice(LAST_NAMES)
+
+        city = random.choice(list(CITY_STATE_MAP.keys()))
+
+        state = CITY_STATE_MAP[city]
+
+        customer_segment = random.choices(
+            CUSTOMER_SEGMENTS,
+            weights=[
+                50,
+                30,
+                15,
+                5
+            ],k=1)[0]
+        
+        date_of_birth = fake.date_between(
+            start_date="-70y",
+            end_date="-18y"
+        )
+
+        signup_date = (datetime.today().date())
+
+        email_prefix = (f"{first_name}"f"{last_name}"f"{random.randint(100,999)}").lower()
+
+        email = (f"{email_prefix}@"f"{random.choice(EMAIL_DOMAINS)}")
+
+        phone = ("9"+ "".join(random.choices("0123456789",k=9)))
+
+        created_date = datetime.today().date()
+
+        updated_date = created_date
+
+        incremental_customers.append(
+            [
+                customer_id,
+                first_name,
+                last_name,
+                email,
+                phone,
+                gender,
+                date_of_birth,
+                city,
+                state,
+                "India",
+                customer_segment,
+                signup_date,
+                created_date,
+                updated_date
+            ]
+        )
+
+    incremental_df = pd.DataFrame(
+        incremental_customers,
+        columns=[
+                "customer_id",
+                "first_name",
+                "last_name",
+                "email",
+                "phone",
+                "gender",
+                "date_of_birth",
+                "city",
+                "state",
+                "country",
+                "customer_segment",
+                "signup_date",
+                "created_date",
+                "updated_date"]
+    )    
+
+    incremental_df.to_csv(MASTER_DIR /"customers_incremental.csv",index=False)  #save incremental file
+
+    updated_df = pd.concat([customers_df,incremental_df],ignore_index=True) #appends incremental file to master
+    updated_df.to_csv(customers_file,index=False)
+        
+    print(f"New Customers Generated: "f"{new_customer_count}")
+    
 #generate products
 def generate_products():
 
@@ -1048,6 +1169,100 @@ def generate_stores():
         f"{len(stores_df):,}"
     )
 
+def generate_incremental_orders():
+
+    orders_file = (TRANSACTION_DIR /"orders.csv")
+
+    orders_df = pd.read_csv(orders_file)
+
+    customers_df = pd.read_csv(MASTER_DIR /"customers.csv")
+
+    stores_df = pd.read_csv(MASTER_DIR /"stores.csv")
+
+    watermark = load_watermark()
+
+    last_load_date = datetime.strptime(watermark["last_load_date"],"%Y-%m-%d").date()
+
+    incremental_order_date = (last_load_date+ timedelta(days=1))
+
+    new_order_count = (random.randint(3000,8000))
+
+    max_order_id = (orders_df["order_id"].max())
+
+    customer_pool = []
+
+    segment_weights = {
+        "Bronze": 1,
+        "Silver": 2,
+        "Gold": 3,
+        "Platinum": 5
+    }
+
+    for _, row in customers_df.iterrows():
+
+        weight = segment_weights.get(row["customer_segment"],1)
+
+        customer_pool.extend([row["customer_id"]] * weight)
+
+    store_ids = (stores_df["store_id"].tolist())
+
+    incremental_orders = []
+
+    for i in range(1,new_order_count + 1):
+
+        order_id = (max_order_id + i)
+
+        customer_id = random.choice(customer_pool)
+
+        store_id = random.choice(store_ids)
+
+        order_status = (get_order_status())
+
+        payment_method = (get_payment_method())
+
+        order_total = round(random.uniform(500, 15000),2)
+
+        created_timestamp = datetime.now()
+
+        updated_timestamp = created_timestamp
+
+        incremental_orders.append(
+            [
+                order_id,
+                customer_id,
+                store_id,
+                incremental_order_date,
+                order_status,
+                payment_method,
+                order_total,
+                created_timestamp,
+                updated_timestamp
+            ]
+        )
+
+    incremental_df = pd.DataFrame(incremental_orders,
+        columns=[
+            "order_id",
+            "customer_id",
+            "store_id",
+            "order_date",
+            "order_status",
+            "payment_method",
+            "order_total",
+            "created_timestamp",
+            "updated_timestamp"
+        ])
+    
+    incremental_df.to_csv(TRANSACTION_DIR /"orders_incremental.csv",index=False)
+
+    updated_orders = pd.concat([orders_df,incremental_df],ignore_index=True)
+
+    updated_orders.to_csv(orders_file,index=False)
+
+    print(f"New Orders Generated: "f"{new_order_count:,}")
+
+    
+
 #generate orders and items
 def generate_orders_and_items():
 
@@ -1268,12 +1483,17 @@ def generate_orders_and_items():
         f"{len(order_items_df):,}"
     )
 
-if __name__ == "__main__":
-
+def run_full_load():
     generate_customers()
-
     generate_products()
-
     generate_stores()
-
     generate_orders_and_items()
+    update_watermark(datetime.today().date())
+
+    generate_incremental_orders()
+    generate_incremental_customers()
+
+    print("\nFull load completed.")
+
+if __name__ == "__main__":
+    run_full_load()
