@@ -93,6 +93,50 @@ Phase 1 - Project Initialization
 * Primary Key Validation
 * Incremental Processing Framework
 
+### Phase 1.5 - Sprint 3 Completed
+### Source System Data Quality Simulation
+
+Implemented realistic source-system data quality issues directly during dataset generation to simulate raw Bronze-layer data from operational systems.
+
+### Customer Data Quality Simulation
+* Null Email Injection
+* Duplicate Phone Number Injection
+* Missing City Injection
+
+### Product Data Quality Simulation
+* Negative Price Injection
+* Duplicate Product ID Injection
+
+### Order Data Quality Simulation
+* Invalid Payment Method Injection
+* Future Order Date Injection
+* Missing Customer ID Injection
+
+### Order Item Data Quality Simulation
+* Negative Quantity Injection
+* Invalid Product ID Injection
+
+### Data Quality Reporting Framework
+* Automated Data Quality Report Generation
+* Defect Count Tracking
+* Dataset Quality Validation
+* Report Export to logs/data_quality_report.txt
+
+### Validation Results
+* Null Emails: 100
+* Duplicate Phones: 50
+* Missing Cities: 50
+* Negative Prices: 2
+* Duplicate Product IDs: 1
+* Invalid Payment Methods: 500
+* Future Order Dates: 250
+* Missing Customer IDs: 250
+* Negative Quantities: ~800
+* Invalid Product IDs: ~723
+
+### New Artifacts
+* logs/data_quality_report.txt
+
 
 ## Execution
 ### Full Load | ###Incremental | ###validate
