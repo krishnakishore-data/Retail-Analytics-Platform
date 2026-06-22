@@ -1,5 +1,4 @@
 # Retail Analytics Platform
-
 ## Overview
 
 Retail Analytics Platform is a production-style Data Engineering project that simulates a modern retail organization's analytics ecosystem.
@@ -20,7 +19,6 @@ The long-term goal is to build an end-to-end Azure Data Platform using industry-
 
 
 ## Technologies
-
 - Azure Data Factory
 - Azure Data Lake Storage Gen2
 - Azure Databricks
@@ -29,7 +27,6 @@ The long-term goal is to build an end-to-end Azure Data Platform using industry-
 - PySpark
 
 ## Project Structure
-
 Retail-Analytics-Platform
 │
 ├── datasets
@@ -47,11 +44,9 @@ Retail-Analytics-Platform
 
 
 ## Status
-
 Phase 1 - Project Initialization
 
 ## Phase 1 Completed
-
 - GitHub repository setup
 - Dataset generation framework
 - Customer master dataset
@@ -62,7 +57,6 @@ Phase 1 - Project Initialization
 - Architecture v1
 
 ## Phase 1.5 - Sprint 1 Completed
-
 ### Business Realism Enhancements
 - Weighted payment method distribution
 - Customer segment influence on order generation
@@ -77,9 +71,7 @@ Phase 1 - Project Initialization
 
 
 ### Phase 1.5 - Sprint 2 Completed
-
 #### Incremental Load Framework
-
 * Watermark-based processing
 * Incremental customer onboarding
 * Incremental order generation
@@ -88,13 +80,11 @@ Phase 1 - Project Initialization
 * Full vs Incremental execution modes
 
 #### Incremental Datasets
-
 * customers_incremental.csv
 * orders_incremental.csv
 * order_items_incremental.csv
 
 #### Features Implemented
-
 * Full Load Execution
 * Incremental Load Execution
 * Watermark Tracking
@@ -104,9 +94,7 @@ Phase 1 - Project Initialization
 * Incremental Processing Framework
 
 
-
 ## Execution
-
 ### Full Load | ###Incremental | ###validate
 
 ```bash
@@ -129,9 +117,9 @@ python scripts/generate_retail_data.py validate
 
 ✅ Phase 1.5 Sprint 2 - Incremental Load Framework
 
-### Upcoming
+✅ Phase 1.5 Sprint 3 - Data Quality Simulation
 
-⬜ Phase 1.5 Sprint 3 - Data Quality Simulation
+### Upcoming
 
 ⬜ Phase 1.5 Sprint 4 - Code Refactoring & Modularization
 

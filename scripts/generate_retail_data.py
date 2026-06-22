@@ -1499,6 +1499,120 @@ def update_incremental_watermark():
 
     print(f"Watermark Updated: "f"{next_load_date}")
 
+def generate_data_quality_report():
+
+    customers_df = pd.read_csv(
+        MASTER_DIR / "customers.csv"
+    )
+
+    products_df = pd.read_csv(
+        MASTER_DIR / "products.csv"
+    )
+
+    orders_df = pd.read_csv(
+        TRANSACTION_DIR / "orders.csv"
+    )
+
+    order_items_df = pd.read_csv(
+        TRANSACTION_DIR / "order_items.csv"
+    )
+
+    null_emails = (
+        customers_df["email"]
+        .isna()
+        .sum()
+    )
+
+    duplicate_phones = (
+        customers_df["phone"]
+        .duplicated()
+        .sum()
+    )
+
+    missing_cities = (
+        customers_df["city"]
+        .isna()
+        .sum()
+    )
+
+    negative_prices = (
+        products_df["price"] < 0
+    ).sum()
+
+    duplicate_products = (
+        products_df["product_id"]
+        .duplicated()
+        .sum()
+    )
+
+    invalid_payments = (
+        ~orders_df["payment_method"]
+        .isin(PAYMENT_METHODS)
+    ).sum()
+
+    future_orders = (
+        pd.to_datetime(
+            orders_df["order_date"]
+        ).dt.date > datetime.today().date()
+    ).sum()
+
+    missing_customer_ids = (
+        orders_df["customer_id"]
+        .isna()
+        .sum()
+    )
+
+    negative_quantities = (
+        order_items_df["quantity"] < 0
+    ).sum()
+
+    valid_products = set(
+        products_df["product_id"]
+        .astype(str)
+    )
+
+    invalid_product_ids = (
+        ~order_items_df["product_id"]
+        .astype(str)
+        .isin(valid_products)
+    ).sum()
+
+    report = f"""
+    =================================
+    DATA QUALITY REPORT
+    =================================
+
+    Customers
+    ---------
+    Null Emails: {null_emails}
+    Duplicate Phones: {duplicate_phones}
+    Missing Cities: {missing_cities}
+
+    Products
+    --------
+    Negative Prices: {negative_prices}
+    Duplicate Product IDs: {duplicate_products}
+
+    Orders
+    ------
+    Invalid Payment Methods: {invalid_payments}
+    Future Order Dates: {future_orders}
+    Missing Customer IDs: {missing_customer_ids}
+
+    Order Items
+    -----------
+    Negative Quantities: {negative_quantities}
+    Invalid Product IDs: {invalid_product_ids}
+    """
+
+    report_file = LOG_DIR / "data_quality_report.txt"
+
+    with open(report_file, "w") as file:
+        file.write(report)
+
+    print(
+        "Data Quality Report Generated Successfully"
+    )
 
 #generate orders and items
 def generate_orders_and_items():
@@ -1608,11 +1722,12 @@ def generate_orders_and_items():
             if random.random() < DATA_QUALITY_RULES["negative_quantity_pct"]:
                 quantity = quantity * -1
 
-            unit_price = (
-                product_price_lookup[
-                    product_id
-                ]
-            )
+            #original_product_id = product_id
+
+            unit_price = (product_price_lookup[product_id])
+
+            if random.random() < DATA_QUALITY_RULES["invalid_product_id_pct"]:
+                product_id = f"P{random.randint(900000,999999)}"
 
             discount = random.choice(
                 DISCOUNTS
@@ -1751,6 +1866,8 @@ def run_full_load():
     generate_products()
     generate_stores()
     generate_orders_and_items()
+    generate_data_quality_report()
+    
     update_watermark(datetime.today().date())
 
     print("\nFull load completed.")
@@ -1763,6 +1880,7 @@ def run_incremental_load():
     update_incremental_watermark()
 
     print("\nIncremental Load Completed")
+
 
 if __name__ == "__main__":
     #run_full_load()
