@@ -414,6 +414,14 @@ PAYMENT_METHOD_WEIGHTS = {
     "Cash": 4
 }
 
+INVALID_PAYMENT_METHODS = [
+    "Crypto",
+    "Cheque",
+    "Voucher",
+    "WalletX",
+    "Test"
+]
+
 DISCOUNTS = [
     0.00,
     0.05,
@@ -423,6 +431,35 @@ DISCOUNTS = [
     0.25,
     0.30
 ]
+
+# ==========================================
+# DATA QUALITY SIMULATION CONFIGURATION
+# ==========================================
+
+DATA_QUALITY_RULES = {
+
+    # Customer Issues
+    "null_email_pct": 0.02,
+    "duplicate_phone_pct": 0.01,
+    "missing_city_pct": 0.01,
+
+    # Product Issues
+    "negative_price_pct": 0.005,
+    "duplicate_product_id_pct": 0.002,
+
+    # Order Issues
+    "invalid_payment_method_pct": 0.01,
+    "future_order_date_pct": 0.005,
+    "missing_customer_id_pct": 0.005,
+
+    # Order Item Issues
+    "negative_quantity_pct": 0.005,
+    "invalid_product_id_pct": 0.005
+}
+
+def get_dq_sample_size(total_records, percentage):
+
+    return max(1,int(total_records * percentage))
 
 EMAIL_DOMAINS = [
     "gmail.com",
@@ -800,14 +837,51 @@ def generate_customers():
 
     customers_df = pd.DataFrame(customers)
 
-    customers_df.to_csv(
-        MASTER_DIR / "customers.csv",
-        index=False
+    # ==========================================
+    # NULL EMAIL SIMULATION       (2% customers with NULL email)
+    # ==========================================
+
+    null_email_count = get_dq_sample_size(len(customers_df), DATA_QUALITY_RULES["null_email_pct"])
+
+    null_email_indices = random.sample(list(customers_df.index),null_email_count)
+
+    customers_df.loc[null_email_indices,"email"] = None
+
+    print(f"Null Emails Injected: {null_email_count}")
+
+    # ==========================================
+    # DUPLICATE PHONE SIMULATION   (1% Duplicate Phone Numbers)
+    # ==========================================
+
+    duplicate_phone_count = get_dq_sample_size(
+        len(customers_df),
+        DATA_QUALITY_RULES["duplicate_phone_pct"]
     )
 
-    print(
-        f"Customers generated: {len(customers_df):,}"
-    )
+    duplicate_indices = random.sample(list(customers_df.index),duplicate_phone_count)
+
+    for idx in duplicate_indices:
+
+        source_idx = random.choice(list(customers_df.index))
+        customers_df.loc[idx,"phone"] = customers_df.loc[source_idx,"phone"]
+
+    print(f"Duplicate Phones Injected: {duplicate_phone_count}")
+
+    # ==========================================
+    # MISSING CITY SIMULATION (1% Missing City Values)
+    # ==========================================
+
+    missing_city_count = get_dq_sample_size(len(customers_df),DATA_QUALITY_RULES["missing_city_pct"])
+
+    missing_city_indices = random.sample(list(customers_df.index),missing_city_count)
+
+    customers_df.loc[missing_city_indices,"city"] = None
+
+    print(f"Missing Cities Injected: {missing_city_count}")
+    #-------------------
+    customers_df.to_csv(MASTER_DIR / "customers.csv",index=False)
+
+    print(f"Customers generated: {len(customers_df):,}")
 
 def generate_incremental_customers():
 
@@ -1052,15 +1126,39 @@ def generate_products():
 
     products_df = pd.DataFrame(products)
 
-    products_df.to_csv(
-        MASTER_DIR / "products.csv",
-        index=False
-    )
+    # ==========================================
+    # NEGATIVE PRICE SIMULATION
+    # ==========================================
 
-    print(
-        f"Products generated: "
-        f"{len(products_df):,}"
-    )
+    negative_price_count = get_dq_sample_size(len(products_df),DATA_QUALITY_RULES["negative_price_pct"])
+
+    negative_price_indices = random.sample(list(products_df.index),negative_price_count)
+
+    products_df.loc[negative_price_indices,"price"] = (products_df.loc[negative_price_indices,"price"]* -1)
+
+    print(f"Negative Prices Injected: {negative_price_count}")
+
+    # ==========================================
+    # DUPLICATE PRODUCT ID SIMULATION
+    # ==========================================
+
+    duplicate_product_count = get_dq_sample_size(len(products_df),DATA_QUALITY_RULES["duplicate_product_id_pct"])
+
+    duplicate_product_indices = random.sample(list(products_df.index),duplicate_product_count)
+
+    for idx in duplicate_product_indices:
+
+        source_idx = random.choice(list(products_df.index))
+
+        products_df.loc[idx,"product_id"] = products_df.loc[source_idx,"product_id"]
+
+    print(f"Duplicate Product IDs Injected: {duplicate_product_count}")
+
+
+
+    products_df.to_csv(MASTER_DIR / "products.csv",index=False)
+
+    print(f"Products generated: "f"{len(products_df):,}")
   
 #generate stores
 def generate_stores():
@@ -1505,10 +1603,10 @@ def generate_orders_and_items():
 
         for product_id in selected_products:
 
-            quantity = random.randint(
-                1,
-                5
-            )
+            quantity = random.randint(1, 5)
+
+            if random.random() < DATA_QUALITY_RULES["negative_quantity_pct"]:
+                quantity = quantity * -1
 
             unit_price = (
                 product_price_lookup[
@@ -1593,34 +1691,60 @@ def generate_orders_and_items():
 
         })
 
-    orders_df = pd.DataFrame(
-        orders
-    )
+    orders_df = pd.DataFrame(orders)
 
-    order_items_df = pd.DataFrame(
-        order_items
-    )
+    # ==========================================
+    # INVALID PAYMENT METHOD SIMULATION
+    # ==========================================
 
-    orders_df.to_csv(
-        TRANSACTION_DIR / "orders.csv",
-        index=False
-    )
+    invalid_payment_count = get_dq_sample_size(len(orders_df),DATA_QUALITY_RULES["invalid_payment_method_pct"])
 
-    order_items_df.to_csv(
-        TRANSACTION_DIR /
-        "order_items.csv",
-        index=False
-    )
+    invalid_payment_indices = random.sample(list(orders_df.index),invalid_payment_count)
 
-    print(
-        f"Orders generated: "
-        f"{len(orders_df):,}"
-    )
+    for idx in invalid_payment_indices:
+        orders_df.loc[idx,"payment_method"] = random.choice(INVALID_PAYMENT_METHODS)
 
-    print(
-        f"Order Items generated: "
-        f"{len(order_items_df):,}"
-    )
+    print(f"Invalid Payment Methods Injected: {invalid_payment_count}")
+
+
+    # ==========================================
+    # FUTURE ORDER DATE SIMULATION
+    # ==========================================
+
+    future_order_count = get_dq_sample_size(len(orders_df),DATA_QUALITY_RULES["future_order_date_pct"])
+
+    future_order_indices = random.sample(list(orders_df.index),future_order_count)
+
+    for idx in future_order_indices:
+        future_date = (datetime.today()+ timedelta(days=random.randint(1, 30))).date()
+
+        orders_df.loc[idx,"order_date"] = future_date
+
+    print(f"Future Order Dates Injected: {future_order_count}")
+
+    # ==========================================
+    # MISSING CUSTOMER ID SIMULATION
+    # ==========================================
+
+    missing_customer_count = get_dq_sample_size(len(orders_df),DATA_QUALITY_RULES["missing_customer_id_pct"])
+
+    missing_customer_indices = random.sample(list(orders_df.index),missing_customer_count)
+
+    orders_df.loc[missing_customer_indices,"customer_id"] = None
+
+    print(f"Missing Customer IDs Injected: {missing_customer_count}")
+
+
+
+    order_items_df = pd.DataFrame(order_items)
+
+    orders_df.to_csv(TRANSACTION_DIR / "orders.csv",index=False)
+
+    order_items_df.to_csv(TRANSACTION_DIR /"order_items.csv",index=False)
+
+    print(f"Orders generated: "f"{len(orders_df):,}")
+
+    print(f"Order Items generated: "f"{len(order_items_df):,}")
 
 def run_full_load():
     generate_customers()
@@ -1662,3 +1786,14 @@ if __name__ == "__main__":
         print(
             "Invalid mode"
         )
+
+    print("Data Quality Framework Loaded Successfully")
+
+    print(DATA_QUALITY_RULES)
+
+    print(
+        get_dq_sample_size(
+            5000,
+            DATA_QUALITY_RULES["null_email_pct"]
+        )
+    )

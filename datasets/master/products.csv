@@ -1,501 +1,501 @@
 product_id,sku,product_name,category,subcategory,brand,supplier_name,price,cost_price,launch_date,created_date,updated_date
-1,ELE-MOB-0001,Apple Model 410,Electronics,Mobile Phone,Apple,Future Retail Distribution,35711.76,25926.81,2025-03-11,2025-03-11,2025-03-11
-2,ELE-MOB-0002,Oppo Model 551,Electronics,Mobile Phone,Oppo,Delhivery Fulfillment,10377.06,8024.92,2026-05-06,2026-05-06,2026-05-06
-3,ELE-MOB-0003,Apple Model 130,Electronics,Mobile Phone,Apple,Delhivery Fulfillment,66470.1,48113.0,2022-08-19,2022-08-19,2022-08-19
-4,ELE-MOB-0004,Asus Model 548,Electronics,Mobile Phone,Asus,Aditya Birla Distribution,70489.0,57157.21,2023-11-20,2023-11-20,2023-11-20
-5,ELE-MOB-0005,LG Model 806,Electronics,Mobile Phone,LG,Delhivery Fulfillment,77666.91,62582.48,2023-03-18,2023-03-18,2023-03-18
-6,ELE-MOB-0006,Oppo Model 416,Electronics,Mobile Phone,Oppo,Allcargo Supply Chain,3544.94,2383.77,2022-06-29,2022-06-29,2022-06-29
-7,ELE-MOB-0007,HP Model 997,Electronics,Mobile Phone,HP,Reliance Retail Supply Chain,5251.1,4227.42,2025-06-13,2025-06-13,2025-06-13
-8,ELE-MOB-0008,Lenovo Model 395,Electronics,Mobile Phone,Lenovo,Ingram Micro India,67590.03,49693.33,2025-11-22,2025-11-22,2025-11-22
-9,ELE-MOB-0009,Xiaomi Model 188,Electronics,Mobile Phone,Xiaomi,Metro Cash and Carry,25270.68,15403.32,2026-06-20,2026-06-20,2026-06-20
-10,ELE-MOB-0010,Samsung Model 963,Electronics,Mobile Phone,Samsung,Mahindra Logistics,13070.36,8566.44,2021-11-23,2021-11-23,2021-11-23
-11,ELE-MOB-0011,LG Model 299,Electronics,Mobile Phone,LG,Reliance Retail Supply Chain,24704.07,19025.2,2026-01-22,2026-01-22,2026-01-22
-12,ELE-LAP-0012,Oppo Model 576,Electronics,Laptop,Oppo,Ecom Express Supply Chain,14952.99,9025.34,2023-05-19,2023-05-19,2023-05-19
-13,ELE-LAP-0013,Lenovo Model 182,Electronics,Laptop,Lenovo,Allcargo Supply Chain,27066.89,19300.21,2025-09-16,2025-09-16,2025-09-16
-14,ELE-LAP-0014,Asus Model 365,Electronics,Laptop,Asus,Future Retail Distribution,67238.67,53337.45,2023-11-20,2023-11-20,2023-11-20
-15,ELE-LAP-0015,Asus Model 365 1,Electronics,Laptop,Asus,Reliance Retail Supply Chain,15539.94,11055.89,2025-09-28,2025-09-28,2025-09-28
-16,ELE-LAP-0016,Asus Model 220,Electronics,Laptop,Asus,Blue Dart Distribution,74378.16,60975.91,2021-10-05,2021-10-05,2021-10-05
-17,ELE-LAP-0017,Apple Model 111,Electronics,Laptop,Apple,Tata Consumer Distribution,3452.14,2452.88,2023-08-31,2023-08-31,2023-08-31
-18,ELE-LAP-0018,Realme Model 998,Electronics,Laptop,Realme,TVS Supply Chain Solutions,78700.91,65260.52,2024-06-04,2024-06-04,2024-06-04
-19,ELE-LAP-0019,LG Model 579,Electronics,Laptop,LG,Safexpress Logistics,11833.55,9545.14,2025-12-24,2025-12-24,2025-12-24
-20,ELE-LAP-0020,Oppo Model 762,Electronics,Laptop,Oppo,Blue Dart Distribution,35937.89,26766.8,2022-11-30,2022-11-30,2022-11-30
-21,ELE-LAP-0021,Apple Model 717,Electronics,Laptop,Apple,TVS Supply Chain Solutions,28133.76,19511.21,2023-08-21,2023-08-21,2023-08-21
-22,ELE-LAP-0022,Lenovo Model 725,Electronics,Laptop,Lenovo,Ecom Express Supply Chain,3592.3,2255.67,2025-06-21,2025-06-21,2025-06-21
-23,ELE-TAB-0023,Apple Model 436,Electronics,Tablet,Apple,Blue Dart Distribution,67630.99,44032.32,2022-07-16,2022-07-16,2022-07-16
-24,ELE-TAB-0024,HP Model 867,Electronics,Tablet,HP,Ecom Express Supply Chain,54689.23,41901.25,2023-05-04,2023-05-04,2023-05-04
-25,ELE-TAB-0025,Boat Model 295,Electronics,Tablet,Boat,Mahindra Logistics,57104.42,45915.85,2026-02-02,2026-02-02,2026-02-02
-26,ELE-TAB-0026,Oppo Model 203,Electronics,Tablet,Oppo,Future Retail Distribution,60692.41,44403.02,2025-09-18,2025-09-18,2025-09-18
-27,ELE-TAB-0027,LG Model 873,Electronics,Tablet,LG,Mahindra Logistics,67244.11,49373.93,2023-03-23,2023-03-23,2023-03-23
-28,ELE-TAB-0028,Oppo Model 183,Electronics,Tablet,Oppo,Metro Cash and Carry,18727.07,15630.2,2023-08-09,2023-08-09,2023-08-09
-29,ELE-TAB-0029,HP Model 409,Electronics,Tablet,HP,TVS Supply Chain Solutions,36615.9,26610.63,2026-03-24,2026-03-24,2026-03-24
-30,ELE-TAB-0030,OnePlus Model 510,Electronics,Tablet,OnePlus,Metro Cash and Carry,51886.95,31959.27,2024-03-05,2024-03-05,2024-03-05
-31,ELE-TAB-0031,OnePlus Model 451,Electronics,Tablet,OnePlus,Blue Dart Distribution,58148.86,40071.59,2022-04-04,2022-04-04,2022-04-04
-32,ELE-TAB-0032,Vivo Model 573,Electronics,Tablet,Vivo,Delhivery Fulfillment,76699.6,64254.97,2023-01-31,2023-01-31,2023-01-31
-33,ELE-TAB-0033,Boat Model 338,Electronics,Tablet,Boat,Allcargo Supply Chain,44857.22,27323.31,2026-05-05,2026-05-05,2026-05-05
-34,ELE-SMA-0034,Asus Model 897,Electronics,Smart Watch,Asus,Aditya Birla Distribution,44640.87,37299.15,2022-01-22,2022-01-22,2022-01-22
-35,ELE-SMA-0035,Asus Model 491,Electronics,Smart Watch,Asus,TVS Supply Chain Solutions,50141.83,38665.29,2025-01-24,2025-01-24,2025-01-24
-36,ELE-SMA-0036,Sony Model 194,Electronics,Smart Watch,Sony,Blue Dart Distribution,44300.2,26873.98,2022-09-14,2022-09-14,2022-09-14
-37,ELE-SMA-0037,Samsung Model 507,Electronics,Smart Watch,Samsung,Allcargo Supply Chain,8374.13,5380.24,2022-03-02,2022-03-02,2022-03-02
-38,ELE-SMA-0038,LG Model 691,Electronics,Smart Watch,LG,Metro Cash and Carry,55705.47,41703.11,2026-06-10,2026-06-10,2026-06-10
-39,ELE-SMA-0039,Oppo Model 311,Electronics,Smart Watch,Oppo,Aditya Birla Distribution,18839.28,12788.76,2023-09-13,2023-09-13,2023-09-13
-40,ELE-SMA-0040,Realme Model 955,Electronics,Smart Watch,Realme,Aditya Birla Distribution,4350.3,2802.22,2023-05-27,2023-05-27,2023-05-27
-41,ELE-SMA-0041,Xiaomi Model 501,Electronics,Smart Watch,Xiaomi,Future Retail Distribution,49793.85,35769.63,2025-03-23,2025-03-23,2025-03-23
-42,ELE-SMA-0042,Realme Model 222,Electronics,Smart Watch,Realme,Snowman Logistics,37633.88,28502.14,2025-09-30,2025-09-30,2025-09-30
-43,ELE-SMA-0043,Vivo Model 358,Electronics,Smart Watch,Vivo,TVS Supply Chain Solutions,79006.71,65047.42,2023-12-23,2023-12-23,2023-12-23
-44,ELE-SMA-0044,LG Model 117,Electronics,Smart Watch,LG,Snowman Logistics,41106.15,25097.37,2022-01-18,2022-01-18,2022-01-18
-45,ELE-HEA-0045,HP Model 674,Electronics,Headphone,HP,Blue Dart Distribution,32533.62,25961.26,2023-04-08,2023-04-08,2023-04-08
-46,ELE-HEA-0046,Xiaomi Model 872,Electronics,Headphone,Xiaomi,Aditya Birla Distribution,30029.72,23525.63,2022-10-21,2022-10-21,2022-10-21
-47,ELE-HEA-0047,Sony Model 824,Electronics,Headphone,Sony,Aditya Birla Distribution,18036.89,12419.02,2023-06-19,2023-06-19,2023-06-19
-48,ELE-HEA-0048,Samsung Model 846,Electronics,Headphone,Samsung,Metro Cash and Carry,21953.79,14778.52,2024-05-21,2024-05-21,2024-05-21
-49,ELE-HEA-0049,Dell Model 403,Electronics,Headphone,Dell,Allcargo Supply Chain,70869.13,52377.02,2023-01-09,2023-01-09,2023-01-09
-50,ELE-HEA-0050,Samsung Model 755,Electronics,Headphone,Samsung,Ecom Express Supply Chain,43683.58,33854.13,2023-07-22,2023-07-22,2023-07-22
-51,ELE-HEA-0051,Boat Model 575,Electronics,Headphone,Boat,Ingram Micro India,56266.76,43899.51,2025-12-17,2025-12-17,2025-12-17
-52,ELE-HEA-0052,Realme Model 184,Electronics,Headphone,Realme,Reliance Retail Supply Chain,16382.36,10961.14,2022-07-26,2022-07-26,2022-07-26
-53,ELE-HEA-0053,Vivo Model 577,Electronics,Headphone,Vivo,Blue Dart Distribution,34085.27,22340.39,2022-01-28,2022-01-28,2022-01-28
-54,ELE-HEA-0054,Apple Model 724,Electronics,Headphone,Apple,Reliance Retail Supply Chain,37235.87,25051.47,2021-09-24,2021-09-24,2021-09-24
-55,ELE-HEA-0055,OnePlus Model 599,Electronics,Headphone,OnePlus,Blue Dart Distribution,77518.65,57463.42,2022-11-13,2022-11-13,2022-11-13
-56,ELE-ACC-0056,Boat Model 902,Electronics,Accessorie,Boat,Safexpress Logistics,60920.72,38703.55,2025-11-01,2025-11-01,2025-11-01
-57,ELE-ACC-0057,Xiaomi Model 329,Electronics,Accessorie,Xiaomi,TVS Supply Chain Solutions,17250.32,10621.25,2024-06-14,2024-06-14,2024-06-14
-58,ELE-ACC-0058,Acer Model 491,Electronics,Accessorie,Acer,Delhivery Fulfillment,12036.26,9300.11,2022-09-29,2022-09-29,2022-09-29
-59,ELE-ACC-0059,OnePlus Model 499,Electronics,Accessorie,OnePlus,Redington India,45816.22,38928.48,2021-11-26,2021-11-26,2021-11-26
-60,ELE-ACC-0060,OnePlus Model 407,Electronics,Accessorie,OnePlus,Tata Consumer Distribution,40874.26,32469.1,2025-05-31,2025-05-31,2025-05-31
-61,ELE-ACC-0061,Realme Model 418,Electronics,Accessorie,Realme,Metro Cash and Carry,67984.91,53014.35,2023-01-23,2023-01-23,2023-01-23
-62,ELE-ACC-0062,Asus Model 381,Electronics,Accessorie,Asus,Metro Cash and Carry,43421.85,27081.26,2022-01-07,2022-01-07,2022-01-07
-63,ELE-ACC-0063,Boat Model 432,Electronics,Accessorie,Boat,Tata Consumer Distribution,77106.45,63395.04,2023-01-31,2023-01-31,2023-01-31
-64,ELE-ACC-0064,Boat Model 655,Electronics,Accessorie,Boat,Ecom Express Supply Chain,66081.58,56091.54,2021-09-30,2021-09-30,2021-09-30
-65,ELE-ACC-0065,Sony Model 877,Electronics,Accessorie,Sony,Ecom Express Supply Chain,67793.35,44424.13,2024-03-22,2024-03-22,2024-03-22
-66,ELE-ACC-0066,Apple Model 438,Electronics,Accessorie,Apple,Blue Dart Distribution,8743.71,6375.5,2022-01-23,2022-01-23,2022-01-23
-67,ELE-CAM-0067,Dell Model 834,Electronics,Camera,Dell,Mahindra Logistics,66745.08,50224.91,2022-05-06,2022-05-06,2022-05-06
-68,ELE-CAM-0068,Acer Model 263,Electronics,Camera,Acer,Metro Cash and Carry,61887.96,42986.12,2023-08-19,2023-08-19,2023-08-19
-69,ELE-CAM-0069,Xiaomi Model 726,Electronics,Camera,Xiaomi,Blue Dart Distribution,42817.77,34892.19,2024-11-17,2024-11-17,2024-11-17
-70,ELE-CAM-0070,Boat Model 621,Electronics,Camera,Boat,Ecom Express Supply Chain,33986.94,22275.03,2025-07-20,2025-07-20,2025-07-20
-71,ELE-CAM-0071,Lenovo Model 597,Electronics,Camera,Lenovo,Redington India,14835.14,11504.95,2022-02-08,2022-02-08,2022-02-08
-72,ELE-CAM-0072,Xiaomi Model 898,Electronics,Camera,Xiaomi,Blue Dart Distribution,49951.12,42217.11,2024-10-04,2024-10-04,2024-10-04
-73,ELE-CAM-0073,OnePlus Model 873,Electronics,Camera,OnePlus,Reliance Retail Supply Chain,39726.74,33009.39,2023-04-30,2023-04-30,2023-04-30
-74,ELE-CAM-0074,HP Model 450,Electronics,Camera,HP,TVS Supply Chain Solutions,77202.0,61244.23,2022-10-23,2022-10-23,2022-10-23
-75,ELE-CAM-0075,Acer Model 178,Electronics,Camera,Acer,Safexpress Logistics,40803.32,27546.42,2022-06-13,2022-06-13,2022-06-13
-76,ELE-CAM-0076,Oppo Model 582,Electronics,Camera,Oppo,Allcargo Supply Chain,41699.75,30722.18,2025-07-07,2025-07-07,2025-07-07
-77,ELE-CAM-0077,Asus Model 649,Electronics,Camera,Asus,Aditya Birla Distribution,53489.08,32145.12,2022-12-28,2022-12-28,2022-12-28
-78,ELE-GAM-0078,Lenovo Model 922,Electronics,Gaming Console,Lenovo,Tata Consumer Distribution,3811.46,2498.81,2023-10-27,2023-10-27,2023-10-27
-79,ELE-GAM-0079,Lenovo Model 183,Electronics,Gaming Console,Lenovo,Delhivery Fulfillment,14650.14,11511.67,2022-11-22,2022-11-22,2022-11-22
-80,ELE-GAM-0080,Boat Model 142,Electronics,Gaming Console,Boat,Ecom Express Supply Chain,33699.89,28244.33,2024-07-27,2024-07-27,2024-07-27
-81,ELE-GAM-0081,Apple Model 688,Electronics,Gaming Console,Apple,Aditya Birla Distribution,54735.19,43429.32,2026-04-18,2026-04-18,2026-04-18
-82,ELE-GAM-0082,Oppo Model 151,Electronics,Gaming Console,Oppo,Delhivery Fulfillment,48016.81,29556.4,2022-09-18,2022-09-18,2022-09-18
-83,ELE-GAM-0083,Acer Model 308,Electronics,Gaming Console,Acer,Safexpress Logistics,26215.11,16129.05,2022-07-20,2022-07-20,2022-07-20
-84,ELE-GAM-0084,Asus Model 689,Electronics,Gaming Console,Asus,Tata Consumer Distribution,7224.18,5218.32,2021-12-04,2021-12-04,2021-12-04
-85,ELE-GAM-0085,Dell Model 300,Electronics,Gaming Console,Dell,Redington India,61709.74,40456.43,2026-06-18,2026-06-18,2026-06-18
-86,ELE-GAM-0086,Lenovo Model 387,Electronics,Gaming Console,Lenovo,Ecom Express Supply Chain,41045.22,26495.82,2026-02-12,2026-02-12,2026-02-12
-87,ELE-GAM-0087,Samsung Model 829,Electronics,Gaming Console,Samsung,Safexpress Logistics,19425.46,12553.67,2023-09-10,2023-09-10,2023-09-10
-88,ELE-GAM-0088,Sony Model 288,Electronics,Gaming Console,Sony,Tata Consumer Distribution,71504.86,55839.96,2024-12-05,2024-12-05,2024-12-05
-89,CLO-MEN-0089,Nike Solid Tee,Clothing,Men T-Shirts,Nike,Metro Cash and Carry,2408.02,1534.2,2024-11-24,2024-11-24,2024-11-24
-90,CLO-MEN-0090,Nike Athletic Tee,Clothing,Men T-Shirts,Nike,Redington India,4462.23,2797.55,2023-04-11,2023-04-11,2023-04-11
-91,CLO-MEN-0091,Allen Solly Athletic Tee,Clothing,Men T-Shirts,Allen Solly,Ingram Micro India,1655.23,1178.69,2024-11-06,2024-11-06,2024-11-06
-92,CLO-MEN-0092,Puma Graphic Tee,Clothing,Men T-Shirts,Puma,Ecom Express Supply Chain,3092.19,2426.96,2022-03-25,2022-03-25,2022-03-25
-93,CLO-MEN-0093,US Polo Crew Neck Tee,Clothing,Men T-Shirts,US Polo,Snowman Logistics,2523.39,1691.84,2022-10-30,2022-10-30,2022-10-30
-94,CLO-MEN-0094,Roadster Athletic Tee,Clothing,Men T-Shirts,Roadster,Tata Consumer Distribution,3019.57,2376.24,2022-03-22,2022-03-22,2022-03-22
-95,CLO-MEN-0095,Max Athletic Tee,Clothing,Men T-Shirts,Max,Ecom Express Supply Chain,4419.6,3130.57,2026-03-02,2026-03-02,2026-03-02
-96,CLO-MEN-0096,Van Heusen Graphic Tee,Clothing,Men T-Shirts,Van Heusen,Ecom Express Supply Chain,407.22,315.7,2026-04-18,2026-04-18,2026-04-18
-97,CLO-MEN-0097,US Polo Crew Neck Tee 1,Clothing,Men T-Shirts,US Polo,Ingram Micro India,2863.62,1846.19,2022-11-25,2022-11-25,2022-11-25
-98,CLO-MEN-0098,Louis Philippe Athletic Tee,Clothing,Men T-Shirts,Louis Philippe,Mahindra Logistics,3097.76,1902.79,2025-12-28,2025-12-28,2025-12-28
-99,CLO-MEN-0099,H&M Athletic Tee,Clothing,Men T-Shirts,H&M,Aditya Birla Distribution,1931.7,1621.36,2025-05-23,2025-05-23,2025-05-23
-100,CLO-MEN-0100,Van Heusen Formal Shirt,Clothing,Men Shirts,Van Heusen,Allcargo Supply Chain,2156.44,1311.99,2023-03-19,2023-03-19,2023-03-19
-101,CLO-MEN-0101,Nike Checked Shirt,Clothing,Men Shirts,Nike,Delhivery Fulfillment,1104.9,872.09,2024-09-24,2024-09-24,2024-09-24
-102,CLO-MEN-0102,Zara Slim Fit Shirt,Clothing,Men Shirts,Zara,Delhivery Fulfillment,2039.95,1369.14,2024-03-17,2024-03-17,2024-03-17
-103,CLO-MEN-0103,Peter England Formal Shirt,Clothing,Men Shirts,Peter England,Allcargo Supply Chain,2307.31,1914.36,2024-02-23,2024-02-23,2024-02-23
-104,CLO-MEN-0104,Puma Formal Shirt,Clothing,Men Shirts,Puma,Future Retail Distribution,1205.92,885.27,2023-10-21,2023-10-21,2023-10-21
-105,CLO-MEN-0105,Allen Solly Checked Shirt,Clothing,Men Shirts,Allen Solly,Tata Consumer Distribution,4196.27,3028.16,2022-12-21,2022-12-21,2022-12-21
-106,CLO-MEN-0106,Max Checked Shirt,Clothing,Men Shirts,Max,Ecom Express Supply Chain,3963.96,2712.23,2025-04-26,2025-04-26,2025-04-26
-107,CLO-MEN-0107,Nike Slim Fit Shirt,Clothing,Men Shirts,Nike,Delhivery Fulfillment,3769.97,2309.13,2021-09-05,2021-09-05,2021-09-05
-108,CLO-MEN-0108,Adidas Checked Shirt,Clothing,Men Shirts,Adidas,Future Retail Distribution,4594.4,3086.04,2025-03-17,2025-03-17,2025-03-17
-109,CLO-MEN-0109,US Polo Formal Shirt,Clothing,Men Shirts,US Polo,Snowman Logistics,3762.33,3084.74,2025-09-28,2025-09-28,2025-09-28
-110,CLO-MEN-0110,Wrogn Checked Shirt,Clothing,Men Shirts,Wrogn,Aditya Birla Distribution,4337.65,2901.8,2023-03-04,2023-03-04,2023-03-04
-111,CLO-MEN-0111,Adidas Skinny Jeans,Clothing,Men Jeans,Adidas,Metro Cash and Carry,4782.06,3532.84,2024-10-17,2024-10-17,2024-10-17
-112,CLO-MEN-0112,Peter England Slim Fit Jeans,Clothing,Men Jeans,Peter England,Ecom Express Supply Chain,1243.95,774.34,2026-04-25,2026-04-25,2026-04-25
-113,CLO-MEN-0113,Puma Slim Fit Jeans,Clothing,Men Jeans,Puma,Aditya Birla Distribution,4008.22,2706.4,2025-03-14,2025-03-14,2025-03-14
-114,CLO-MEN-0114,Wrogn Stretch Jeans,Clothing,Men Jeans,Wrogn,Reliance Retail Supply Chain,331.85,242.57,2024-03-07,2024-03-07,2024-03-07
-115,CLO-MEN-0115,US Polo Stretch Jeans,Clothing,Men Jeans,US Polo,Blue Dart Distribution,2492.87,1973.03,2022-07-19,2022-07-19,2022-07-19
-116,CLO-MEN-0116,FabIndia Slim Fit Jeans,Clothing,Men Jeans,FabIndia,Aditya Birla Distribution,4617.41,3520.03,2021-12-09,2021-12-09,2021-12-09
-117,CLO-MEN-0117,Nike Regular Fit Jeans,Clothing,Men Jeans,Nike,Tata Consumer Distribution,2475.87,1962.38,2025-08-18,2025-08-18,2025-08-18
-118,CLO-MEN-0118,Roadster Skinny Jeans,Clothing,Men Jeans,Roadster,Future Retail Distribution,1445.5,1175.85,2026-03-13,2026-03-13,2026-03-13
-119,CLO-MEN-0119,Zara Stretch Jeans,Clothing,Men Jeans,Zara,Mahindra Logistics,1508.86,986.28,2021-09-10,2021-09-10,2021-09-10
-120,CLO-MEN-0120,Zara Stretch Jeans 1,Clothing,Men Jeans,Zara,Reliance Retail Supply Chain,4542.98,3167.02,2021-07-28,2021-07-28,2021-07-28
-121,CLO-MEN-0121,Adidas Slim Fit Jeans,Clothing,Men Jeans,Adidas,Allcargo Supply Chain,849.92,590.4,2023-07-06,2023-07-06,2023-07-06
-122,CLO-MEN-0122,Puma Cotton Trouser,Clothing,Men Trousers,Puma,Allcargo Supply Chain,1783.75,1474.82,2023-01-03,2023-01-03,2023-01-03
-123,CLO-MEN-0123,FabIndia Chino Pants,Clothing,Men Trousers,FabIndia,Future Retail Distribution,991.73,796.98,2025-02-21,2025-02-21,2025-02-21
-124,CLO-MEN-0124,Adidas Formal Trouser,Clothing,Men Trousers,Adidas,Tata Consumer Distribution,3722.28,3083.33,2021-10-26,2021-10-26,2021-10-26
-125,CLO-MEN-0125,Max Stretch Trouser,Clothing,Men Trousers,Max,TVS Supply Chain Solutions,2604.53,2055.09,2024-12-31,2024-12-31,2024-12-31
-126,CLO-MEN-0126,Levis Cotton Trouser,Clothing,Men Trousers,Levis,Blue Dart Distribution,1662.04,1122.57,2025-08-28,2025-08-28,2025-08-28
-127,CLO-MEN-0127,Roadster Stretch Trouser,Clothing,Men Trousers,Roadster,Blue Dart Distribution,1303.72,907.16,2021-08-07,2021-08-07,2021-08-07
-128,CLO-MEN-0128,Allen Solly Cotton Trouser,Clothing,Men Trousers,Allen Solly,Safexpress Logistics,409.69,321.35,2024-06-10,2024-06-10,2024-06-10
-129,CLO-MEN-0129,Allen Solly Chino Pants,Clothing,Men Trousers,Allen Solly,Allcargo Supply Chain,2588.1,2178.99,2023-07-03,2023-07-03,2023-07-03
-130,CLO-MEN-0130,Van Heusen Chino Pants,Clothing,Men Trousers,Van Heusen,Mahindra Logistics,3181.83,2212.66,2021-10-24,2021-10-24,2021-10-24
-131,CLO-MEN-0131,Adidas Formal Trouser 1,Clothing,Men Trousers,Adidas,Future Retail Distribution,3094.07,2526.39,2025-08-01,2025-08-01,2025-08-01
-132,CLO-MEN-0132,H&M Cotton Trouser,Clothing,Men Trousers,H&M,Metro Cash and Carry,2599.03,1620.95,2021-09-27,2021-09-27,2021-09-27
-133,CLO-MEN-0133,US Polo Denim Jacket,Clothing,Men Jackets,US Polo,Reliance Retail Supply Chain,1981.55,1292.98,2025-07-13,2025-07-13,2025-07-13
-134,CLO-MEN-0134,Peter England Bomber Jacket,Clothing,Men Jackets,Peter England,TVS Supply Chain Solutions,2326.63,1441.73,2024-04-19,2024-04-19,2024-04-19
-135,CLO-MEN-0135,Louis Philippe Bomber Jacket,Clothing,Men Jackets,Louis Philippe,Safexpress Logistics,1453.53,892.93,2022-10-14,2022-10-14,2022-10-14
-136,CLO-MEN-0136,Puma Winter Jacket,Clothing,Men Jackets,Puma,Future Retail Distribution,3801.02,2642.78,2023-04-25,2023-04-25,2023-04-25
-137,CLO-MEN-0137,Max Hooded Jacket,Clothing,Men Jackets,Max,Delhivery Fulfillment,476.43,361.95,2021-10-24,2021-10-24,2021-10-24
-138,CLO-MEN-0138,US Polo Denim Jacket 1,Clothing,Men Jackets,US Polo,Delhivery Fulfillment,3954.2,3054.3,2023-07-08,2023-07-08,2023-07-08
-139,CLO-MEN-0139,FabIndia Winter Jacket,Clothing,Men Jackets,FabIndia,Tata Consumer Distribution,1544.05,1297.15,2023-09-26,2023-09-26,2023-09-26
-140,CLO-MEN-0140,FabIndia Hooded Jacket,Clothing,Men Jackets,FabIndia,Tata Consumer Distribution,2524.12,1809.63,2024-09-24,2024-09-24,2024-09-24
-141,CLO-MEN-0141,Allen Solly Hooded Jacket,Clothing,Men Jackets,Allen Solly,TVS Supply Chain Solutions,766.86,595.59,2023-01-17,2023-01-17,2023-01-17
-142,CLO-MEN-0142,Levis Denim Jacket,Clothing,Men Jackets,Levis,Allcargo Supply Chain,741.98,593.97,2023-10-02,2023-10-02,2023-10-02
-143,CLO-MEN-0143,Wrogn Hooded Jacket,Clothing,Men Jackets,Wrogn,Ingram Micro India,4062.11,3373.91,2024-02-20,2024-02-20,2024-02-20
-144,CLO-MEN-0144,Zara Ethnic Kurta,Clothing,Men Ethnic Wear,Zara,Metro Cash and Carry,2481.79,2067.1,2023-03-20,2023-03-20,2023-03-20
-145,CLO-MEN-0145,Louis Philippe Nehru Jacket,Clothing,Men Ethnic Wear,Louis Philippe,Metro Cash and Carry,2389.03,1610.42,2024-08-21,2024-08-21,2024-08-21
-146,CLO-MEN-0146,Van Heusen Sherwani,Clothing,Men Ethnic Wear,Van Heusen,Delhivery Fulfillment,2386.12,1908.85,2026-02-03,2026-02-03,2026-02-03
-147,CLO-MEN-0147,FabIndia Kurta Set,Clothing,Men Ethnic Wear,FabIndia,Future Retail Distribution,2879.89,2213.89,2023-06-26,2023-06-26,2023-06-26
-148,CLO-MEN-0148,Louis Philippe Ethnic Kurta,Clothing,Men Ethnic Wear,Louis Philippe,Tata Consumer Distribution,4716.12,3033.42,2024-11-25,2024-11-25,2024-11-25
-149,CLO-MEN-0149,Nike Ethnic Kurta,Clothing,Men Ethnic Wear,Nike,Safexpress Logistics,3543.53,2772.22,2025-10-25,2025-10-25,2025-10-25
-150,CLO-MEN-0150,Zara Sherwani,Clothing,Men Ethnic Wear,Zara,Delhivery Fulfillment,2715.05,2113.72,2022-08-25,2022-08-25,2022-08-25
-151,CLO-MEN-0151,Allen Solly Ethnic Kurta,Clothing,Men Ethnic Wear,Allen Solly,Redington India,3348.17,2574.05,2021-09-22,2021-09-22,2021-09-22
-152,CLO-MEN-0152,Adidas Ethnic Kurta,Clothing,Men Ethnic Wear,Adidas,Metro Cash and Carry,4807.5,3546.28,2025-06-24,2025-06-24,2025-06-24
-153,CLO-MEN-0153,Roadster Kurta Set,Clothing,Men Ethnic Wear,Roadster,Metro Cash and Carry,2252.15,1641.74,2024-02-23,2024-02-23,2024-02-23
-154,CLO-MEN-0154,H&M Ethnic Kurta,Clothing,Men Ethnic Wear,H&M,Aditya Birla Distribution,2468.67,1620.43,2026-05-28,2026-05-28,2026-05-28
-155,CLO-MEN-0155,Van Heusen Sneakers,Clothing,Men Footwear,Van Heusen,Future Retail Distribution,2095.17,1608.31,2025-02-27,2025-02-27,2025-02-27
-156,CLO-MEN-0156,Nike Slip On Shoes,Clothing,Men Footwear,Nike,Tata Consumer Distribution,4651.69,3613.88,2026-04-16,2026-04-16,2026-04-16
-157,CLO-MEN-0157,Louis Philippe Slip On Shoes,Clothing,Men Footwear,Louis Philippe,Delhivery Fulfillment,1497.13,905.82,2026-02-02,2026-02-02,2026-02-02
-158,CLO-MEN-0158,Zara Running Shoes,Clothing,Men Footwear,Zara,Mahindra Logistics,666.98,431.25,2024-05-14,2024-05-14,2024-05-14
-159,CLO-MEN-0159,Wrogn Sports Shoes,Clothing,Men Footwear,Wrogn,Safexpress Logistics,3545.83,2801.27,2022-09-04,2022-09-04,2022-09-04
-160,CLO-MEN-0160,Puma Slip On Shoes,Clothing,Men Footwear,Puma,Tata Consumer Distribution,382.92,259.76,2023-03-08,2023-03-08,2023-03-08
-161,CLO-MEN-0161,FabIndia Formal Shoes,Clothing,Men Footwear,FabIndia,Ingram Micro India,3816.83,2468.16,2025-10-08,2025-10-08,2025-10-08
-162,CLO-MEN-0162,US Polo Running Shoes,Clothing,Men Footwear,US Polo,Snowman Logistics,1596.63,1020.9,2026-05-01,2026-05-01,2026-05-01
-163,CLO-MEN-0163,Puma Formal Shoes,Clothing,Men Footwear,Puma,Ingram Micro India,4324.1,2797.21,2023-09-04,2023-09-04,2023-09-04
-164,CLO-MEN-0164,Max Slip On Shoes,Clothing,Men Footwear,Max,Ecom Express Supply Chain,860.66,671.18,2025-03-05,2025-03-05,2025-03-05
-165,CLO-MEN-0165,Allen Solly Sports Shoes,Clothing,Men Footwear,Allen Solly,Allcargo Supply Chain,467.05,384.21,2025-11-23,2025-11-23,2025-11-23
-166,CLO-MEN-0166,Louis Philippe Sports T-Shirt,Clothing,Men Sportswear,Louis Philippe,Aditya Birla Distribution,3211.08,2622.44,2026-01-30,2026-01-30,2026-01-30
-167,CLO-MEN-0167,Zara Sports T-Shirt,Clothing,Men Sportswear,Zara,Tata Consumer Distribution,1098.07,771.05,2022-08-09,2022-08-09,2022-08-09
-168,CLO-MEN-0168,Zara Sports T-Shirt 1,Clothing,Men Sportswear,Zara,Mahindra Logistics,2808.99,2198.47,2026-03-15,2026-03-15,2026-03-15
-169,CLO-MEN-0169,Puma Training Shorts,Clothing,Men Sportswear,Puma,Ecom Express Supply Chain,3404.47,2151.9,2023-03-08,2023-03-08,2023-03-08
-170,CLO-MEN-0170,Roadster Sports T-Shirt,Clothing,Men Sportswear,Roadster,TVS Supply Chain Solutions,2695.46,2038.75,2026-04-28,2026-04-28,2026-04-28
-171,CLO-MEN-0171,Van Heusen Gym Vest,Clothing,Men Sportswear,Van Heusen,Snowman Logistics,4942.06,4124.69,2023-02-04,2023-02-04,2023-02-04
-172,CLO-MEN-0172,Max Gym Vest,Clothing,Men Sportswear,Max,Reliance Retail Supply Chain,4218.21,2955.85,2023-08-20,2023-08-20,2023-08-20
-173,CLO-MEN-0173,US Polo Sports T-Shirt,Clothing,Men Sportswear,US Polo,Future Retail Distribution,2294.87,1882.96,2025-10-01,2025-10-01,2025-10-01
-174,CLO-MEN-0174,Peter England Track Pant,Clothing,Men Sportswear,Peter England,Metro Cash and Carry,3340.42,2129.18,2025-08-16,2025-08-16,2025-08-16
-175,CLO-MEN-0175,Roadster Gym Vest,Clothing,Men Sportswear,Roadster,Ecom Express Supply Chain,2843.71,1746.8,2023-09-29,2023-09-29,2023-09-29
-176,CLO-MEN-0176,Allen Solly Training Shorts,Clothing,Men Sportswear,Allen Solly,Metro Cash and Carry,3590.79,2182.34,2024-11-28,2024-11-28,2024-11-28
-177,CLO-WOM-0177,Levis Party Dress,Clothing,Women Dresses,Levis,Ecom Express Supply Chain,4359.63,3658.84,2022-11-11,2022-11-11,2022-11-11
-178,CLO-WOM-0178,Roadster Floral Dress,Clothing,Women Dresses,Roadster,Redington India,899.21,550.91,2021-11-07,2021-11-07,2021-11-07
-179,CLO-WOM-0179,Louis Philippe Summer Dress,Clothing,Women Dresses,Louis Philippe,Reliance Retail Supply Chain,3435.13,2717.21,2023-12-15,2023-12-15,2023-12-15
-180,CLO-WOM-0180,Allen Solly Maxi Dress,Clothing,Women Dresses,Allen Solly,Snowman Logistics,1345.16,1125.87,2023-03-19,2023-03-19,2023-03-19
-181,CLO-WOM-0181,Allen Solly Maxi Dress 1,Clothing,Women Dresses,Allen Solly,Allcargo Supply Chain,2137.44,1328.44,2026-02-07,2026-02-07,2026-02-07
-182,CLO-WOM-0182,Allen Solly Party Dress,Clothing,Women Dresses,Allen Solly,Safexpress Logistics,2572.17,1806.1,2022-01-18,2022-01-18,2022-01-18
-183,CLO-WOM-0183,Allen Solly Summer Dress,Clothing,Women Dresses,Allen Solly,Safexpress Logistics,674.99,536.67,2025-11-27,2025-11-27,2025-11-27
-184,CLO-WOM-0184,Louis Philippe Maxi Dress,Clothing,Women Dresses,Louis Philippe,Metro Cash and Carry,743.54,573.74,2022-01-20,2022-01-20,2022-01-20
-185,CLO-WOM-0185,Allen Solly Maxi Dress 2,Clothing,Women Dresses,Allen Solly,Allcargo Supply Chain,4442.44,2703.82,2021-06-25,2021-06-25,2021-06-25
-186,CLO-WOM-0186,Wrogn Maxi Dress,Clothing,Women Dresses,Wrogn,Snowman Logistics,2762.35,1840.31,2022-01-06,2022-01-06,2022-01-06
-187,CLO-WOM-0187,Zara Summer Dress,Clothing,Women Dresses,Zara,Snowman Logistics,2394.68,1669.82,2024-02-01,2024-02-01,2024-02-01
-188,CLO-TOP-0188,Max Model 650,Clothing,Tops,Max,Blue Dart Distribution,3844.77,3066.59,2022-05-08,2022-05-08,2022-05-08
-189,CLO-TOP-0189,Louis Philippe Model 715,Clothing,Tops,Louis Philippe,Reliance Retail Supply Chain,4919.53,3869.88,2021-11-17,2021-11-17,2021-11-17
-190,CLO-TOP-0190,Zara Model 447,Clothing,Tops,Zara,Reliance Retail Supply Chain,1399.86,920.52,2024-12-24,2024-12-24,2024-12-24
-191,CLO-TOP-0191,Puma Model 223,Clothing,Tops,Puma,Ecom Express Supply Chain,2241.61,1802.56,2024-08-31,2024-08-31,2024-08-31
-192,CLO-TOP-0192,Louis Philippe Model 805,Clothing,Tops,Louis Philippe,Delhivery Fulfillment,1038.9,670.96,2024-04-15,2024-04-15,2024-04-15
-193,CLO-TOP-0193,US Polo Model 693,Clothing,Tops,US Polo,Redington India,4200.11,2623.24,2023-01-02,2023-01-02,2023-01-02
-194,CLO-TOP-0194,Puma Model 536,Clothing,Tops,Puma,Blue Dart Distribution,2151.82,1669.73,2026-03-21,2026-03-21,2026-03-21
-195,CLO-TOP-0195,Van Heusen Model 689,Clothing,Tops,Van Heusen,Ingram Micro India,2836.7,1728.67,2026-02-07,2026-02-07,2026-02-07
-196,CLO-TOP-0196,Peter England Model 384,Clothing,Tops,Peter England,Blue Dart Distribution,1461.46,1025.5,2022-07-19,2022-07-19,2022-07-19
-197,CLO-TOP-0197,Wrogn Model 179,Clothing,Tops,Wrogn,Tata Consumer Distribution,4620.68,3575.05,2024-09-13,2024-09-13,2024-09-13
-198,CLO-TOP-0198,H&M Model 178,Clothing,Tops,H&M,Safexpress Logistics,1070.44,812.88,2024-06-26,2024-06-26,2024-06-26
-199,CLO-WOM-0199,US Polo Mom Fit Jeans,Clothing,Women Jeans,US Polo,Reliance Retail Supply Chain,2876.76,1838.65,2026-03-25,2026-03-25,2026-03-25
-200,CLO-WOM-0200,US Polo Skinny Jeans,Clothing,Women Jeans,US Polo,Safexpress Logistics,1956.45,1622.86,2026-05-06,2026-05-06,2026-05-06
-201,CLO-WOM-0201,Roadster Regular Jeans,Clothing,Women Jeans,Roadster,Ecom Express Supply Chain,815.1,619.54,2025-03-25,2025-03-25,2025-03-25
-202,CLO-WOM-0202,Louis Philippe Mom Fit Jeans,Clothing,Women Jeans,Louis Philippe,Metro Cash and Carry,4934.39,3453.69,2021-12-05,2021-12-05,2021-12-05
-203,CLO-WOM-0203,Wrogn Regular Jeans,Clothing,Women Jeans,Wrogn,Blue Dart Distribution,4738.23,3450.13,2024-02-08,2024-02-08,2024-02-08
-204,CLO-WOM-0204,Adidas High Rise Jeans,Clothing,Women Jeans,Adidas,Allcargo Supply Chain,726.94,437.19,2023-03-08,2023-03-08,2023-03-08
-205,CLO-WOM-0205,Levis High Rise Jeans,Clothing,Women Jeans,Levis,Mahindra Logistics,4219.35,3527.01,2024-10-16,2024-10-16,2024-10-16
-206,CLO-WOM-0206,Nike Regular Jeans,Clothing,Women Jeans,Nike,Future Retail Distribution,4641.25,2814.32,2024-04-17,2024-04-17,2024-04-17
-207,CLO-WOM-0207,Max Mom Fit Jeans,Clothing,Women Jeans,Max,Redington India,4951.96,3619.23,2022-07-05,2022-07-05,2022-07-05
-208,CLO-WOM-0208,Puma High Rise Jeans,Clothing,Women Jeans,Puma,Mahindra Logistics,2478.37,1823.59,2024-10-29,2024-10-29,2024-10-29
-209,CLO-WOM-0209,Nike High Rise Jeans,Clothing,Women Jeans,Nike,Ecom Express Supply Chain,3267.01,1966.94,2025-05-08,2025-05-08,2025-05-08
-210,CLO-KUR-0210,Puma Model 273,Clothing,Kurtis,Puma,Allcargo Supply Chain,2353.58,1437.25,2023-02-14,2023-02-14,2023-02-14
-211,CLO-KUR-0211,Allen Solly Model 305,Clothing,Kurtis,Allen Solly,Aditya Birla Distribution,1341.76,891.57,2024-07-06,2024-07-06,2024-07-06
-212,CLO-KUR-0212,Louis Philippe Model 926,Clothing,Kurtis,Louis Philippe,Future Retail Distribution,4914.24,3417.09,2023-01-18,2023-01-18,2023-01-18
-213,CLO-KUR-0213,Wrogn Model 648,Clothing,Kurtis,Wrogn,Ecom Express Supply Chain,4518.13,3231.91,2022-03-21,2022-03-21,2022-03-21
-214,CLO-KUR-0214,US Polo Model 958,Clothing,Kurtis,US Polo,Ingram Micro India,2069.19,1592.06,2024-03-23,2024-03-23,2024-03-23
-215,CLO-KUR-0215,Allen Solly Model 895,Clothing,Kurtis,Allen Solly,TVS Supply Chain Solutions,366.14,264.78,2022-12-15,2022-12-15,2022-12-15
-216,CLO-KUR-0216,Roadster Model 284,Clothing,Kurtis,Roadster,Allcargo Supply Chain,3123.22,2587.0,2021-06-25,2021-06-25,2021-06-25
-217,CLO-KUR-0217,Puma Model 689,Clothing,Kurtis,Puma,Aditya Birla Distribution,2469.55,1785.16,2023-11-11,2023-11-11,2023-11-11
-218,CLO-KUR-0218,Van Heusen Model 380,Clothing,Kurtis,Van Heusen,Aditya Birla Distribution,2983.42,2209.61,2023-06-30,2023-06-30,2023-06-30
-219,CLO-KUR-0219,H&M Model 129,Clothing,Kurtis,H&M,Blue Dart Distribution,3416.55,2595.91,2025-10-28,2025-10-28,2025-10-28
-220,CLO-KUR-0220,Zara Model 348,Clothing,Kurtis,Zara,Blue Dart Distribution,1308.54,967.78,2022-11-14,2022-11-14,2022-11-14
-221,CLO-SAR-0221,Allen Solly Model 377,Clothing,Sarees,Allen Solly,Tata Consumer Distribution,3030.35,2346.21,2025-07-25,2025-07-25,2025-07-25
-222,CLO-SAR-0222,Puma Model 840,Clothing,Sarees,Puma,Blue Dart Distribution,1123.02,680.15,2024-08-16,2024-08-16,2024-08-16
-223,CLO-SAR-0223,Allen Solly Model 723,Clothing,Sarees,Allen Solly,Blue Dart Distribution,899.94,664.48,2024-04-23,2024-04-23,2024-04-23
-224,CLO-SAR-0224,Max Model 411,Clothing,Sarees,Max,Redington India,621.54,435.05,2023-06-27,2023-06-27,2023-06-27
-225,CLO-SAR-0225,FabIndia Model 191,Clothing,Sarees,FabIndia,TVS Supply Chain Solutions,1605.73,1180.4,2022-05-06,2022-05-06,2022-05-06
-226,CLO-SAR-0226,Zara Model 650,Clothing,Sarees,Zara,Ecom Express Supply Chain,3128.44,2332.67,2026-05-08,2026-05-08,2026-05-08
-227,CLO-SAR-0227,Wrogn Model 834,Clothing,Sarees,Wrogn,Aditya Birla Distribution,4048.84,3031.07,2023-04-21,2023-04-21,2023-04-21
-228,CLO-SAR-0228,Louis Philippe Model 630,Clothing,Sarees,Louis Philippe,Tata Consumer Distribution,4369.36,2917.12,2025-07-26,2025-07-26,2025-07-26
-229,CLO-SAR-0229,Puma Model 498,Clothing,Sarees,Puma,Allcargo Supply Chain,2975.43,2209.7,2023-11-10,2023-11-10,2023-11-10
-230,CLO-SAR-0230,Roadster Model 630,Clothing,Sarees,Roadster,Ecom Express Supply Chain,2535.52,1730.29,2025-02-12,2025-02-12,2025-02-12
-231,CLO-SAR-0231,Van Heusen Model 726,Clothing,Sarees,Van Heusen,Ingram Micro India,2832.35,2101.82,2024-02-26,2024-02-26,2024-02-26
-232,CLO-WOM-0232,Adidas Casual Jacket,Clothing,Women Jackets,Adidas,Ecom Express Supply Chain,608.54,390.93,2026-05-25,2026-05-25,2026-05-25
-233,CLO-WOM-0233,Peter England Denim Jacket,Clothing,Women Jackets,Peter England,Delhivery Fulfillment,902.92,572.96,2023-04-06,2023-04-06,2023-04-06
-234,CLO-WOM-0234,Van Heusen Denim Jacket,Clothing,Women Jackets,Van Heusen,Future Retail Distribution,2756.85,1751.75,2023-10-24,2023-10-24,2023-10-24
-235,CLO-WOM-0235,Adidas Long Coat,Clothing,Women Jackets,Adidas,Reliance Retail Supply Chain,952.53,657.33,2026-03-31,2026-03-31,2026-03-31
-236,CLO-WOM-0236,Levis Denim Jacket 1,Clothing,Women Jackets,Levis,Redington India,2942.95,2288.91,2021-08-06,2021-08-06,2021-08-06
-237,CLO-WOM-0237,Zara Winter Jacket,Clothing,Women Jackets,Zara,TVS Supply Chain Solutions,4660.04,3452.29,2021-06-24,2021-06-24,2021-06-24
-238,CLO-WOM-0238,Wrogn Casual Jacket,Clothing,Women Jackets,Wrogn,TVS Supply Chain Solutions,2128.36,1736.84,2024-07-25,2024-07-25,2024-07-25
-239,CLO-WOM-0239,US Polo Casual Jacket,Clothing,Women Jackets,US Polo,Safexpress Logistics,1128.01,758.41,2025-05-20,2025-05-20,2025-05-20
-240,CLO-WOM-0240,H&M Denim Jacket,Clothing,Women Jackets,H&M,Snowman Logistics,2281.78,1556.72,2022-06-12,2022-06-12,2022-06-12
-241,CLO-WOM-0241,Roadster Casual Jacket,Clothing,Women Jackets,Roadster,Safexpress Logistics,377.28,263.91,2023-03-09,2023-03-09,2023-03-09
-242,CLO-WOM-0242,Adidas Long Coat 1,Clothing,Women Jackets,Adidas,Metro Cash and Carry,2634.01,1807.57,2022-04-22,2022-04-22,2022-04-22
-243,CLO-WOM-0243,Wrogn Flats,Clothing,Women Footwear,Wrogn,Redington India,2424.04,1639.26,2021-07-11,2021-07-11,2021-07-11
-244,CLO-WOM-0244,Roadster Flats,Clothing,Women Footwear,Roadster,TVS Supply Chain Solutions,3842.25,2920.38,2026-03-23,2026-03-23,2026-03-23
-245,CLO-WOM-0245,Louis Philippe Sandals,Clothing,Women Footwear,Louis Philippe,Redington India,2400.64,1581.77,2024-01-11,2024-01-11,2024-01-11
-246,CLO-WOM-0246,US Polo Flats,Clothing,Women Footwear,US Polo,Reliance Retail Supply Chain,1567.38,994.1,2025-12-05,2025-12-05,2025-12-05
-247,CLO-WOM-0247,Nike Sandals,Clothing,Women Footwear,Nike,Safexpress Logistics,3284.26,2473.91,2023-03-22,2023-03-22,2023-03-22
-248,CLO-WOM-0248,H&M Sandals,Clothing,Women Footwear,H&M,Delhivery Fulfillment,3140.83,2417.79,2025-09-26,2025-09-26,2025-09-26
-249,CLO-WOM-0249,Wrogn Heels,Clothing,Women Footwear,Wrogn,Ingram Micro India,2449.46,2025.72,2021-09-20,2021-09-20,2021-09-20
-250,CLO-WOM-0250,Louis Philippe Flats,Clothing,Women Footwear,Louis Philippe,Future Retail Distribution,772.38,593.5,2026-02-13,2026-02-13,2026-02-13
-251,CLO-WOM-0251,Wrogn Sports Shoes 1,Clothing,Women Footwear,Wrogn,Blue Dart Distribution,3408.2,2595.48,2025-12-18,2025-12-18,2025-12-18
-252,CLO-WOM-0252,Louis Philippe Sports Shoes,Clothing,Women Footwear,Louis Philippe,Aditya Birla Distribution,4977.91,3339.51,2023-08-06,2023-08-06,2023-08-06
-253,CLO-WOM-0253,Van Heusen Heels,Clothing,Women Footwear,Van Heusen,Snowman Logistics,3232.8,2274.34,2022-10-03,2022-10-03,2022-10-03
-254,CLO-WOM-0254,Roadster Training Tights,Clothing,Women Activewear,Roadster,Reliance Retail Supply Chain,4894.05,3038.42,2023-12-07,2023-12-07,2023-12-07
-255,CLO-WOM-0255,Allen Solly Sports Bra,Clothing,Women Activewear,Allen Solly,Reliance Retail Supply Chain,1633.83,1296.44,2024-05-04,2024-05-04,2024-05-04
-256,CLO-WOM-0256,Levis Training Tights,Clothing,Women Activewear,Levis,Redington India,1208.15,773.24,2026-04-07,2026-04-07,2026-04-07
-257,CLO-WOM-0257,Allen Solly Workout Top,Clothing,Women Activewear,Allen Solly,Delhivery Fulfillment,4593.73,3790.1,2023-02-12,2023-02-12,2023-02-12
-258,CLO-WOM-0258,Louis Philippe Workout Top,Clothing,Women Activewear,Louis Philippe,Redington India,4780.5,3917.53,2024-01-21,2024-01-21,2024-01-21
-259,CLO-WOM-0259,Van Heusen Workout Top,Clothing,Women Activewear,Van Heusen,Future Retail Distribution,4378.0,3122.6,2024-06-23,2024-06-23,2024-06-23
-260,CLO-WOM-0260,Allen Solly Sports Bra 1,Clothing,Women Activewear,Allen Solly,Allcargo Supply Chain,2476.04,1735.34,2024-08-19,2024-08-19,2024-08-19
-261,CLO-WOM-0261,Zara Sports Bra,Clothing,Women Activewear,Zara,Safexpress Logistics,2468.5,1803.07,2021-09-17,2021-09-17,2021-09-17
-262,CLO-WOM-0262,Allen Solly Workout Top 1,Clothing,Women Activewear,Allen Solly,Tata Consumer Distribution,2650.44,1705.24,2022-04-29,2022-04-29,2022-04-29
-263,CLO-WOM-0263,Allen Solly Yoga Pants,Clothing,Women Activewear,Allen Solly,Blue Dart Distribution,2912.9,2383.76,2026-05-17,2026-05-17,2026-05-17
-264,CLO-WOM-0264,Allen Solly Sports Bra 2,Clothing,Women Activewear,Allen Solly,Aditya Birla Distribution,3684.22,2930.35,2024-01-18,2024-01-18,2024-01-18
-265,CLO-KID-0265,Puma Kids Shirt,Clothing,Kids Clothing,Puma,Metro Cash and Carry,4922.08,3195.99,2024-05-31,2024-05-31,2024-05-31
-266,CLO-KID-0266,Adidas Kids Shirt,Clothing,Kids Clothing,Adidas,Ecom Express Supply Chain,816.26,640.32,2024-07-26,2024-07-26,2024-07-26
-267,CLO-KID-0267,Wrogn Kids Jeans,Clothing,Kids Clothing,Wrogn,Ingram Micro India,664.3,479.23,2022-06-21,2022-06-21,2022-06-21
-268,CLO-KID-0268,Levis Kids Shorts,Clothing,Kids Clothing,Levis,TVS Supply Chain Solutions,3557.29,2968.25,2025-10-04,2025-10-04,2025-10-04
-269,CLO-KID-0269,Van Heusen Kids Jeans,Clothing,Kids Clothing,Van Heusen,Snowman Logistics,1361.13,933.13,2025-08-22,2025-08-22,2025-08-22
-270,CLO-KID-0270,Peter England Kids T-Shirt,Clothing,Kids Clothing,Peter England,Snowman Logistics,731.91,617.26,2026-02-27,2026-02-27,2026-02-27
-271,CLO-KID-0271,Wrogn Kids Shirt,Clothing,Kids Clothing,Wrogn,Metro Cash and Carry,4275.39,2861.68,2025-05-09,2025-05-09,2025-05-09
-272,CLO-KID-0272,Peter England Kids Shirt,Clothing,Kids Clothing,Peter England,Redington India,904.17,610.93,2024-07-22,2024-07-22,2024-07-22
-273,CLO-KID-0273,Adidas Kids Jeans,Clothing,Kids Clothing,Adidas,Mahindra Logistics,1280.66,852.04,2024-08-10,2024-08-10,2024-08-10
-274,CLO-KID-0274,Van Heusen Kids Jeans 1,Clothing,Kids Clothing,Van Heusen,Allcargo Supply Chain,1417.81,1049.74,2024-08-23,2024-08-23,2024-08-23
-275,CLO-KID-0275,Puma Kids Shirt 1,Clothing,Kids Clothing,Puma,Future Retail Distribution,4135.33,3137.51,2023-04-18,2023-04-18,2023-04-18
-276,CLO-KID-0276,Adidas Kids School Shoes,Clothing,Kids Footwear,Adidas,Snowman Logistics,3401.76,2265.32,2025-03-31,2025-03-31,2025-03-31
-277,CLO-KID-0277,US Polo Kids Sandals,Clothing,Kids Footwear,US Polo,Blue Dart Distribution,622.04,489.21,2026-01-24,2026-01-24,2026-01-24
-278,CLO-KID-0278,US Polo Kids Sneakers,Clothing,Kids Footwear,US Polo,Redington India,1186.64,945.03,2025-12-04,2025-12-04,2025-12-04
-279,CLO-KID-0279,Allen Solly Kids Sandals,Clothing,Kids Footwear,Allen Solly,Blue Dart Distribution,1002.75,663.29,2026-02-25,2026-02-25,2026-02-25
-280,CLO-KID-0280,Levis Kids Sneakers,Clothing,Kids Footwear,Levis,Future Retail Distribution,856.35,695.4,2023-02-20,2023-02-20,2023-02-20
-281,CLO-KID-0281,FabIndia Kids School Shoes,Clothing,Kids Footwear,FabIndia,Ecom Express Supply Chain,2626.0,1905.13,2024-05-03,2024-05-03,2024-05-03
-282,CLO-KID-0282,Puma Kids Sandals,Clothing,Kids Footwear,Puma,Mahindra Logistics,2863.69,1878.85,2025-04-29,2025-04-29,2025-04-29
-283,CLO-KID-0283,US Polo Kids Sneakers 1,Clothing,Kids Footwear,US Polo,Redington India,1184.16,970.51,2023-05-08,2023-05-08,2023-05-08
-284,CLO-KID-0284,Van Heusen Kids Sneakers,Clothing,Kids Footwear,Van Heusen,Aditya Birla Distribution,2932.65,2358.95,2022-08-17,2022-08-17,2022-08-17
-285,CLO-KID-0285,Nike Kids Sneakers,Clothing,Kids Footwear,Nike,Tata Consumer Distribution,538.32,401.28,2023-07-21,2023-07-21,2023-07-21
-286,CLO-KID-0286,H&M Kids Sneakers,Clothing,Kids Footwear,H&M,Redington India,2008.86,1457.91,2022-04-27,2022-04-27,2022-04-27
-287,CLO-KID-0287,Levis Kids Jacket,Clothing,Kids Winter Wear,Levis,Mahindra Logistics,2220.57,1378.26,2023-02-24,2023-02-24,2023-02-24
-288,CLO-KID-0288,Roadster Kids Jacket,Clothing,Kids Winter Wear,Roadster,Future Retail Distribution,4046.98,3301.1,2026-04-01,2026-04-01,2026-04-01
-289,CLO-KID-0289,Nike Kids Jacket,Clothing,Kids Winter Wear,Nike,Ecom Express Supply Chain,4578.37,3153.95,2024-05-01,2024-05-01,2024-05-01
-290,CLO-KID-0290,Wrogn Kids Sweater,Clothing,Kids Winter Wear,Wrogn,TVS Supply Chain Solutions,4751.38,3700.63,2025-03-22,2025-03-22,2025-03-22
-291,CLO-KID-0291,Levis Kids Sweater,Clothing,Kids Winter Wear,Levis,Aditya Birla Distribution,4655.83,3412.65,2026-01-30,2026-01-30,2026-01-30
-292,CLO-KID-0292,Adidas Kids Hoodie,Clothing,Kids Winter Wear,Adidas,Ingram Micro India,2630.16,2118.6,2023-06-08,2023-06-08,2023-06-08
-293,CLO-KID-0293,Roadster Kids Hoodie,Clothing,Kids Winter Wear,Roadster,Snowman Logistics,1864.23,1312.32,2022-04-29,2022-04-29,2022-04-29
-294,CLO-KID-0294,Max Kids Jacket,Clothing,Kids Winter Wear,Max,Blue Dart Distribution,1187.1,985.31,2026-03-25,2026-03-25,2026-03-25
-295,CLO-KID-0295,FabIndia Kids Sweater,Clothing,Kids Winter Wear,FabIndia,Reliance Retail Supply Chain,945.19,670.54,2024-01-12,2024-01-12,2024-01-12
-296,CLO-KID-0296,Levis Kids Sweater 1,Clothing,Kids Winter Wear,Levis,Ingram Micro India,742.01,609.16,2026-01-28,2026-01-28,2026-01-28
-297,CLO-KID-0297,US Polo Kids Jacket,Clothing,Kids Winter Wear,US Polo,Snowman Logistics,1689.27,1024.98,2026-03-26,2026-03-26,2026-03-26
-298,HOM-FUR-0298,Bajaj Sofa Set,Home & Kitchen,Furniture,Bajaj,Safexpress Logistics,15720.17,9748.95,2021-08-20,2021-08-20,2021-08-20
-299,HOM-FUR-0299,Whirlpool Study Table,Home & Kitchen,Furniture,Whirlpool,Ecom Express Supply Chain,5613.38,3824.19,2025-01-14,2025-01-14,2025-01-14
-300,HOM-FUR-0300,Bajaj Office Chair,Home & Kitchen,Furniture,Bajaj,Snowman Logistics,24359.55,20365.32,2022-09-19,2022-09-19,2022-09-19
-301,HOM-FUR-0301,Pigeon Sofa Set,Home & Kitchen,Furniture,Pigeon,Reliance Retail Supply Chain,16012.67,12811.0,2026-02-11,2026-02-11,2026-02-11
-302,HOM-FUR-0302,Butterfly Sofa Set,Home & Kitchen,Furniture,Butterfly,Redington India,22685.06,15854.85,2025-12-08,2025-12-08,2025-12-08
-303,HOM-FUR-0303,Godrej Study Table,Home & Kitchen,Furniture,Godrej,Future Retail Distribution,8170.3,5867.34,2023-08-26,2023-08-26,2023-08-26
-304,HOM-FUR-0304,Prestige Office Chair,Home & Kitchen,Furniture,Prestige,Blue Dart Distribution,11739.13,8496.25,2023-11-23,2023-11-23,2023-11-23
-305,HOM-FUR-0305,Ikea Sofa Set,Home & Kitchen,Furniture,Ikea,Snowman Logistics,22652.05,17125.87,2023-07-27,2023-07-27,2023-07-27
-306,HOM-FUR-0306,Philips Sofa Set,Home & Kitchen,Furniture,Philips,Snowman Logistics,6002.11,3606.44,2022-01-11,2022-01-11,2022-01-11
-307,HOM-FUR-0307,Butterfly Office Chair,Home & Kitchen,Furniture,Butterfly,Blue Dart Distribution,12408.48,10143.58,2022-01-09,2022-01-09,2022-01-09
-308,HOM-FUR-0308,Prestige Dining Table,Home & Kitchen,Furniture,Prestige,Delhivery Fulfillment,28252.51,23564.46,2023-11-29,2023-11-29,2023-11-29
-309,HOM-COO-0309,Bajaj Non Stick Pan,Home & Kitchen,Cookware,Bajaj,Future Retail Distribution,26094.12,20134.73,2022-07-02,2022-07-02,2022-07-02
-310,HOM-COO-0310,Whirlpool Deluxe Cookware Set,Home & Kitchen,Cookware,Whirlpool,Ecom Express Supply Chain,5869.12,4409.78,2026-01-12,2026-01-12,2026-01-12
-311,HOM-COO-0311,Whirlpool Steel Cookware Set,Home & Kitchen,Cookware,Whirlpool,Mahindra Logistics,698.57,556.64,2025-09-04,2025-09-04,2025-09-04
-312,HOM-COO-0312,Prestige Pressure Cooker,Home & Kitchen,Cookware,Prestige,Aditya Birla Distribution,8308.95,5196.99,2023-12-01,2023-12-01,2023-12-01
-313,HOM-COO-0313,Bajaj Deluxe Cookware Set,Home & Kitchen,Cookware,Bajaj,Mahindra Logistics,9648.8,6750.09,2025-06-03,2025-06-03,2025-06-03
-314,HOM-COO-0314,Ikea Non Stick Pan,Home & Kitchen,Cookware,Ikea,Blue Dart Distribution,28902.59,17561.35,2022-03-12,2022-03-12,2022-03-12
-315,HOM-COO-0315,Whirlpool Deluxe Cookware Set 1,Home & Kitchen,Cookware,Whirlpool,Tata Consumer Distribution,20392.38,14719.04,2023-08-05,2023-08-05,2023-08-05
-316,HOM-COO-0316,Whirlpool Pressure Cooker,Home & Kitchen,Cookware,Whirlpool,Blue Dart Distribution,16949.01,10362.4,2021-07-13,2021-07-13,2021-07-13
-317,HOM-COO-0317,Bajaj Deluxe Cookware Set 1,Home & Kitchen,Cookware,Bajaj,Blue Dart Distribution,899.96,714.25,2021-10-01,2021-10-01,2021-10-01
-318,HOM-COO-0318,Nilkamal Pressure Cooker,Home & Kitchen,Cookware,Nilkamal,Mahindra Logistics,26548.43,20192.0,2023-06-03,2023-06-03,2023-06-03
-319,HOM-COO-0319,Nilkamal Deluxe Cookware Set,Home & Kitchen,Cookware,Nilkamal,TVS Supply Chain Solutions,2116.29,1705.37,2023-03-14,2023-03-14,2023-03-14
-320,HOM-KIT-0320,Hawkins Microwave Oven,Home & Kitchen,Kitchen Appliances,Hawkins,Redington India,3376.46,2281.24,2026-04-06,2026-04-06,2026-04-06
-321,HOM-KIT-0321,Godrej Mixer Grinder,Home & Kitchen,Kitchen Appliances,Godrej,Aditya Birla Distribution,5992.8,3893.42,2022-06-13,2022-06-13,2022-06-13
-322,HOM-KIT-0322,Butterfly Induction Cooktop,Home & Kitchen,Kitchen Appliances,Butterfly,TVS Supply Chain Solutions,4948.08,3804.82,2022-03-24,2022-03-24,2022-03-24
-323,HOM-KIT-0323,Butterfly Microwave Oven,Home & Kitchen,Kitchen Appliances,Butterfly,Snowman Logistics,15392.83,9556.77,2021-06-25,2021-06-25,2021-06-25
-324,HOM-KIT-0324,Ikea Microwave Oven,Home & Kitchen,Kitchen Appliances,Ikea,Reliance Retail Supply Chain,25650.08,21761.1,2026-03-05,2026-03-05,2026-03-05
-325,HOM-KIT-0325,Bajaj Air Fryer,Home & Kitchen,Kitchen Appliances,Bajaj,Snowman Logistics,15146.55,12356.6,2022-06-06,2022-06-06,2022-06-06
-326,HOM-KIT-0326,Hawkins Induction Cooktop,Home & Kitchen,Kitchen Appliances,Hawkins,Ecom Express Supply Chain,3818.13,2995.22,2024-03-16,2024-03-16,2024-03-16
-327,HOM-KIT-0327,Philips Air Fryer,Home & Kitchen,Kitchen Appliances,Philips,TVS Supply Chain Solutions,28406.59,20104.92,2024-07-20,2024-07-20,2024-07-20
-328,HOM-KIT-0328,Hawkins Microwave Oven 1,Home & Kitchen,Kitchen Appliances,Hawkins,Tata Consumer Distribution,6397.88,5093.2,2025-01-04,2025-01-04,2025-01-04
-329,HOM-KIT-0329,Butterfly Microwave Oven 1,Home & Kitchen,Kitchen Appliances,Butterfly,Snowman Logistics,26583.21,16326.62,2024-03-04,2024-03-04,2024-03-04
-330,HOM-KIT-0330,Prestige Induction Cooktop,Home & Kitchen,Kitchen Appliances,Prestige,Allcargo Supply Chain,12957.52,10055.42,2022-08-15,2022-08-15,2022-08-15
-331,HOM-HOM-0331,Philips Photo Frame,Home & Kitchen,Home Decor,Philips,Delhivery Fulfillment,13504.44,8224.45,2022-01-12,2022-01-12,2022-01-12
-332,HOM-HOM-0332,Bajaj Indoor Plant Pot,Home & Kitchen,Home Decor,Bajaj,Ingram Micro India,9244.2,7614.07,2024-11-24,2024-11-24,2024-11-24
-333,HOM-HOM-0333,Ikea Wall Art,Home & Kitchen,Home Decor,Ikea,Tata Consumer Distribution,11266.56,7703.14,2025-07-23,2025-07-23,2025-07-23
-334,HOM-HOM-0334,Philips Decor Lamp,Home & Kitchen,Home Decor,Philips,Redington India,28367.48,22948.38,2021-09-25,2021-09-25,2021-09-25
-335,HOM-HOM-0335,Pigeon Wall Art,Home & Kitchen,Home Decor,Pigeon,Mahindra Logistics,15413.48,12483.82,2024-01-27,2024-01-27,2024-01-27
-336,HOM-HOM-0336,Philips Wall Art,Home & Kitchen,Home Decor,Philips,Reliance Retail Supply Chain,27086.53,18200.32,2021-12-20,2021-12-20,2021-12-20
-337,HOM-HOM-0337,Nilkamal Indoor Plant Pot,Home & Kitchen,Home Decor,Nilkamal,Metro Cash and Carry,28621.51,20993.58,2023-11-13,2023-11-13,2023-11-13
-338,HOM-HOM-0338,Whirlpool Wall Art,Home & Kitchen,Home Decor,Whirlpool,Aditya Birla Distribution,19365.68,16009.1,2024-11-01,2024-11-01,2024-11-01
-339,HOM-HOM-0339,Butterfly Wall Art,Home & Kitchen,Home Decor,Butterfly,Delhivery Fulfillment,28666.62,19445.99,2024-02-09,2024-02-09,2024-02-09
-340,HOM-HOM-0340,Whirlpool Wall Art 1,Home & Kitchen,Home Decor,Whirlpool,Reliance Retail Supply Chain,18901.39,14913.01,2026-03-29,2026-03-29,2026-03-29
-341,HOM-HOM-0341,Butterfly Decor Lamp,Home & Kitchen,Home Decor,Butterfly,Redington India,22970.34,19095.92,2024-11-10,2024-11-10,2024-11-10
-342,HOM-STO-0342,Butterfly Shoe Rack,Home & Kitchen,Storage & Organization,Butterfly,Safexpress Logistics,19210.31,16264.01,2022-06-27,2022-06-27,2022-06-27
-343,HOM-STO-0343,Butterfly Shoe Rack 1,Home & Kitchen,Storage & Organization,Butterfly,Aditya Birla Distribution,26702.23,20063.82,2025-10-11,2025-10-11,2025-10-11
-344,HOM-STO-0344,Pigeon Drawer Unit,Home & Kitchen,Storage & Organization,Pigeon,Safexpress Logistics,17374.57,13504.92,2025-03-05,2025-03-05,2025-03-05
-345,HOM-STO-0345,Philips Shoe Rack,Home & Kitchen,Storage & Organization,Philips,Delhivery Fulfillment,15839.01,11708.01,2024-11-28,2024-11-28,2024-11-28
-346,HOM-STO-0346,Ikea Storage Box,Home & Kitchen,Storage & Organization,Ikea,Ecom Express Supply Chain,20821.93,14519.25,2025-10-29,2025-10-29,2025-10-29
-347,HOM-STO-0347,Godrej Drawer Unit,Home & Kitchen,Storage & Organization,Godrej,Reliance Retail Supply Chain,10774.34,7731.52,2024-12-22,2024-12-22,2024-12-22
-348,HOM-STO-0348,Godrej Wardrobe Organizer,Home & Kitchen,Storage & Organization,Godrej,Safexpress Logistics,25640.81,17850.7,2022-10-16,2022-10-16,2022-10-16
-349,HOM-STO-0349,Bajaj Storage Box,Home & Kitchen,Storage & Organization,Bajaj,Future Retail Distribution,4609.24,3651.25,2022-04-21,2022-04-21,2022-04-21
-350,HOM-STO-0350,Prestige Storage Box,Home & Kitchen,Storage & Organization,Prestige,Snowman Logistics,20372.61,15789.97,2026-04-03,2026-04-03,2026-04-03
-351,HOM-STO-0351,Butterfly Drawer Unit,Home & Kitchen,Storage & Organization,Butterfly,Ingram Micro India,20795.82,15250.96,2021-10-14,2021-10-14,2021-10-14
-352,HOM-STO-0352,Bajaj Drawer Unit,Home & Kitchen,Storage & Organization,Bajaj,Reliance Retail Supply Chain,19954.96,16715.08,2024-04-18,2024-04-18,2024-04-18
-353,HOM-BED-0353,Prestige Pillow Set,Home & Kitchen,Bedding,Prestige,Delhivery Fulfillment,23225.8,15880.81,2025-07-07,2025-07-07,2025-07-07
-354,HOM-BED-0354,Pigeon Bedsheet Set,Home & Kitchen,Bedding,Pigeon,Snowman Logistics,14156.41,11501.43,2025-04-23,2025-04-23,2025-04-23
-355,HOM-BED-0355,Hawkins Blanket,Home & Kitchen,Bedding,Hawkins,Mahindra Logistics,12128.04,8348.85,2026-05-08,2026-05-08,2026-05-08
-356,HOM-BED-0356,Godrej Pillow Set,Home & Kitchen,Bedding,Godrej,Ingram Micro India,9998.39,7115.16,2022-06-04,2022-06-04,2022-06-04
-357,HOM-BED-0357,Bajaj Comforter,Home & Kitchen,Bedding,Bajaj,Allcargo Supply Chain,13416.75,8147.84,2026-06-05,2026-06-05,2026-06-05
-358,HOM-BED-0358,Godrej Blanket,Home & Kitchen,Bedding,Godrej,Allcargo Supply Chain,24046.92,16890.97,2024-07-19,2024-07-19,2024-07-19
-359,HOM-BED-0359,Philips Comforter,Home & Kitchen,Bedding,Philips,Snowman Logistics,29916.06,19564.4,2023-09-17,2023-09-17,2023-09-17
-360,HOM-BED-0360,Nilkamal Bedsheet Set,Home & Kitchen,Bedding,Nilkamal,Snowman Logistics,19370.89,14506.19,2024-07-25,2024-07-25,2024-07-25
-361,HOM-BED-0361,Butterfly Comforter,Home & Kitchen,Bedding,Butterfly,Safexpress Logistics,19190.55,11656.84,2022-01-07,2022-01-07,2022-01-07
-362,HOM-BED-0362,Whirlpool Blanket,Home & Kitchen,Bedding,Whirlpool,Blue Dart Distribution,3097.04,2455.31,2022-10-15,2022-10-15,2022-10-15
-363,HOM-BED-0363,Whirlpool Comforter,Home & Kitchen,Bedding,Whirlpool,Future Retail Distribution,14585.81,10471.26,2023-08-15,2023-08-15,2023-08-15
-364,HOM-DIN-0364,Prestige Glass Set,Home & Kitchen,Dining Essentials,Prestige,Ecom Express Supply Chain,15871.92,11626.27,2025-07-02,2025-07-02,2025-07-02
-365,HOM-DIN-0365,Philips Dinner Set,Home & Kitchen,Dining Essentials,Philips,Aditya Birla Distribution,23044.92,15167.11,2026-01-06,2026-01-06,2026-01-06
-366,HOM-DIN-0366,Hawkins Cutlery Set,Home & Kitchen,Dining Essentials,Hawkins,Metro Cash and Carry,27477.49,18712.32,2025-02-26,2025-02-26,2025-02-26
-367,HOM-DIN-0367,Nilkamal Cutlery Set,Home & Kitchen,Dining Essentials,Nilkamal,Blue Dart Distribution,21614.06,16741.92,2021-12-29,2021-12-29,2021-12-29
-368,HOM-DIN-0368,Ikea Cutlery Set,Home & Kitchen,Dining Essentials,Ikea,Metro Cash and Carry,6698.94,5084.25,2022-06-17,2022-06-17,2022-06-17
-369,HOM-DIN-0369,Pigeon Dinner Set,Home & Kitchen,Dining Essentials,Pigeon,Aditya Birla Distribution,8624.22,6414.7,2023-12-07,2023-12-07,2023-12-07
-370,HOM-DIN-0370,Pigeon Cutlery Set,Home & Kitchen,Dining Essentials,Pigeon,Redington India,10800.46,7136.88,2026-02-22,2026-02-22,2026-02-22
-371,HOM-DIN-0371,Philips Glass Set,Home & Kitchen,Dining Essentials,Philips,Reliance Retail Supply Chain,20037.18,16532.22,2021-07-11,2021-07-11,2021-07-11
-372,HOM-DIN-0372,Bajaj Dinner Set,Home & Kitchen,Dining Essentials,Bajaj,Future Retail Distribution,17680.8,14410.45,2026-03-03,2026-03-03,2026-03-03
-373,HOM-DIN-0373,Godrej Dinner Set,Home & Kitchen,Dining Essentials,Godrej,Aditya Birla Distribution,6160.23,4473.08,2025-06-24,2025-06-24,2025-06-24
-374,HOM-DIN-0374,Godrej Serving Bowl,Home & Kitchen,Dining Essentials,Godrej,Redington India,20142.67,13326.99,2023-05-03,2023-05-03,2023-05-03
-375,HOM-CLE-0375,Nilkamal Floor Cleaner,Home & Kitchen,Cleaning Supplies,Nilkamal,Delhivery Fulfillment,12564.29,8135.56,2021-11-09,2021-11-09,2021-11-09
-376,HOM-CLE-0376,Butterfly Cleaning Kit,Home & Kitchen,Cleaning Supplies,Butterfly,Blue Dart Distribution,10441.74,7771.87,2026-04-25,2026-04-25,2026-04-25
-377,HOM-CLE-0377,Bajaj Mop Set,Home & Kitchen,Cleaning Supplies,Bajaj,Delhivery Fulfillment,16273.93,11679.93,2022-11-15,2022-11-15,2022-11-15
-378,HOM-CLE-0378,Ikea Surface Cleaner,Home & Kitchen,Cleaning Supplies,Ikea,Ingram Micro India,5216.36,3677.51,2023-05-10,2023-05-10,2023-05-10
-379,HOM-CLE-0379,Ikea Floor Cleaner,Home & Kitchen,Cleaning Supplies,Ikea,Mahindra Logistics,19844.2,12285.69,2023-01-18,2023-01-18,2023-01-18
-380,HOM-CLE-0380,Philips Mop Set,Home & Kitchen,Cleaning Supplies,Philips,Redington India,19949.93,12897.05,2023-03-31,2023-03-31,2023-03-31
-381,HOM-CLE-0381,Philips Floor Cleaner,Home & Kitchen,Cleaning Supplies,Philips,Safexpress Logistics,2833.49,2344.09,2026-01-22,2026-01-22,2026-01-22
-382,HOM-CLE-0382,Ikea Cleaning Kit,Home & Kitchen,Cleaning Supplies,Ikea,Reliance Retail Supply Chain,10690.52,7242.77,2024-04-17,2024-04-17,2024-04-17
-383,HOM-CLE-0383,Pigeon Cleaning Kit,Home & Kitchen,Cleaning Supplies,Pigeon,Snowman Logistics,7817.37,5911.6,2022-05-22,2022-05-22,2022-05-22
-384,HOM-CLE-0384,Philips Mop Set 1,Home & Kitchen,Cleaning Supplies,Philips,Ingram Micro India,10173.21,7301.46,2022-06-19,2022-06-19,2022-06-19
-385,HOM-CLE-0385,Hawkins Mop Set,Home & Kitchen,Cleaning Supplies,Hawkins,Aditya Birla Distribution,28565.66,18117.18,2023-10-20,2023-10-20,2023-10-20
-386,SPO-FIT-0386,Nivia Resistance Bands,Sports & Fitness,Fitness Equipment,Nivia,Ingram Micro India,12317.56,8012.07,2021-07-17,2021-07-17,2021-07-17
-387,SPO-FIT-0387,Yonex Treadmill,Sports & Fitness,Fitness Equipment,Yonex,Redington India,14641.44,11107.23,2023-05-23,2023-05-23,2023-05-23
-388,SPO-FIT-0388,Decathlon Exercise Bike,Sports & Fitness,Fitness Equipment,Decathlon,Aditya Birla Distribution,1068.62,712.69,2022-09-16,2022-09-16,2022-09-16
-389,SPO-FIT-0389,Cosco Dumbbell Set,Sports & Fitness,Fitness Equipment,Cosco,Snowman Logistics,14189.42,10736.97,2023-03-07,2023-03-07,2023-03-07
-390,SPO-FIT-0390,Yonex Treadmill 1,Sports & Fitness,Fitness Equipment,Yonex,Blue Dart Distribution,266.3,168.64,2022-06-03,2022-06-03,2022-06-03
-391,SPO-FIT-0391,Puma Treadmill,Sports & Fitness,Fitness Equipment,Puma,Redington India,1641.45,1352.07,2023-09-16,2023-09-16,2023-09-16
-392,SPO-FIT-0392,Cosco Treadmill,Sports & Fitness,Fitness Equipment,Cosco,Future Retail Distribution,8751.41,6457.25,2022-12-04,2022-12-04,2022-12-04
-393,SPO-FIT-0393,Yonex Dumbbell Set,Sports & Fitness,Fitness Equipment,Yonex,Blue Dart Distribution,10196.7,7298.24,2023-10-06,2023-10-06,2023-10-06
-394,SPO-FIT-0394,Decathlon Exercise Bike 1,Sports & Fitness,Fitness Equipment,Decathlon,Delhivery Fulfillment,901.27,575.9,2023-12-05,2023-12-05,2023-12-05
-395,SPO-FIT-0395,Reebok Exercise Bike,Sports & Fitness,Fitness Equipment,Reebok,Redington India,4644.39,3475.6,2021-09-13,2021-09-13,2021-09-13
-396,SPO-FIT-0396,Nivia Treadmill,Sports & Fitness,Fitness Equipment,Nivia,Tata Consumer Distribution,14288.08,10765.33,2026-03-01,2026-03-01,2026-03-01
-397,SPO-OUT-0397,Adidas Basketball,Sports & Fitness,Outdoor Sports,Adidas,Mahindra Logistics,1748.3,1470.06,2024-07-19,2024-07-19,2024-07-19
-398,SPO-OUT-0398,Adidas Basketball 1,Sports & Fitness,Outdoor Sports,Adidas,Aditya Birla Distribution,12210.07,9576.13,2026-05-25,2026-05-25,2026-05-25
-399,SPO-OUT-0399,Nike Badminton Set,Sports & Fitness,Outdoor Sports,Nike,Snowman Logistics,12239.77,8750.88,2024-02-12,2024-02-12,2024-02-12
-400,SPO-OUT-0400,Cosco Football,Sports & Fitness,Outdoor Sports,Cosco,Future Retail Distribution,14037.1,9996.06,2025-02-17,2025-02-17,2025-02-17
-401,SPO-OUT-0401,Yonex Volleyball,Sports & Fitness,Outdoor Sports,Yonex,Mahindra Logistics,2119.04,1294.21,2022-07-06,2022-07-06,2022-07-06
-402,SPO-OUT-0402,Reebok Basketball,Sports & Fitness,Outdoor Sports,Reebok,Snowman Logistics,12700.19,8431.55,2024-04-30,2024-04-30,2024-04-30
-403,SPO-OUT-0403,Nike Basketball,Sports & Fitness,Outdoor Sports,Nike,TVS Supply Chain Solutions,3749.86,3183.55,2025-01-03,2025-01-03,2025-01-03
-404,SPO-OUT-0404,Decathlon Badminton Set,Sports & Fitness,Outdoor Sports,Decathlon,Blue Dart Distribution,3201.22,2581.99,2023-04-15,2023-04-15,2023-04-15
-405,SPO-OUT-0405,MRF Badminton Set,Sports & Fitness,Outdoor Sports,MRF,Blue Dart Distribution,2986.47,2237.86,2024-02-19,2024-02-19,2024-02-19
-406,SPO-OUT-0406,Cosco Basketball,Sports & Fitness,Outdoor Sports,Cosco,Future Retail Distribution,6955.96,5426.75,2023-07-24,2023-07-24,2023-07-24
-407,SPO-OUT-0407,Cosco Football 1,Sports & Fitness,Outdoor Sports,Cosco,Reliance Retail Supply Chain,9715.92,7630.18,2021-11-09,2021-11-09,2021-11-09
-408,SPO-IND-0408,SG Carrom Board,Sports & Fitness,Indoor Games,SG,Mahindra Logistics,5757.78,4315.58,2024-10-08,2024-10-08,2024-10-08
-409,SPO-IND-0409,Nivia Ludo Set,Sports & Fitness,Indoor Games,Nivia,Delhivery Fulfillment,2836.83,2176.62,2024-10-19,2024-10-19,2024-10-19
-410,SPO-IND-0410,Decathlon Table Tennis Set,Sports & Fitness,Indoor Games,Decathlon,Safexpress Logistics,14614.53,9854.39,2025-01-01,2025-01-01,2025-01-01
-411,SPO-IND-0411,Decathlon Table Tennis Set 1,Sports & Fitness,Indoor Games,Decathlon,Redington India,2713.73,1700.66,2024-02-17,2024-02-17,2024-02-17
-412,SPO-IND-0412,Puma Ludo Set,Sports & Fitness,Indoor Games,Puma,Ingram Micro India,7179.65,4665.33,2022-03-16,2022-03-16,2022-03-16
-413,SPO-IND-0413,Nike Chess Board,Sports & Fitness,Indoor Games,Nike,Metro Cash and Carry,8800.75,5508.14,2025-03-27,2025-03-27,2025-03-27
-414,SPO-IND-0414,Puma Chess Board,Sports & Fitness,Indoor Games,Puma,Aditya Birla Distribution,3904.19,2851.25,2025-08-20,2025-08-20,2025-08-20
-415,SPO-IND-0415,Adidas Chess Board,Sports & Fitness,Indoor Games,Adidas,Snowman Logistics,13714.78,11129.93,2025-09-23,2025-09-23,2025-09-23
-416,SPO-IND-0416,Reebok Table Tennis Set,Sports & Fitness,Indoor Games,Reebok,Delhivery Fulfillment,7630.57,5580.37,2024-10-09,2024-10-09,2024-10-09
-417,SPO-IND-0417,Adidas Ludo Set,Sports & Fitness,Indoor Games,Adidas,Metro Cash and Carry,14611.25,8930.05,2021-12-26,2021-12-26,2021-12-26
-418,SPO-IND-0418,Nivia Ludo Set 1,Sports & Fitness,Indoor Games,Nivia,Snowman Logistics,930.46,619.91,2026-01-30,2026-01-30,2026-01-30
-419,SPO-YOG-0419,Cosco Yoga Block,Sports & Fitness,Yoga Accessories,Cosco,Reliance Retail Supply Chain,6651.86,5114.19,2023-05-11,2023-05-11,2023-05-11
-420,SPO-YOG-0420,Cosco Yoga Strap,Sports & Fitness,Yoga Accessories,Cosco,Delhivery Fulfillment,3108.37,2482.93,2024-10-09,2024-10-09,2024-10-09
-421,SPO-YOG-0421,Decathlon Yoga Block,Sports & Fitness,Yoga Accessories,Decathlon,Delhivery Fulfillment,6336.88,3844.79,2025-07-16,2025-07-16,2025-07-16
-422,SPO-YOG-0422,Puma Meditation Cushion,Sports & Fitness,Yoga Accessories,Puma,Ingram Micro India,243.87,150.06,2026-04-06,2026-04-06,2026-04-06
-423,SPO-YOG-0423,Nivia Meditation Cushion,Sports & Fitness,Yoga Accessories,Nivia,Redington India,1008.91,679.18,2022-05-02,2022-05-02,2022-05-02
-424,SPO-YOG-0424,Cosco Yoga Strap 1,Sports & Fitness,Yoga Accessories,Cosco,TVS Supply Chain Solutions,7573.64,5623.2,2022-08-26,2022-08-26,2022-08-26
-425,SPO-YOG-0425,SG Yoga Block,Sports & Fitness,Yoga Accessories,SG,TVS Supply Chain Solutions,457.41,296.67,2024-04-27,2024-04-27,2024-04-27
-426,SPO-YOG-0426,Adidas Yoga Mat,Sports & Fitness,Yoga Accessories,Adidas,Ingram Micro India,1520.96,1155.57,2024-08-14,2024-08-14,2024-08-14
-427,SPO-YOG-0427,MRF Yoga Block,Sports & Fitness,Yoga Accessories,MRF,Redington India,4807.57,4086.21,2023-02-15,2023-02-15,2023-02-15
-428,SPO-YOG-0428,Adidas Yoga Block,Sports & Fitness,Yoga Accessories,Adidas,Reliance Retail Supply Chain,11453.39,7871.93,2023-03-21,2023-03-21,2023-03-21
-429,SPO-YOG-0429,Adidas Yoga Strap,Sports & Fitness,Yoga Accessories,Adidas,Snowman Logistics,11417.97,8564.4,2024-07-02,2024-07-02,2024-07-02
-430,SPO-CYC-0430,Puma Mountain Bike,Sports & Fitness,Cycling,Puma,Delhivery Fulfillment,12194.88,7468.73,2025-11-26,2025-11-26,2025-11-26
-431,SPO-CYC-0431,Cosco Cycling Helmet,Sports & Fitness,Cycling,Cosco,Mahindra Logistics,8471.61,5706.57,2023-07-12,2023-07-12,2023-07-12
-432,SPO-CYC-0432,MRF Road Bike,Sports & Fitness,Cycling,MRF,Aditya Birla Distribution,4269.57,3276.8,2024-12-27,2024-12-27,2024-12-27
-433,SPO-CYC-0433,Yonex Bike Gloves,Sports & Fitness,Cycling,Yonex,Allcargo Supply Chain,12677.71,9999.37,2026-04-23,2026-04-23,2026-04-23
-434,SPO-CYC-0434,Reebok Cycling Helmet,Sports & Fitness,Cycling,Reebok,Snowman Logistics,10325.02,6909.11,2024-01-08,2024-01-08,2024-01-08
-435,SPO-CYC-0435,Cosco Mountain Bike,Sports & Fitness,Cycling,Cosco,Blue Dart Distribution,6471.05,4307.21,2023-02-15,2023-02-15,2023-02-15
-436,SPO-CYC-0436,MRF Bike Gloves,Sports & Fitness,Cycling,MRF,Ingram Micro India,14411.76,9320.65,2025-03-27,2025-03-27,2025-03-27
-437,SPO-CYC-0437,MRF Mountain Bike,Sports & Fitness,Cycling,MRF,Ecom Express Supply Chain,8745.16,5420.96,2024-05-17,2024-05-17,2024-05-17
-438,SPO-CYC-0438,Puma Cycling Helmet,Sports & Fitness,Cycling,Puma,Blue Dart Distribution,13573.7,8911.14,2026-03-03,2026-03-03,2026-03-03
-439,SPO-CYC-0439,Yonex Bike Gloves 1,Sports & Fitness,Cycling,Yonex,Snowman Logistics,10756.42,8942.78,2021-09-05,2021-09-05,2021-09-05
-440,SPO-CYC-0440,Cosco Mountain Bike 1,Sports & Fitness,Cycling,Cosco,Ingram Micro India,927.72,672.78,2022-08-28,2022-08-28,2022-08-28
-441,SPO-RUN-0441,Reebok Running Shoes,Sports & Fitness,Running Gear,Reebok,Mahindra Logistics,6097.58,4377.78,2022-06-13,2022-06-13,2022-06-13
-442,SPO-RUN-0442,SG Running Shoes,Sports & Fitness,Running Gear,SG,Redington India,14237.0,9238.7,2024-03-05,2024-03-05,2024-03-05
-443,SPO-RUN-0443,SG Running Shorts,Sports & Fitness,Running Gear,SG,Aditya Birla Distribution,762.97,634.69,2021-12-24,2021-12-24,2021-12-24
-444,SPO-RUN-0444,SG Running Shoes 1,Sports & Fitness,Running Gear,SG,Metro Cash and Carry,7027.81,5316.05,2024-09-10,2024-09-10,2024-09-10
-445,SPO-RUN-0445,Cosco Running Shorts,Sports & Fitness,Running Gear,Cosco,Delhivery Fulfillment,1628.52,982.3,2023-05-07,2023-05-07,2023-05-07
-446,SPO-RUN-0446,Reebok Running Shorts,Sports & Fitness,Running Gear,Reebok,Snowman Logistics,9979.92,6142.49,2021-10-08,2021-10-08,2021-10-08
-447,SPO-RUN-0447,Decathlon Running Shorts,Sports & Fitness,Running Gear,Decathlon,Ingram Micro India,4370.07,2801.68,2024-07-02,2024-07-02,2024-07-02
-448,SPO-RUN-0448,MRF Running Shoes,Sports & Fitness,Running Gear,MRF,Ingram Micro India,13284.59,8189.45,2023-08-28,2023-08-28,2023-08-28
-449,SPO-RUN-0449,Adidas Running Shorts,Sports & Fitness,Running Gear,Adidas,Future Retail Distribution,5811.15,3775.03,2023-02-17,2023-02-17,2023-02-17
-450,SPO-RUN-0450,Nike Running Shorts,Sports & Fitness,Running Gear,Nike,Ingram Micro India,12703.57,9063.31,2026-03-20,2026-03-20,2026-03-20
-451,SPO-RUN-0451,Adidas Sports Watch,Sports & Fitness,Running Gear,Adidas,Future Retail Distribution,1171.83,887.8,2022-11-11,2022-11-11,2022-11-11
-452,SPO-CRI-0452,Decathlon English Willow Bat,Sports & Fitness,Cricket Equipment,Decathlon,Mahindra Logistics,821.58,615.64,2026-02-03,2026-02-03,2026-02-03
-453,SPO-CRI-0453,Cosco English Willow Bat,Sports & Fitness,Cricket Equipment,Cosco,Future Retail Distribution,10839.74,6606.24,2025-06-17,2025-06-17,2025-06-17
-454,SPO-CRI-0454,Adidas English Willow Bat,Sports & Fitness,Cricket Equipment,Adidas,Ingram Micro India,5328.49,3268.89,2023-07-17,2023-07-17,2023-07-17
-455,SPO-CRI-0455,Puma Cricket Kit,Sports & Fitness,Cricket Equipment,Puma,Metro Cash and Carry,4160.19,3340.99,2026-04-04,2026-04-04,2026-04-04
-456,SPO-CRI-0456,Decathlon Helmet Pro,Sports & Fitness,Cricket Equipment,Decathlon,Blue Dart Distribution,10472.6,7352.33,2024-05-07,2024-05-07,2024-05-07
-457,SPO-CRI-0457,Nivia English Willow Bat,Sports & Fitness,Cricket Equipment,Nivia,Ecom Express Supply Chain,9326.35,7042.13,2026-03-09,2026-03-09,2026-03-09
-458,SPO-CRI-0458,MRF Batting Gloves,Sports & Fitness,Cricket Equipment,MRF,Allcargo Supply Chain,10622.06,8942.52,2024-09-05,2024-09-05,2024-09-05
-459,SPO-CRI-0459,Puma Batting Gloves,Sports & Fitness,Cricket Equipment,Puma,Aditya Birla Distribution,2447.99,1906.9,2025-10-24,2025-10-24,2025-10-24
-460,SPO-CRI-0460,Reebok Batting Gloves,Sports & Fitness,Cricket Equipment,Reebok,Future Retail Distribution,4014.42,2971.83,2025-06-02,2025-06-02,2025-06-02
-461,SPO-CRI-0461,Cosco Batting Gloves,Sports & Fitness,Cricket Equipment,Cosco,Allcargo Supply Chain,4786.81,3046.54,2021-10-29,2021-10-29,2021-10-29
-462,SPO-CRI-0462,Puma Helmet Pro,Sports & Fitness,Cricket Equipment,Puma,Delhivery Fulfillment,10956.91,6601.13,2024-08-28,2024-08-28,2024-08-28
-463,BEA-SKI-0463,Nivea Vitamin C Face Wash,Beauty & Personal Care,Skincare,Nivea,Tata Consumer Distribution,3679.21,2809.61,2022-06-17,2022-06-17,2022-06-17
-464,BEA-SKI-0464,Ponds Sunscreen SPF50,Beauty & Personal Care,Skincare,Ponds,Redington India,1770.6,1483.94,2026-01-01,2026-01-01,2026-01-01
-465,BEA-SKI-0465,Ponds Aloe Vera Gel,Beauty & Personal Care,Skincare,Ponds,Redington India,1728.89,1044.15,2025-05-27,2025-05-27,2025-05-27
-466,BEA-SKI-0466,Lakme Sunscreen SPF50,Beauty & Personal Care,Skincare,Lakme,Safexpress Logistics,834.7,519.88,2026-02-03,2026-02-03,2026-02-03
-467,BEA-SKI-0467,Ponds Daily Moisturizer,Beauty & Personal Care,Skincare,Ponds,Delhivery Fulfillment,524.46,327.1,2024-08-30,2024-08-30,2024-08-30
-468,BEA-SKI-0468,Maybelline Vitamin C Face Wash,Beauty & Personal Care,Skincare,Maybelline,Snowman Logistics,423.22,261.19,2022-04-09,2022-04-09,2022-04-09
-469,BEA-SKI-0469,Lakme Daily Moisturizer,Beauty & Personal Care,Skincare,Lakme,Safexpress Logistics,3097.68,2117.02,2022-01-12,2022-01-12,2022-01-12
-470,BEA-SKI-0470,Lakme Sunscreen SPF50 1,Beauty & Personal Care,Skincare,Lakme,Ecom Express Supply Chain,2334.3,1751.03,2023-08-17,2023-08-17,2023-08-17
-471,BEA-SKI-0471,Biotique Sunscreen SPF50,Beauty & Personal Care,Skincare,Biotique,Ingram Micro India,3345.58,2837.66,2022-08-20,2022-08-20,2022-08-20
-472,BEA-SKI-0472,Lakme Vitamin C Face Wash,Beauty & Personal Care,Skincare,Lakme,Blue Dart Distribution,2536.48,2007.54,2025-08-11,2025-08-11,2025-08-11
-473,BEA-SKI-0473,Nivea Aloe Vera Gel,Beauty & Personal Care,Skincare,Nivea,Reliance Retail Supply Chain,1586.65,1218.99,2024-06-24,2024-06-24,2024-06-24
-474,BEA-HAI-0474,Loreal Conditioner Plus,Beauty & Personal Care,Haircare,Loreal,Aditya Birla Distribution,1358.39,857.99,2023-08-30,2023-08-30,2023-08-30
-475,BEA-HAI-0475,Nykaa Hair Serum,Beauty & Personal Care,Haircare,Nykaa,Redington India,1627.89,1365.14,2023-11-09,2023-11-09,2023-11-09
-476,BEA-HAI-0476,Mamaearth Hair Oil,Beauty & Personal Care,Haircare,Mamaearth,Ecom Express Supply Chain,1964.44,1247.36,2021-10-10,2021-10-10,2021-10-10
-477,BEA-HAI-0477,Mamaearth Hair Serum,Beauty & Personal Care,Haircare,Mamaearth,Snowman Logistics,1478.79,950.17,2025-02-14,2025-02-14,2025-02-14
-478,BEA-HAI-0478,Maybelline Hair Serum,Beauty & Personal Care,Haircare,Maybelline,TVS Supply Chain Solutions,1326.88,964.45,2024-03-28,2024-03-28,2024-03-28
-479,BEA-HAI-0479,Loreal Conditioner Plus 1,Beauty & Personal Care,Haircare,Loreal,Snowman Logistics,1245.13,813.3,2023-12-07,2023-12-07,2023-12-07
-480,BEA-HAI-0480,Maybelline Conditioner Plus,Beauty & Personal Care,Haircare,Maybelline,TVS Supply Chain Solutions,3648.15,2846.85,2024-08-21,2024-08-21,2024-08-21
-481,BEA-HAI-0481,Himalaya Hair Oil,Beauty & Personal Care,Haircare,Himalaya,Blue Dart Distribution,2474.49,1606.23,2025-05-29,2025-05-29,2025-05-29
-482,BEA-HAI-0482,Mamaearth Conditioner Plus,Beauty & Personal Care,Haircare,Mamaearth,Tata Consumer Distribution,1980.48,1568.59,2021-12-19,2021-12-19,2021-12-19
-483,BEA-HAI-0483,Dove Hair Serum,Beauty & Personal Care,Haircare,Dove,Delhivery Fulfillment,2153.43,1496.23,2024-03-01,2024-03-01,2024-03-01
-484,BEA-HAI-0484,Nykaa Anti Hairfall Shampoo,Beauty & Personal Care,Haircare,Nykaa,Mahindra Logistics,2505.14,1842.66,2024-06-13,2024-06-13,2024-06-13
-485,BEA-COS-0485,Ponds Matte Lipstick,Beauty & Personal Care,Cosmetics,Ponds,Ecom Express Supply Chain,3889.23,3227.66,2022-08-30,2022-08-30,2022-08-30
-486,BEA-COS-0486,Ponds Matte Lipstick 1,Beauty & Personal Care,Cosmetics,Ponds,Allcargo Supply Chain,2551.63,1751.78,2022-01-08,2022-01-08,2022-01-08
-487,BEA-COS-0487,Dove Compact Powder,Beauty & Personal Care,Cosmetics,Dove,Redington India,2330.97,1949.43,2021-11-30,2021-11-30,2021-11-30
-488,BEA-COS-0488,Dove Matte Lipstick,Beauty & Personal Care,Cosmetics,Dove,Redington India,1195.73,878.39,2021-07-08,2021-07-08,2021-07-08
-489,BEA-COS-0489,Lakme Matte Lipstick,Beauty & Personal Care,Cosmetics,Lakme,Mahindra Logistics,1425.39,1059.9,2024-09-24,2024-09-24,2024-09-24
-490,BEA-COS-0490,Himalaya Foundation Cream,Beauty & Personal Care,Cosmetics,Himalaya,Allcargo Supply Chain,3415.81,2592.97,2021-09-27,2021-09-27,2021-09-27
-491,BEA-COS-0491,Nykaa Eye Liner,Beauty & Personal Care,Cosmetics,Nykaa,Tata Consumer Distribution,1074.05,781.36,2022-01-03,2022-01-03,2022-01-03
-492,BEA-COS-0492,Ponds Eye Liner,Beauty & Personal Care,Cosmetics,Ponds,Mahindra Logistics,2814.57,2315.66,2025-03-16,2025-03-16,2025-03-16
-493,BEA-COS-0493,Loreal Foundation Cream,Beauty & Personal Care,Cosmetics,Loreal,Delhivery Fulfillment,2438.62,1616.3,2021-11-01,2021-11-01,2021-11-01
-494,BEA-COS-0494,Mamaearth Compact Powder,Beauty & Personal Care,Cosmetics,Mamaearth,Blue Dart Distribution,3090.3,2407.07,2025-04-28,2025-04-28,2025-04-28
-495,BEA-COS-0495,Ponds Matte Lipstick 2,Beauty & Personal Care,Cosmetics,Ponds,Snowman Logistics,2693.91,2112.3,2024-04-25,2024-04-25,2024-04-25
-496,BEA-FRA-0496,Dove Luxury Perfume,Beauty & Personal Care,Fragrances,Dove,Metro Cash and Carry,3799.98,3185.82,2026-01-20,2026-01-20,2026-01-20
-497,BEA-FRA-0497,Dove Deodorant,Beauty & Personal Care,Fragrances,Dove,Safexpress Logistics,536.42,331.37,2024-03-20,2024-03-20,2024-03-20
-498,BEA-FRA-0498,Mamaearth Luxury Perfume,Beauty & Personal Care,Fragrances,Mamaearth,Safexpress Logistics,1561.26,1031.48,2023-12-19,2023-12-19,2023-12-19
-499,BEA-FRA-0499,Mamaearth Luxury Perfume 1,Beauty & Personal Care,Fragrances,Mamaearth,Allcargo Supply Chain,2573.74,1562.83,2025-03-04,2025-03-04,2025-03-04
-500,BEA-FRA-0500,Lakme Luxury Perfume,Beauty & Personal Care,Fragrances,Lakme,Snowman Logistics,3647.55,2785.84,2025-09-01,2025-09-01,2025-09-01
+1,ELE-MOB-0001,OnePlus Model 215,Electronics,Mobile Phone,OnePlus,Aditya Birla Distribution,69719.22,49928.39,2022-06-26,2022-06-26,2022-06-26
+2,ELE-MOB-0002,LG Model 544,Electronics,Mobile Phone,LG,Future Retail Distribution,65700.07,45940.52,2025-03-04,2025-03-04,2025-03-04
+3,ELE-MOB-0003,Oppo Model 794,Electronics,Mobile Phone,Oppo,Future Retail Distribution,15809.38,11314.02,2025-02-01,2025-02-01,2025-02-01
+4,ELE-MOB-0004,Lenovo Model 654,Electronics,Mobile Phone,Lenovo,Allcargo Supply Chain,26603.78,19370.38,2022-09-04,2022-09-04,2022-09-04
+5,ELE-MOB-0005,Vivo Model 127,Electronics,Mobile Phone,Vivo,Blue Dart Distribution,66219.8,46149.87,2025-08-30,2025-08-30,2025-08-30
+6,ELE-MOB-0006,Samsung Model 560,Electronics,Mobile Phone,Samsung,Ecom Express Supply Chain,20751.65,15676.9,2025-02-06,2025-02-06,2025-02-06
+7,ELE-MOB-0007,Sony Model 300,Electronics,Mobile Phone,Sony,Snowman Logistics,33954.72,23750.07,2026-04-28,2026-04-28,2026-04-28
+8,ELE-MOB-0008,Dell Model 319,Electronics,Mobile Phone,Dell,TVS Supply Chain Solutions,64443.64,39510.33,2026-03-27,2026-03-27,2026-03-27
+9,ELE-MOB-0009,Oppo Model 407,Electronics,Mobile Phone,Oppo,Blue Dart Distribution,-27312.26,21423.65,2023-01-23,2023-01-23,2023-01-23
+10,ELE-MOB-0010,Acer Model 638,Electronics,Mobile Phone,Acer,Redington India,19278.67,15419.99,2025-06-08,2025-06-08,2025-06-08
+11,ELE-MOB-0011,Oppo Model 669,Electronics,Mobile Phone,Oppo,Tata Consumer Distribution,34431.51,23391.65,2025-04-05,2025-04-05,2025-04-05
+12,ELE-LAP-0012,Apple Model 779,Electronics,Laptop,Apple,Delhivery Fulfillment,26283.88,17308.55,2022-06-15,2022-06-15,2022-06-15
+13,ELE-LAP-0013,OnePlus Model 777,Electronics,Laptop,OnePlus,Reliance Retail Supply Chain,71133.57,51284.8,2022-07-07,2022-07-07,2022-07-07
+14,ELE-LAP-0014,Lenovo Model 748,Electronics,Laptop,Lenovo,Tata Consumer Distribution,6643.58,5456.92,2023-08-18,2023-08-18,2023-08-18
+15,ELE-LAP-0015,Lenovo Model 548,Electronics,Laptop,Lenovo,Future Retail Distribution,28806.69,18483.03,2025-08-16,2025-08-16,2025-08-16
+16,ELE-LAP-0016,Xiaomi Model 687,Electronics,Laptop,Xiaomi,Aditya Birla Distribution,55259.03,46915.3,2022-05-14,2022-05-14,2022-05-14
+17,ELE-LAP-0017,Boat Model 606,Electronics,Laptop,Boat,Safexpress Logistics,54253.33,42889.58,2023-12-28,2023-12-28,2023-12-28
+18,ELE-LAP-0018,LG Model 477,Electronics,Laptop,LG,Metro Cash and Carry,71883.81,43351.96,2022-09-10,2022-09-10,2022-09-10
+19,ELE-LAP-0019,Samsung Model 744,Electronics,Laptop,Samsung,Delhivery Fulfillment,2563.58,1939.98,2024-05-05,2024-05-05,2024-05-05
+20,ELE-LAP-0020,Samsung Model 227,Electronics,Laptop,Samsung,Ecom Express Supply Chain,55914.11,42748.26,2022-07-15,2022-07-15,2022-07-15
+21,ELE-LAP-0021,OnePlus Model 337,Electronics,Laptop,OnePlus,Snowman Logistics,17254.67,12622.96,2024-04-17,2024-04-17,2024-04-17
+22,ELE-LAP-0022,Asus Model 299,Electronics,Laptop,Asus,Mahindra Logistics,14426.38,9544.62,2026-05-23,2026-05-23,2026-05-23
+23,ELE-TAB-0023,Realme Model 593,Electronics,Tablet,Realme,Blue Dart Distribution,79981.26,62215.19,2024-11-22,2024-11-22,2024-11-22
+24,ELE-TAB-0024,Realme Model 147,Electronics,Tablet,Realme,Blue Dart Distribution,73536.02,52121.17,2025-08-19,2025-08-19,2025-08-19
+25,ELE-TAB-0025,Acer Model 638 1,Electronics,Tablet,Acer,Blue Dart Distribution,4207.43,2903.01,2022-08-19,2022-08-19,2022-08-19
+26,ELE-TAB-0026,Realme Model 625,Electronics,Tablet,Realme,Mahindra Logistics,73688.24,51391.57,2024-09-29,2024-09-29,2024-09-29
+27,ELE-TAB-0027,Boat Model 890,Electronics,Tablet,Boat,TVS Supply Chain Solutions,9351.91,6766.1,2022-08-14,2022-08-14,2022-08-14
+28,ELE-TAB-0028,Boat Model 999,Electronics,Tablet,Boat,Redington India,18702.32,13720.46,2022-01-22,2022-01-22,2022-01-22
+29,ELE-TAB-0029,Apple Model 666,Electronics,Tablet,Apple,Ingram Micro India,68375.09,47357.94,2024-02-29,2024-02-29,2024-02-29
+30,ELE-TAB-0030,Xiaomi Model 985,Electronics,Tablet,Xiaomi,Snowman Logistics,10535.69,8883.91,2022-01-23,2022-01-23,2022-01-23
+31,ELE-TAB-0031,Asus Model 875,Electronics,Tablet,Asus,Allcargo Supply Chain,48322.44,31981.11,2023-08-16,2023-08-16,2023-08-16
+32,ELE-TAB-0032,Oppo Model 320,Electronics,Tablet,Oppo,Metro Cash and Carry,15900.51,13074.18,2024-07-28,2024-07-28,2024-07-28
+33,ELE-TAB-0033,Samsung Model 434,Electronics,Tablet,Samsung,Safexpress Logistics,52233.3,36535.94,2024-10-01,2024-10-01,2024-10-01
+34,ELE-SMA-0034,Realme Model 565,Electronics,Smart Watch,Realme,Ecom Express Supply Chain,4904.66,3903.63,2023-09-12,2023-09-12,2023-09-12
+35,ELE-SMA-0035,Xiaomi Model 895,Electronics,Smart Watch,Xiaomi,Future Retail Distribution,37947.31,29885.0,2026-04-20,2026-04-20,2026-04-20
+36,ELE-SMA-0036,Samsung Model 266,Electronics,Smart Watch,Samsung,Ingram Micro India,56457.68,44552.87,2026-01-18,2026-01-18,2026-01-18
+37,ELE-SMA-0037,Dell Model 167,Electronics,Smart Watch,Dell,Allcargo Supply Chain,19021.26,15748.98,2025-03-30,2025-03-30,2025-03-30
+38,ELE-SMA-0038,Samsung Model 364,Electronics,Smart Watch,Samsung,Delhivery Fulfillment,30022.91,22212.18,2023-11-08,2023-11-08,2023-11-08
+39,ELE-SMA-0039,Lenovo Model 337,Electronics,Smart Watch,Lenovo,Allcargo Supply Chain,68446.87,43957.48,2024-04-06,2024-04-06,2024-04-06
+40,ELE-SMA-0040,Apple Model 933,Electronics,Smart Watch,Apple,Reliance Retail Supply Chain,77399.5,62066.5,2025-05-22,2025-05-22,2025-05-22
+41,ELE-SMA-0041,Oppo Model 641,Electronics,Smart Watch,Oppo,Allcargo Supply Chain,35608.52,28979.13,2025-09-26,2025-09-26,2025-09-26
+42,ELE-SMA-0042,Asus Model 621,Electronics,Smart Watch,Asus,Redington India,10976.1,7014.27,2024-10-20,2024-10-20,2024-10-20
+43,ELE-SMA-0043,Realme Model 394,Electronics,Smart Watch,Realme,Tata Consumer Distribution,66529.37,50446.46,2021-09-17,2021-09-17,2021-09-17
+44,ELE-SMA-0044,Asus Model 753,Electronics,Smart Watch,Asus,Mahindra Logistics,14803.71,11111.96,2022-09-21,2022-09-21,2022-09-21
+45,ELE-HEA-0045,LG Model 639,Electronics,Headphone,LG,Safexpress Logistics,25291.66,18140.51,2026-03-23,2026-03-23,2026-03-23
+46,ELE-HEA-0046,Xiaomi Model 242,Electronics,Headphone,Xiaomi,TVS Supply Chain Solutions,65074.01,40923.83,2022-05-30,2022-05-30,2022-05-30
+47,ELE-HEA-0047,Xiaomi Model 527,Electronics,Headphone,Xiaomi,Redington India,20144.48,12194.22,2025-06-14,2025-06-14,2025-06-14
+48,ELE-HEA-0048,OnePlus Model 815,Electronics,Headphone,OnePlus,Aditya Birla Distribution,7742.95,6150.93,2026-04-02,2026-04-02,2026-04-02
+49,ELE-HEA-0049,Realme Model 453,Electronics,Headphone,Realme,Allcargo Supply Chain,43755.69,33915.45,2025-12-03,2025-12-03,2025-12-03
+50,ELE-HEA-0050,HP Model 166,Electronics,Headphone,HP,Allcargo Supply Chain,64436.53,42349.08,2022-06-10,2022-06-10,2022-06-10
+51,ELE-HEA-0051,Dell Model 480,Electronics,Headphone,Dell,Safexpress Logistics,38939.4,25556.59,2022-10-25,2022-10-25,2022-10-25
+52,ELE-HEA-0052,Dell Model 874,Electronics,Headphone,Dell,Blue Dart Distribution,35828.69,23355.96,2023-05-12,2023-05-12,2023-05-12
+53,ELE-HEA-0053,Xiaomi Model 568,Electronics,Headphone,Xiaomi,Metro Cash and Carry,30438.84,19560.61,2025-05-19,2025-05-19,2025-05-19
+54,ELE-HEA-0054,Apple Model 407,Electronics,Headphone,Apple,TVS Supply Chain Solutions,75150.74,46651.5,2021-06-25,2021-06-25,2021-06-25
+55,ELE-HEA-0055,Lenovo Model 991,Electronics,Headphone,Lenovo,Metro Cash and Carry,12848.66,8694.92,2024-04-01,2024-04-01,2024-04-01
+56,ELE-ACC-0056,HP Model 427,Electronics,Accessorie,HP,TVS Supply Chain Solutions,12095.73,9793.97,2023-02-18,2023-02-18,2023-02-18
+57,ELE-ACC-0057,LG Model 863,Electronics,Accessorie,LG,Blue Dart Distribution,54875.26,43422.13,2025-11-01,2025-11-01,2025-11-01
+58,ELE-ACC-0058,Dell Model 336,Electronics,Accessorie,Dell,TVS Supply Chain Solutions,6884.77,5404.63,2022-02-06,2022-02-06,2022-02-06
+59,ELE-ACC-0059,OnePlus Model 715,Electronics,Accessorie,OnePlus,Allcargo Supply Chain,45805.08,30259.88,2025-09-13,2025-09-13,2025-09-13
+60,ELE-ACC-0060,OnePlus Model 998,Electronics,Accessorie,OnePlus,Aditya Birla Distribution,66653.32,50643.07,2022-10-28,2022-10-28,2022-10-28
+61,ELE-ACC-0061,Acer Model 376,Electronics,Accessorie,Acer,Redington India,33383.97,27887.34,2025-05-16,2025-05-16,2025-05-16
+62,ELE-ACC-0062,Boat Model 457,Electronics,Accessorie,Boat,Mahindra Logistics,2048.56,1312.69,2023-04-24,2023-04-24,2023-04-24
+63,ELE-ACC-0063,Xiaomi Model 214,Electronics,Accessorie,Xiaomi,Delhivery Fulfillment,33366.27,20626.48,2022-01-03,2022-01-03,2022-01-03
+64,ELE-ACC-0064,Lenovo Model 815,Electronics,Accessorie,Lenovo,Mahindra Logistics,59725.24,37862.35,2025-08-30,2025-08-30,2025-08-30
+65,ELE-ACC-0065,Xiaomi Model 865,Electronics,Accessorie,Xiaomi,Future Retail Distribution,25447.39,18507.91,2021-12-22,2021-12-22,2021-12-22
+66,ELE-ACC-0066,Xiaomi Model 222,Electronics,Accessorie,Xiaomi,Ingram Micro India,5944.61,4388.15,2025-11-03,2025-11-03,2025-11-03
+67,ELE-CAM-0067,Realme Model 974,Electronics,Camera,Realme,Future Retail Distribution,27521.39,18748.38,2023-04-29,2023-04-29,2023-04-29
+68,ELE-CAM-0068,Samsung Model 790,Electronics,Camera,Samsung,Safexpress Logistics,22920.89,14020.32,2026-03-04,2026-03-04,2026-03-04
+69,ELE-CAM-0069,OnePlus Model 314,Electronics,Camera,OnePlus,Ecom Express Supply Chain,76959.75,50862.22,2021-10-31,2021-10-31,2021-10-31
+70,ELE-CAM-0070,Xiaomi Model 412,Electronics,Camera,Xiaomi,Reliance Retail Supply Chain,57032.95,34985.62,2026-02-17,2026-02-17,2026-02-17
+71,ELE-CAM-0071,Boat Model 395,Electronics,Camera,Boat,Snowman Logistics,17168.36,10868.89,2025-10-17,2025-10-17,2025-10-17
+72,ELE-CAM-0072,Oppo Model 408,Electronics,Camera,Oppo,Blue Dart Distribution,53976.29,34308.15,2025-09-18,2025-09-18,2025-09-18
+73,ELE-CAM-0073,Vivo Model 148,Electronics,Camera,Vivo,Metro Cash and Carry,39003.13,28495.73,2023-09-29,2023-09-29,2023-09-29
+74,ELE-CAM-0074,Dell Model 840,Electronics,Camera,Dell,Mahindra Logistics,17192.78,13350.39,2024-10-06,2024-10-06,2024-10-06
+75,ELE-CAM-0075,Samsung Model 541,Electronics,Camera,Samsung,Aditya Birla Distribution,55728.51,37641.66,2023-03-08,2023-03-08,2023-03-08
+76,ELE-CAM-0076,Asus Model 404,Electronics,Camera,Asus,Allcargo Supply Chain,30619.5,24908.87,2022-12-23,2022-12-23,2022-12-23
+77,ELE-CAM-0077,OnePlus Model 102,Electronics,Camera,OnePlus,Snowman Logistics,11341.89,7044.0,2022-06-21,2022-06-21,2022-06-21
+78,ELE-GAM-0078,Realme Model 489,Electronics,Gaming Console,Realme,Reliance Retail Supply Chain,60350.12,38369.68,2024-10-05,2024-10-05,2024-10-05
+79,ELE-GAM-0079,Apple Model 902,Electronics,Gaming Console,Apple,TVS Supply Chain Solutions,21501.23,13815.74,2026-03-09,2026-03-09,2026-03-09
+80,ELE-GAM-0080,Realme Model 398,Electronics,Gaming Console,Realme,Reliance Retail Supply Chain,73511.89,50826.25,2025-04-16,2025-04-16,2025-04-16
+81,ELE-GAM-0081,Samsung Model 163,Electronics,Gaming Console,Samsung,Redington India,5281.16,4226.1,2022-10-26,2022-10-26,2022-10-26
+82,ELE-GAM-0082,Oppo Model 684,Electronics,Gaming Console,Oppo,Redington India,43669.28,29112.96,2025-05-17,2025-05-17,2025-05-17
+83,ELE-GAM-0083,Samsung Model 161,Electronics,Gaming Console,Samsung,Mahindra Logistics,6790.08,5324.98,2022-11-06,2022-11-06,2022-11-06
+84,ELE-GAM-0084,Dell Model 885,Electronics,Gaming Console,Dell,Aditya Birla Distribution,59262.7,37738.11,2023-08-05,2023-08-05,2023-08-05
+85,ELE-GAM-0085,Acer Model 795,Electronics,Gaming Console,Acer,TVS Supply Chain Solutions,40939.79,34444.09,2022-04-07,2022-04-07,2022-04-07
+86,ELE-GAM-0086,Boat Model 652,Electronics,Gaming Console,Boat,Metro Cash and Carry,29669.76,20923.21,2021-08-23,2021-08-23,2021-08-23
+87,ELE-GAM-0087,OnePlus Model 581,Electronics,Gaming Console,OnePlus,Snowman Logistics,69066.9,49777.92,2023-03-19,2023-03-19,2023-03-19
+88,ELE-GAM-0088,Boat Model 881,Electronics,Gaming Console,Boat,Future Retail Distribution,8672.97,6294.07,2023-04-04,2023-04-04,2023-04-04
+89,CLO-MEN-0089,H&M Polo Tee,Clothing,Men T-Shirts,H&M,Snowman Logistics,850.57,535.83,2021-12-11,2021-12-11,2021-12-11
+90,CLO-MEN-0090,Nike Athletic Tee,Clothing,Men T-Shirts,Nike,Reliance Retail Supply Chain,3967.98,3268.93,2025-12-12,2025-12-12,2025-12-12
+91,CLO-MEN-0091,Van Heusen Athletic Tee,Clothing,Men T-Shirts,Van Heusen,Mahindra Logistics,1257.27,1045.83,2023-10-12,2023-10-12,2023-10-12
+92,CLO-MEN-0092,Adidas Athletic Tee,Clothing,Men T-Shirts,Adidas,Mahindra Logistics,550.72,350.95,2026-03-16,2026-03-16,2026-03-16
+93,CLO-MEN-0093,H&M Athletic Tee,Clothing,Men T-Shirts,H&M,Reliance Retail Supply Chain,2367.65,1657.94,2023-10-03,2023-10-03,2023-10-03
+94,CLO-MEN-0094,Nike Crew Neck Tee,Clothing,Men T-Shirts,Nike,Safexpress Logistics,1644.81,1222.86,2023-04-04,2023-04-04,2023-04-04
+95,CLO-MEN-0095,Roadster Athletic Tee,Clothing,Men T-Shirts,Roadster,Redington India,2289.31,1399.89,2021-11-11,2021-11-11,2021-11-11
+96,CLO-MEN-0096,Adidas Crew Neck Tee,Clothing,Men T-Shirts,Adidas,TVS Supply Chain Solutions,4762.11,3471.92,2025-12-16,2025-12-16,2025-12-16
+97,CLO-MEN-0097,Van Heusen Polo Tee,Clothing,Men T-Shirts,Van Heusen,Allcargo Supply Chain,1402.02,1056.17,2021-08-20,2021-08-20,2021-08-20
+98,CLO-MEN-0098,Wrogn Athletic Tee,Clothing,Men T-Shirts,Wrogn,Ingram Micro India,1959.16,1601.59,2025-05-26,2025-05-26,2025-05-26
+99,CLO-MEN-0099,H&M Graphic Tee,Clothing,Men T-Shirts,H&M,Ingram Micro India,3768.07,2343.68,2022-03-07,2022-03-07,2022-03-07
+100,CLO-MEN-0100,Puma Slim Fit Shirt,Clothing,Men Shirts,Puma,Redington India,1848.01,1336.71,2026-01-29,2026-01-29,2026-01-29
+101,CLO-MEN-0101,US Polo Checked Shirt,Clothing,Men Shirts,US Polo,Tata Consumer Distribution,-2211.6,1717.38,2024-02-19,2024-02-19,2024-02-19
+102,CLO-MEN-0102,US Polo Formal Shirt,Clothing,Men Shirts,US Polo,Blue Dart Distribution,984.61,679.37,2021-12-26,2021-12-26,2021-12-26
+103,CLO-MEN-0103,Roadster Linen Shirt,Clothing,Men Shirts,Roadster,Reliance Retail Supply Chain,2900.04,2011.95,2026-04-10,2026-04-10,2026-04-10
+104,CLO-MEN-0104,Levis Checked Shirt,Clothing,Men Shirts,Levis,Tata Consumer Distribution,2156.6,1561.35,2021-09-06,2021-09-06,2021-09-06
+105,CLO-MEN-0105,Levis Linen Shirt,Clothing,Men Shirts,Levis,Tata Consumer Distribution,4827.65,3139.55,2024-07-21,2024-07-21,2024-07-21
+106,CLO-MEN-0106,Adidas Formal Shirt,Clothing,Men Shirts,Adidas,Aditya Birla Distribution,2600.89,1855.53,2025-03-10,2025-03-10,2025-03-10
+107,CLO-MEN-0107,FabIndia Formal Shirt,Clothing,Men Shirts,FabIndia,TVS Supply Chain Solutions,3376.32,2220.05,2024-11-22,2024-11-22,2024-11-22
+108,CLO-MEN-0108,Adidas Casual Shirt,Clothing,Men Shirts,Adidas,Redington India,2896.14,1831.72,2025-08-13,2025-08-13,2025-08-13
+109,CLO-MEN-0109,Puma Casual Shirt,Clothing,Men Shirts,Puma,Allcargo Supply Chain,946.5,620.13,2022-05-09,2022-05-09,2022-05-09
+110,CLO-MEN-0110,Max Casual Shirt,Clothing,Men Shirts,Max,Ecom Express Supply Chain,1301.64,1072.4,2025-06-01,2025-06-01,2025-06-01
+111,CLO-MEN-0111,Roadster Regular Fit Jeans,Clothing,Men Jeans,Roadster,Redington India,2969.19,2432.05,2024-07-17,2024-07-17,2024-07-17
+112,CLO-MEN-0112,FabIndia Stretch Jeans,Clothing,Men Jeans,FabIndia,Redington India,2514.02,1811.73,2022-12-20,2022-12-20,2022-12-20
+113,CLO-MEN-0113,Louis Philippe Skinny Jeans,Clothing,Men Jeans,Louis Philippe,Future Retail Distribution,2170.71,1725.59,2022-04-08,2022-04-08,2022-04-08
+114,CLO-MEN-0114,Adidas Stretch Jeans,Clothing,Men Jeans,Adidas,Aditya Birla Distribution,3056.79,1924.7,2025-12-12,2025-12-12,2025-12-12
+115,CLO-MEN-0115,US Polo Slim Fit Jeans,Clothing,Men Jeans,US Polo,Reliance Retail Supply Chain,4218.67,2971.57,2021-10-14,2021-10-14,2021-10-14
+116,CLO-MEN-0116,US Polo Skinny Jeans,Clothing,Men Jeans,US Polo,Ecom Express Supply Chain,3964.02,2822.08,2023-05-09,2023-05-09,2023-05-09
+117,CLO-MEN-0117,Allen Solly Regular Fit Jeans,Clothing,Men Jeans,Allen Solly,Metro Cash and Carry,3055.7,1840.97,2022-02-15,2022-02-15,2022-02-15
+118,CLO-MEN-0118,Zara Slim Fit Jeans,Clothing,Men Jeans,Zara,Aditya Birla Distribution,4711.13,3668.67,2024-02-11,2024-02-11,2024-02-11
+119,CLO-MEN-0119,Nike Stretch Jeans,Clothing,Men Jeans,Nike,Metro Cash and Carry,2787.48,2026.79,2024-02-20,2024-02-20,2024-02-20
+120,CLO-MEN-0120,Nike Regular Fit Jeans,Clothing,Men Jeans,Nike,Metro Cash and Carry,407.45,299.62,2023-08-13,2023-08-13,2023-08-13
+121,CLO-MEN-0121,US Polo Slim Fit Jeans 1,Clothing,Men Jeans,US Polo,Tata Consumer Distribution,2308.54,1539.73,2025-12-05,2025-12-05,2025-12-05
+122,CLO-MEN-0122,US Polo Stretch Trouser,Clothing,Men Trousers,US Polo,Reliance Retail Supply Chain,1167.73,990.72,2023-07-12,2023-07-12,2023-07-12
+123,CLO-MEN-0123,Wrogn Cotton Trouser,Clothing,Men Trousers,Wrogn,Safexpress Logistics,2864.64,2000.26,2024-02-29,2024-02-29,2024-02-29
+124,CLO-MEN-0124,Allen Solly Chino Pants,Clothing,Men Trousers,Allen Solly,Metro Cash and Carry,4355.87,3609.73,2023-08-26,2023-08-26,2023-08-26
+125,CLO-MEN-0125,Zara Chino Pants,Clothing,Men Trousers,Zara,Metro Cash and Carry,2687.73,1753.39,2022-01-27,2022-01-27,2022-01-27
+126,CLO-MEN-0126,Nike Formal Trouser,Clothing,Men Trousers,Nike,Mahindra Logistics,3626.77,2485.62,2023-12-04,2023-12-04,2023-12-04
+127,CLO-MEN-0127,Puma Stretch Trouser,Clothing,Men Trousers,Puma,Safexpress Logistics,2280.07,1937.44,2024-03-22,2024-03-22,2024-03-22
+128,CLO-MEN-0128,Max Chino Pants,Clothing,Men Trousers,Max,Reliance Retail Supply Chain,4338.01,3551.32,2021-12-12,2021-12-12,2021-12-12
+129,CLO-MEN-0129,Levis Formal Trouser,Clothing,Men Trousers,Levis,Allcargo Supply Chain,3429.66,2341.82,2024-02-24,2024-02-24,2024-02-24
+130,CLO-MEN-0130,Peter England Formal Trouser,Clothing,Men Trousers,Peter England,Aditya Birla Distribution,3302.22,2747.65,2023-02-21,2023-02-21,2023-02-21
+131,CLO-MEN-0131,Adidas Cotton Trouser,Clothing,Men Trousers,Adidas,Aditya Birla Distribution,3439.37,2782.95,2021-10-11,2021-10-11,2021-10-11
+132,CLO-MEN-0132,Zara Formal Trouser,Clothing,Men Trousers,Zara,TVS Supply Chain Solutions,1030.06,708.2,2023-05-12,2023-05-12,2023-05-12
+133,CLO-MEN-0133,Roadster Bomber Jacket,Clothing,Men Jackets,Roadster,Ingram Micro India,2491.39,1693.12,2023-06-08,2023-06-08,2023-06-08
+134,CLO-MEN-0134,Levis Hooded Jacket,Clothing,Men Jackets,Levis,Mahindra Logistics,3462.28,2472.13,2025-08-15,2025-08-15,2025-08-15
+135,CLO-MEN-0135,Nike Hooded Jacket,Clothing,Men Jackets,Nike,Delhivery Fulfillment,3111.38,1947.51,2022-04-18,2022-04-18,2022-04-18
+136,CLO-MEN-0136,Louis Philippe Bomber Jacket,Clothing,Men Jackets,Louis Philippe,Ecom Express Supply Chain,684.2,581.43,2022-10-27,2022-10-27,2022-10-27
+137,CLO-MEN-0137,Zara Denim Jacket,Clothing,Men Jackets,Zara,Aditya Birla Distribution,3857.72,2874.85,2026-01-31,2026-01-31,2026-01-31
+138,CLO-MEN-0138,Zara Winter Jacket,Clothing,Men Jackets,Zara,Delhivery Fulfillment,1699.44,1400.65,2023-01-31,2023-01-31,2023-01-31
+139,CLO-MEN-0139,FabIndia Winter Jacket,Clothing,Men Jackets,FabIndia,Ecom Express Supply Chain,469.73,337.36,2021-10-24,2021-10-24,2021-10-24
+140,CLO-MEN-0140,Max Hooded Jacket,Clothing,Men Jackets,Max,Ecom Express Supply Chain,3825.64,3124.42,2021-07-15,2021-07-15,2021-07-15
+141,CLO-MEN-0141,Max Denim Jacket,Clothing,Men Jackets,Max,Future Retail Distribution,1711.94,1337.78,2023-01-06,2023-01-06,2023-01-06
+142,CLO-MEN-0142,Van Heusen Winter Jacket,Clothing,Men Jackets,Van Heusen,Redington India,2032.0,1664.3,2021-07-07,2021-07-07,2021-07-07
+143,CLO-MEN-0143,Allen Solly Hooded Jacket,Clothing,Men Jackets,Allen Solly,Reliance Retail Supply Chain,2713.37,2042.6,2023-10-13,2023-10-13,2023-10-13
+144,CLO-MEN-0144,US Polo Nehru Jacket,Clothing,Men Ethnic Wear,US Polo,Safexpress Logistics,4474.89,3229.86,2024-03-13,2024-03-13,2024-03-13
+145,CLO-MEN-0145,Van Heusen Nehru Jacket,Clothing,Men Ethnic Wear,Van Heusen,Allcargo Supply Chain,1218.07,845.67,2025-12-30,2025-12-30,2025-12-30
+146,CLO-MEN-0146,H&M Ethnic Kurta,Clothing,Men Ethnic Wear,H&M,Reliance Retail Supply Chain,4673.09,2949.11,2026-04-30,2026-04-30,2026-04-30
+147,CLO-MEN-0147,Peter England Ethnic Kurta,Clothing,Men Ethnic Wear,Peter England,Metro Cash and Carry,2225.7,1337.85,2023-06-09,2023-06-09,2023-06-09
+148,CLO-MEN-0148,Nike Ethnic Kurta,Clothing,Men Ethnic Wear,Nike,Tata Consumer Distribution,4099.46,3275.3,2021-10-18,2021-10-18,2021-10-18
+149,CLO-MEN-0149,Nike Kurta Set,Clothing,Men Ethnic Wear,Nike,Safexpress Logistics,1092.75,806.55,2024-09-01,2024-09-01,2024-09-01
+150,CLO-MEN-0150,Max Ethnic Kurta,Clothing,Men Ethnic Wear,Max,Mahindra Logistics,1967.61,1652.73,2021-12-26,2021-12-26,2021-12-26
+151,CLO-MEN-0151,Allen Solly Kurta Set,Clothing,Men Ethnic Wear,Allen Solly,Future Retail Distribution,853.51,610.64,2025-07-15,2025-07-15,2025-07-15
+152,CLO-MEN-0152,Peter England Sherwani,Clothing,Men Ethnic Wear,Peter England,Allcargo Supply Chain,2300.03,1737.01,2021-10-11,2021-10-11,2021-10-11
+153,CLO-MEN-0153,Nike Ethnic Kurta 1,Clothing,Men Ethnic Wear,Nike,Snowman Logistics,2910.42,1928.17,2024-03-26,2024-03-26,2024-03-26
+154,CLO-MEN-0154,Peter England Nehru Jacket,Clothing,Men Ethnic Wear,Peter England,Ingram Micro India,2721.94,2069.1,2022-12-13,2022-12-13,2022-12-13
+155,CLO-MEN-0155,Roadster Slip On Shoes,Clothing,Men Footwear,Roadster,Reliance Retail Supply Chain,4518.77,3515.79,2025-08-17,2025-08-17,2025-08-17
+156,CLO-MEN-0156,FabIndia Running Shoes,Clothing,Men Footwear,FabIndia,Ingram Micro India,1061.35,690.76,2023-04-24,2023-04-24,2023-04-24
+157,CLO-MEN-0157,Roadster Sports Shoes,Clothing,Men Footwear,Roadster,TVS Supply Chain Solutions,4211.41,3252.06,2023-06-25,2023-06-25,2023-06-25
+158,CLO-MEN-0158,Van Heusen Slip On Shoes,Clothing,Men Footwear,Van Heusen,Redington India,1957.03,1644.02,2023-04-15,2023-04-15,2023-04-15
+159,CLO-MEN-0159,H&M Formal Shoes,Clothing,Men Footwear,H&M,Delhivery Fulfillment,4089.24,2886.32,2021-11-18,2021-11-18,2021-11-18
+160,CLO-MEN-0160,Puma Formal Shoes,Clothing,Men Footwear,Puma,Future Retail Distribution,775.01,557.01,2024-04-19,2024-04-19,2024-04-19
+161,CLO-MEN-0161,Peter England Formal Shoes,Clothing,Men Footwear,Peter England,Metro Cash and Carry,4091.81,2644.17,2024-07-14,2024-07-14,2024-07-14
+162,CLO-MEN-0162,H&M Sneakers,Clothing,Men Footwear,H&M,Aditya Birla Distribution,4545.29,3222.14,2025-04-12,2025-04-12,2025-04-12
+163,CLO-MEN-0163,Allen Solly Sneakers,Clothing,Men Footwear,Allen Solly,Ingram Micro India,2010.46,1320.75,2021-07-29,2021-07-29,2021-07-29
+164,CLO-MEN-0164,Wrogn Running Shoes,Clothing,Men Footwear,Wrogn,Reliance Retail Supply Chain,2802.24,2168.45,2021-11-07,2021-11-07,2021-11-07
+165,CLO-MEN-0165,Levis Sneakers,Clothing,Men Footwear,Levis,Allcargo Supply Chain,1232.77,864.67,2025-07-23,2025-07-23,2025-07-23
+166,CLO-MEN-0166,Puma Gym Vest,Clothing,Men Sportswear,Puma,Delhivery Fulfillment,2132.77,1287.12,2021-07-25,2021-07-25,2021-07-25
+167,CLO-MEN-0167,Allen Solly Gym Vest,Clothing,Men Sportswear,Allen Solly,Safexpress Logistics,3237.67,2727.37,2025-02-21,2025-02-21,2025-02-21
+168,CLO-MEN-0168,US Polo Sports T-Shirt,Clothing,Men Sportswear,US Polo,TVS Supply Chain Solutions,4085.67,2978.75,2024-06-08,2024-06-08,2024-06-08
+169,CLO-MEN-0169,Levis Sports T-Shirt,Clothing,Men Sportswear,Levis,Safexpress Logistics,2433.02,1966.45,2022-09-23,2022-09-23,2022-09-23
+170,CLO-MEN-0170,Levis Sports T-Shirt 1,Clothing,Men Sportswear,Levis,Allcargo Supply Chain,2039.72,1474.33,2023-07-20,2023-07-20,2023-07-20
+171,CLO-MEN-0171,Levis Training Shorts,Clothing,Men Sportswear,Levis,Delhivery Fulfillment,720.29,456.59,2022-08-29,2022-08-29,2022-08-29
+172,CLO-MEN-0172,Nike Track Pant,Clothing,Men Sportswear,Nike,Mahindra Logistics,1671.22,1007.58,2025-03-20,2025-03-20,2025-03-20
+173,CLO-MEN-0173,Louis Philippe Track Pant,Clothing,Men Sportswear,Louis Philippe,Metro Cash and Carry,1597.16,1039.08,2024-12-28,2024-12-28,2024-12-28
+174,CLO-MEN-0174,Allen Solly Sports T-Shirt,Clothing,Men Sportswear,Allen Solly,Reliance Retail Supply Chain,3149.99,2162.37,2022-09-23,2022-09-23,2022-09-23
+175,CLO-MEN-0175,Levis Training Shorts 1,Clothing,Men Sportswear,Levis,Safexpress Logistics,3243.39,2363.0,2024-09-28,2024-09-28,2024-09-28
+176,CLO-MEN-0176,US Polo Sports T-Shirt 1,Clothing,Men Sportswear,US Polo,Ingram Micro India,1167.16,985.48,2023-10-06,2023-10-06,2023-10-06
+177,CLO-WOM-0177,Peter England Floral Dress,Clothing,Women Dresses,Peter England,Mahindra Logistics,391.34,264.59,2021-08-04,2021-08-04,2021-08-04
+178,CLO-WOM-0178,Allen Solly Maxi Dress,Clothing,Women Dresses,Allen Solly,TVS Supply Chain Solutions,769.33,529.37,2025-10-13,2025-10-13,2025-10-13
+179,CLO-WOM-0179,Louis Philippe Maxi Dress,Clothing,Women Dresses,Louis Philippe,Tata Consumer Distribution,4394.74,3085.19,2022-09-12,2022-09-12,2022-09-12
+180,CLO-WOM-0180,Allen Solly Floral Dress,Clothing,Women Dresses,Allen Solly,Delhivery Fulfillment,4737.52,3887.53,2022-11-19,2022-11-19,2022-11-19
+181,CLO-WOM-0181,Nike Summer Dress,Clothing,Women Dresses,Nike,Aditya Birla Distribution,913.36,665.45,2023-11-21,2023-11-21,2023-11-21
+182,CLO-WOM-0182,Levis Floral Dress,Clothing,Women Dresses,Levis,Aditya Birla Distribution,2528.42,1971.18,2022-05-14,2022-05-14,2022-05-14
+183,CLO-WOM-0183,Van Heusen Maxi Dress,Clothing,Women Dresses,Van Heusen,Delhivery Fulfillment,913.0,723.29,2023-10-21,2023-10-21,2023-10-21
+184,CLO-WOM-0184,Roadster Maxi Dress,Clothing,Women Dresses,Roadster,Allcargo Supply Chain,4651.69,3596.56,2022-02-13,2022-02-13,2022-02-13
+185,CLO-WOM-0185,Puma Party Dress,Clothing,Women Dresses,Puma,Mahindra Logistics,718.05,503.21,2023-08-20,2023-08-20,2023-08-20
+186,CLO-WOM-0186,Max Maxi Dress,Clothing,Women Dresses,Max,Aditya Birla Distribution,1529.31,1174.07,2025-01-19,2025-01-19,2025-01-19
+187,CLO-WOM-0187,FabIndia Party Dress,Clothing,Women Dresses,FabIndia,TVS Supply Chain Solutions,3374.4,2263.92,2023-03-25,2023-03-25,2023-03-25
+188,CLO-TOP-0188,Zara Model 331,Clothing,Tops,Zara,Metro Cash and Carry,1947.58,1400.2,2022-10-20,2022-10-20,2022-10-20
+189,CLO-TOP-0189,Wrogn Model 726,Clothing,Tops,Wrogn,Tata Consumer Distribution,3217.94,2058.25,2024-03-06,2024-03-06,2024-03-06
+190,CLO-TOP-0190,Peter England Model 502,Clothing,Tops,Peter England,Allcargo Supply Chain,792.5,585.07,2025-07-30,2025-07-30,2025-07-30
+191,CLO-TOP-0191,FabIndia Model 403,Clothing,Tops,FabIndia,Allcargo Supply Chain,3845.04,2794.07,2021-12-14,2021-12-14,2021-12-14
+192,CLO-TOP-0192,Peter England Model 155,Clothing,Tops,Peter England,Mahindra Logistics,3961.93,2699.68,2026-05-16,2026-05-16,2026-05-16
+193,CLO-TOP-0193,Levis Model 253,Clothing,Tops,Levis,Future Retail Distribution,2122.75,1576.42,2026-03-12,2026-03-12,2026-03-12
+194,CLO-TOP-0194,Allen Solly Model 789,Clothing,Tops,Allen Solly,Allcargo Supply Chain,3539.81,2755.64,2025-04-09,2025-04-09,2025-04-09
+195,CLO-TOP-0195,Van Heusen Model 856,Clothing,Tops,Van Heusen,Aditya Birla Distribution,914.56,736.13,2022-01-01,2022-01-01,2022-01-01
+196,CLO-TOP-0196,FabIndia Model 758,Clothing,Tops,FabIndia,Safexpress Logistics,4289.38,2976.78,2025-09-01,2025-09-01,2025-09-01
+197,CLO-TOP-0197,Wrogn Model 357,Clothing,Tops,Wrogn,Safexpress Logistics,1888.42,1497.01,2022-08-24,2022-08-24,2022-08-24
+198,CLO-TOP-0198,US Polo Model 732,Clothing,Tops,US Polo,Ecom Express Supply Chain,1061.8,759.12,2022-10-30,2022-10-30,2022-10-30
+199,CLO-WOM-0199,H&M High Rise Jeans,Clothing,Women Jeans,H&M,Safexpress Logistics,2184.61,1385.5,2023-04-06,2023-04-06,2023-04-06
+200,CLO-WOM-0200,Louis Philippe Mom Fit Jeans,Clothing,Women Jeans,Louis Philippe,Allcargo Supply Chain,332.69,220.87,2025-03-09,2025-03-09,2025-03-09
+201,CLO-WOM-0201,Louis Philippe Skinny Jeans 1,Clothing,Women Jeans,Louis Philippe,Snowman Logistics,4589.77,3813.39,2025-05-06,2025-05-06,2025-05-06
+202,CLO-WOM-0202,US Polo Regular Jeans,Clothing,Women Jeans,US Polo,Future Retail Distribution,3309.18,2154.56,2026-03-31,2026-03-31,2026-03-31
+203,CLO-WOM-0203,Louis Philippe High Rise Jeans,Clothing,Women Jeans,Louis Philippe,TVS Supply Chain Solutions,3203.7,2714.27,2025-05-13,2025-05-13,2025-05-13
+204,CLO-WOM-0204,Allen Solly Regular Jeans,Clothing,Women Jeans,Allen Solly,TVS Supply Chain Solutions,3374.41,2791.13,2022-12-16,2022-12-16,2022-12-16
+205,CLO-WOM-0205,Peter England Skinny Jeans,Clothing,Women Jeans,Peter England,Future Retail Distribution,4575.12,3617.77,2022-02-23,2022-02-23,2022-02-23
+206,CLO-WOM-0206,Levis Regular Jeans,Clothing,Women Jeans,Levis,Delhivery Fulfillment,4687.49,3849.44,2023-01-03,2023-01-03,2023-01-03
+207,CLO-WOM-0207,Nike Skinny Jeans,Clothing,Women Jeans,Nike,Metro Cash and Carry,2748.03,1920.46,2022-08-25,2022-08-25,2022-08-25
+208,CLO-WOM-0208,Adidas Skinny Jeans,Clothing,Women Jeans,Adidas,Allcargo Supply Chain,4836.32,4052.9,2023-05-28,2023-05-28,2023-05-28
+209,CLO-WOM-0209,Louis Philippe High Rise Jeans 1,Clothing,Women Jeans,Louis Philippe,Future Retail Distribution,2174.22,1319.08,2024-02-23,2024-02-23,2024-02-23
+210,CLO-KUR-0210,Louis Philippe Model 484,Clothing,Kurtis,Louis Philippe,Safexpress Logistics,2910.6,2313.21,2024-12-20,2024-12-20,2024-12-20
+211,CLO-KUR-0211,Peter England Model 564,Clothing,Kurtis,Peter England,Safexpress Logistics,1185.96,968.89,2023-11-29,2023-11-29,2023-11-29
+212,CLO-KUR-0212,Nike Model 481,Clothing,Kurtis,Nike,Snowman Logistics,4693.58,3899.4,2022-10-21,2022-10-21,2022-10-21
+213,CLO-KUR-0213,US Polo Model 734,Clothing,Kurtis,US Polo,Reliance Retail Supply Chain,1852.39,1124.17,2023-10-28,2023-10-28,2023-10-28
+214,CLO-KUR-0214,H&M Model 179,Clothing,Kurtis,H&M,Aditya Birla Distribution,2047.38,1632.0,2024-12-04,2024-12-04,2024-12-04
+215,CLO-KUR-0215,Nike Model 994,Clothing,Kurtis,Nike,Delhivery Fulfillment,3583.93,2623.72,2024-08-20,2024-08-20,2024-08-20
+216,CLO-KUR-0216,Peter England Model 709,Clothing,Kurtis,Peter England,Allcargo Supply Chain,938.93,630.88,2022-02-23,2022-02-23,2022-02-23
+217,CLO-KUR-0217,Adidas Model 442,Clothing,Kurtis,Adidas,Reliance Retail Supply Chain,3783.94,2835.3,2022-11-23,2022-11-23,2022-11-23
+218,CLO-KUR-0218,Max Model 602,Clothing,Kurtis,Max,Blue Dart Distribution,969.65,667.96,2024-07-31,2024-07-31,2024-07-31
+219,CLO-KUR-0219,Adidas Model 219,Clothing,Kurtis,Adidas,Delhivery Fulfillment,3208.23,2457.7,2021-12-01,2021-12-01,2021-12-01
+220,CLO-KUR-0220,Levis Model 562,Clothing,Kurtis,Levis,Aditya Birla Distribution,1364.64,1113.17,2025-08-24,2025-08-24,2025-08-24
+221,CLO-SAR-0221,Max Model 667,Clothing,Sarees,Max,Future Retail Distribution,773.66,486.33,2021-08-31,2021-08-31,2021-08-31
+222,CLO-SAR-0222,Max Model 802,Clothing,Sarees,Max,Ecom Express Supply Chain,2769.5,1753.3,2024-05-15,2024-05-15,2024-05-15
+223,CLO-SAR-0223,Nike Model 691,Clothing,Sarees,Nike,Redington India,1587.07,1120.59,2022-02-28,2022-02-28,2022-02-28
+224,CLO-SAR-0224,Levis Model 129,Clothing,Sarees,Levis,Metro Cash and Carry,1582.84,1295.35,2024-07-24,2024-07-24,2024-07-24
+225,CLO-SAR-0225,H&M Model 986,Clothing,Sarees,H&M,TVS Supply Chain Solutions,4728.9,3949.07,2022-02-02,2022-02-02,2022-02-02
+226,CLO-SAR-0226,Louis Philippe Model 559,Clothing,Sarees,Louis Philippe,Ecom Express Supply Chain,364.54,261.9,2023-07-11,2023-07-11,2023-07-11
+227,CLO-SAR-0227,H&M Model 125,Clothing,Sarees,H&M,Reliance Retail Supply Chain,4263.31,3124.94,2021-07-01,2021-07-01,2021-07-01
+228,CLO-SAR-0228,Levis Model 765,Clothing,Sarees,Levis,Ingram Micro India,4658.36,3864.12,2024-05-28,2024-05-28,2024-05-28
+229,CLO-SAR-0229,Puma Model 464,Clothing,Sarees,Puma,Aditya Birla Distribution,3531.54,2369.52,2023-05-02,2023-05-02,2023-05-02
+230,CLO-SAR-0230,Roadster Model 997,Clothing,Sarees,Roadster,TVS Supply Chain Solutions,1414.93,972.19,2021-09-14,2021-09-14,2021-09-14
+231,CLO-SAR-0231,Peter England Model 256,Clothing,Sarees,Peter England,Tata Consumer Distribution,4635.46,3089.85,2024-09-20,2024-09-20,2024-09-20
+232,CLO-WOM-0232,Max Casual Jacket,Clothing,Women Jackets,Max,Redington India,3621.99,2540.33,2026-05-03,2026-05-03,2026-05-03
+233,CLO-WOM-0233,Puma Casual Jacket,Clothing,Women Jackets,Puma,Metro Cash and Carry,1826.35,1135.12,2021-12-29,2021-12-29,2021-12-29
+234,CLO-WOM-0234,Max Casual Jacket 1,Clothing,Women Jackets,Max,Snowman Logistics,1255.02,974.84,2021-06-27,2021-06-27,2021-06-27
+235,CLO-WOM-0235,US Polo Casual Jacket,Clothing,Women Jackets,US Polo,Blue Dart Distribution,2369.92,2005.87,2025-09-19,2025-09-19,2025-09-19
+236,CLO-WOM-0236,Nike Long Coat,Clothing,Women Jackets,Nike,Metro Cash and Carry,2269.13,1867.53,2025-05-06,2025-05-06,2025-05-06
+237,CLO-WOM-0237,Wrogn Denim Jacket,Clothing,Women Jackets,Wrogn,Mahindra Logistics,1616.77,1038.93,2024-08-01,2024-08-01,2024-08-01
+238,CLO-WOM-0238,Van Heusen Long Coat,Clothing,Women Jackets,Van Heusen,Snowman Logistics,1002.92,650.86,2022-10-26,2022-10-26,2022-10-26
+239,CLO-WOM-0239,Puma Casual Jacket 1,Clothing,Women Jackets,Puma,Metro Cash and Carry,3424.42,2632.63,2025-06-17,2025-06-17,2025-06-17
+240,CLO-WOM-0240,Zara Casual Jacket,Clothing,Women Jackets,Zara,Delhivery Fulfillment,4109.02,3054.71,2021-12-03,2021-12-03,2021-12-03
+241,CLO-WOM-0241,Wrogn Long Coat,Clothing,Women Jackets,Wrogn,Metro Cash and Carry,490.8,376.66,2025-07-21,2025-07-21,2025-07-21
+242,CLO-WOM-0242,Louis Philippe Winter Jacket,Clothing,Women Jackets,Louis Philippe,Allcargo Supply Chain,4655.31,3340.2,2022-05-23,2022-05-23,2022-05-23
+243,CLO-WOM-0243,Zara Sports Shoes,Clothing,Women Footwear,Zara,Blue Dart Distribution,1322.64,866.01,2023-01-07,2023-01-07,2023-01-07
+244,CLO-WOM-0244,Peter England Heels,Clothing,Women Footwear,Peter England,TVS Supply Chain Solutions,3328.4,2332.77,2021-11-14,2021-11-14,2021-11-14
+245,CLO-WOM-0245,Levis Sports Shoes,Clothing,Women Footwear,Levis,Snowman Logistics,1158.51,892.97,2023-07-04,2023-07-04,2023-07-04
+246,CLO-WOM-0246,Nike Sports Shoes,Clothing,Women Footwear,Nike,Mahindra Logistics,920.25,666.01,2023-02-10,2023-02-10,2023-02-10
+247,CLO-WOM-0247,US Polo Sandals,Clothing,Women Footwear,US Polo,Delhivery Fulfillment,2930.17,2118.04,2023-12-17,2023-12-17,2023-12-17
+248,CLO-WOM-0248,Van Heusen Sports Shoes,Clothing,Women Footwear,Van Heusen,Snowman Logistics,3647.84,2745.73,2024-12-09,2024-12-09,2024-12-09
+249,CLO-WOM-0249,H&M Sandals,Clothing,Women Footwear,H&M,Delhivery Fulfillment,3397.2,2225.15,2022-04-24,2022-04-24,2022-04-24
+250,CLO-WOM-0250,Levis Sandals,Clothing,Women Footwear,Levis,Mahindra Logistics,1277.78,1017.16,2021-07-29,2021-07-29,2021-07-29
+251,CLO-WOM-0251,Roadster Flats,Clothing,Women Footwear,Roadster,Mahindra Logistics,2920.04,1804.97,2022-09-27,2022-09-27,2022-09-27
+252,CLO-WOM-0252,Max Heels,Clothing,Women Footwear,Max,Aditya Birla Distribution,650.43,435.74,2024-10-22,2024-10-22,2024-10-22
+253,CLO-WOM-0253,US Polo Flats,Clothing,Women Footwear,US Polo,Ingram Micro India,1227.87,904.27,2023-09-27,2023-09-27,2023-09-27
+254,CLO-WOM-0254,H&M Training Tights,Clothing,Women Activewear,H&M,Redington India,419.78,312.96,2024-03-14,2024-03-14,2024-03-14
+255,CLO-WOM-0255,Nike Yoga Pants,Clothing,Women Activewear,Nike,Delhivery Fulfillment,3749.03,3150.57,2025-06-24,2025-06-24,2025-06-24
+256,CLO-WOM-0256,Van Heusen Sports Bra,Clothing,Women Activewear,Van Heusen,Blue Dart Distribution,4640.69,3271.51,2024-12-09,2024-12-09,2024-12-09
+257,CLO-WOM-0257,FabIndia Workout Top,Clothing,Women Activewear,FabIndia,Allcargo Supply Chain,3881.06,2526.04,2023-01-19,2023-01-19,2023-01-19
+258,CLO-WOM-0258,Louis Philippe Sports Bra,Clothing,Women Activewear,Louis Philippe,Safexpress Logistics,3524.51,2440.3,2024-12-06,2024-12-06,2024-12-06
+259,CLO-WOM-0259,H&M Sports Bra,Clothing,Women Activewear,H&M,Snowman Logistics,4228.39,2902.28,2023-04-05,2023-04-05,2023-04-05
+260,CLO-WOM-0260,Wrogn Yoga Pants,Clothing,Women Activewear,Wrogn,Metro Cash and Carry,350.64,285.45,2022-04-14,2022-04-14,2022-04-14
+261,CLO-WOM-0261,FabIndia Workout Top 1,Clothing,Women Activewear,FabIndia,Future Retail Distribution,784.51,553.07,2026-01-29,2026-01-29,2026-01-29
+262,CLO-WOM-0262,Van Heusen Sports Bra 1,Clothing,Women Activewear,Van Heusen,Mahindra Logistics,481.31,302.16,2025-08-27,2025-08-27,2025-08-27
+263,CLO-WOM-0263,Allen Solly Yoga Pants,Clothing,Women Activewear,Allen Solly,Aditya Birla Distribution,507.23,385.63,2024-07-31,2024-07-31,2024-07-31
+264,CLO-WOM-0264,Adidas Workout Top,Clothing,Women Activewear,Adidas,Reliance Retail Supply Chain,4738.43,4008.22,2021-12-11,2021-12-11,2021-12-11
+265,CLO-KID-0265,Peter England Kids Shirt,Clothing,Kids Clothing,Peter England,Aditya Birla Distribution,3985.19,2706.47,2021-09-08,2021-09-08,2021-09-08
+266,CLO-KID-0266,Puma Kids T-Shirt,Clothing,Kids Clothing,Puma,Aditya Birla Distribution,4190.46,3156.19,2025-08-07,2025-08-07,2025-08-07
+267,CLO-KID-0267,Peter England Kids Jeans,Clothing,Kids Clothing,Peter England,Metro Cash and Carry,2100.94,1552.42,2023-05-12,2023-05-12,2023-05-12
+268,CLO-KID-0268,H&M Kids Jeans,Clothing,Kids Clothing,H&M,Future Retail Distribution,1676.2,1277.01,2021-09-24,2021-09-24,2021-09-24
+269,CLO-KID-0269,Peter England Kids Shirt 1,Clothing,Kids Clothing,Peter England,Allcargo Supply Chain,389.61,327.79,2026-02-25,2026-02-25,2026-02-25
+270,CLO-KID-0270,Levis Kids Shirt,Clothing,Kids Clothing,Levis,Redington India,3769.9,3201.25,2025-10-11,2025-10-11,2025-10-11
+271,CLO-KID-0271,Nike Kids Shorts,Clothing,Kids Clothing,Nike,Delhivery Fulfillment,3659.66,2771.72,2023-07-22,2023-07-22,2023-07-22
+272,CLO-KID-0272,Adidas Kids Jeans,Clothing,Kids Clothing,Adidas,Safexpress Logistics,495.47,393.41,2023-10-28,2023-10-28,2023-10-28
+273,CLO-KID-0273,Peter England Kids Shirt 2,Clothing,Kids Clothing,Peter England,Tata Consumer Distribution,4970.48,3113.82,2021-11-24,2021-11-24,2021-11-24
+274,CLO-KID-0274,Adidas Kids Shorts,Clothing,Kids Clothing,Adidas,Aditya Birla Distribution,4723.4,3161.15,2024-11-16,2024-11-16,2024-11-16
+275,CLO-KID-0275,FabIndia Kids Jeans,Clothing,Kids Clothing,FabIndia,Ingram Micro India,1093.44,765.58,2025-06-18,2025-06-18,2025-06-18
+276,CLO-KID-0276,Zara Kids School Shoes,Clothing,Kids Footwear,Zara,Metro Cash and Carry,3745.31,2464.37,2026-04-07,2026-04-07,2026-04-07
+277,CLO-KID-0277,H&M Kids Sneakers,Clothing,Kids Footwear,H&M,Allcargo Supply Chain,1513.38,1073.62,2022-09-13,2022-09-13,2022-09-13
+278,CLO-KID-0278,US Polo Kids School Shoes,Clothing,Kids Footwear,US Polo,Future Retail Distribution,4781.64,3271.99,2024-01-16,2024-01-16,2024-01-16
+279,CLO-KID-0279,Louis Philippe Kids Sandals,Clothing,Kids Footwear,Louis Philippe,Redington India,1175.57,850.69,2023-02-24,2023-02-24,2023-02-24
+280,CLO-KID-0280,Louis Philippe Kids School Shoes,Clothing,Kids Footwear,Louis Philippe,Tata Consumer Distribution,2309.05,1658.86,2022-03-30,2022-03-30,2022-03-30
+281,CLO-KID-0281,US Polo Kids Sandals,Clothing,Kids Footwear,US Polo,Delhivery Fulfillment,402.6,297.75,2025-10-01,2025-10-01,2025-10-01
+282,CLO-KID-0282,Roadster Kids School Shoes,Clothing,Kids Footwear,Roadster,Allcargo Supply Chain,4369.06,3027.1,2025-07-02,2025-07-02,2025-07-02
+283,CLO-KID-0283,Peter England Kids School Shoes,Clothing,Kids Footwear,Peter England,Ingram Micro India,4422.89,3106.29,2025-12-08,2025-12-08,2025-12-08
+284,CLO-KID-0284,Louis Philippe Kids School Shoes 1,Clothing,Kids Footwear,Louis Philippe,Reliance Retail Supply Chain,3727.82,2980.08,2022-10-24,2022-10-24,2022-10-24
+285,CLO-KID-0285,Wrogn Kids Sneakers,Clothing,Kids Footwear,Wrogn,Blue Dart Distribution,3109.7,2197.18,2021-10-12,2021-10-12,2021-10-12
+286,CLO-KID-0286,Van Heusen Kids Sandals,Clothing,Kids Footwear,Van Heusen,Reliance Retail Supply Chain,4282.84,3070.38,2023-02-03,2023-02-03,2023-02-03
+287,CLO-KID-0287,Levis Kids Sweater,Clothing,Kids Winter Wear,Levis,Ingram Micro India,703.06,522.67,2024-12-30,2024-12-30,2024-12-30
+288,CLO-KID-0288,Adidas Kids Sweater,Clothing,Kids Winter Wear,Adidas,Reliance Retail Supply Chain,1073.56,764.14,2025-02-22,2025-02-22,2025-02-22
+289,CLO-KID-0289,US Polo Kids Hoodie,Clothing,Kids Winter Wear,US Polo,TVS Supply Chain Solutions,2260.64,1369.23,2021-10-09,2021-10-09,2021-10-09
+290,CLO-KID-0290,Nike Kids Sweater,Clothing,Kids Winter Wear,Nike,Redington India,1443.55,965.69,2022-05-14,2022-05-14,2022-05-14
+291,CLO-KID-0291,FabIndia Kids Hoodie,Clothing,Kids Winter Wear,FabIndia,Reliance Retail Supply Chain,3434.91,2233.7,2025-06-19,2025-06-19,2025-06-19
+292,CLO-KID-0292,Peter England Kids Hoodie,Clothing,Kids Winter Wear,Peter England,TVS Supply Chain Solutions,1398.18,875.13,2021-11-15,2021-11-15,2021-11-15
+293,CLO-KID-0293,FabIndia Kids Sweater,Clothing,Kids Winter Wear,FabIndia,Aditya Birla Distribution,1543.0,930.91,2025-09-25,2025-09-25,2025-09-25
+294,CLO-KID-0294,Nike Kids Jacket,Clothing,Kids Winter Wear,Nike,Safexpress Logistics,1056.1,669.76,2023-08-25,2023-08-25,2023-08-25
+295,CLO-KID-0295,Wrogn Kids Hoodie,Clothing,Kids Winter Wear,Wrogn,Allcargo Supply Chain,3675.22,2463.8,2024-04-30,2024-04-30,2024-04-30
+296,CLO-KID-0296,Levis Kids Hoodie,Clothing,Kids Winter Wear,Levis,Redington India,4520.58,3108.15,2025-10-17,2025-10-17,2025-10-17
+297,CLO-KID-0297,H&M Kids Sweater,Clothing,Kids Winter Wear,H&M,Redington India,3047.44,2533.59,2025-05-30,2025-05-30,2025-05-30
+298,HOM-FUR-0298,Godrej Sofa Set,Home & Kitchen,Furniture,Godrej,Aditya Birla Distribution,2281.99,1649.81,2022-10-14,2022-10-14,2022-10-14
+299,HOM-FUR-0299,Butterfly Sofa Set,Home & Kitchen,Furniture,Butterfly,Ingram Micro India,8346.78,5446.77,2024-04-28,2024-04-28,2024-04-28
+300,HOM-FUR-0300,Philips Study Table,Home & Kitchen,Furniture,Philips,Snowman Logistics,25829.64,15592.52,2021-11-07,2021-11-07,2021-11-07
+301,HOM-FUR-0301,Whirlpool Study Table,Home & Kitchen,Furniture,Whirlpool,Snowman Logistics,7894.17,5951.17,2024-02-16,2024-02-16,2024-02-16
+302,HOM-FUR-0302,Ikea Study Table,Home & Kitchen,Furniture,Ikea,Metro Cash and Carry,25277.13,17235.8,2024-12-08,2024-12-08,2024-12-08
+303,HOM-FUR-0303,Ikea Dining Table,Home & Kitchen,Furniture,Ikea,Tata Consumer Distribution,3826.46,2601.02,2026-05-10,2026-05-10,2026-05-10
+304,HOM-FUR-0304,Butterfly Study Table,Home & Kitchen,Furniture,Butterfly,Reliance Retail Supply Chain,19050.88,14654.54,2024-06-11,2024-06-11,2024-06-11
+305,HOM-FUR-0305,Hawkins Study Table,Home & Kitchen,Furniture,Hawkins,Blue Dart Distribution,29618.31,22280.95,2025-05-01,2025-05-01,2025-05-01
+306,HOM-FUR-0306,Godrej Dining Table,Home & Kitchen,Furniture,Godrej,Metro Cash and Carry,29357.79,24504.08,2024-02-28,2024-02-28,2024-02-28
+307,HOM-FUR-0307,Bajaj Study Table,Home & Kitchen,Furniture,Bajaj,Blue Dart Distribution,5348.1,4457.94,2021-12-24,2021-12-24,2021-12-24
+308,HOM-FUR-0308,Pigeon Dining Table,Home & Kitchen,Furniture,Pigeon,Ecom Express Supply Chain,13069.3,9823.95,2021-09-13,2021-09-13,2021-09-13
+309,HOM-COO-0309,Bajaj Deluxe Cookware Set,Home & Kitchen,Cookware,Bajaj,Ecom Express Supply Chain,8300.36,5293.06,2024-04-07,2024-04-07,2024-04-07
+310,HOM-COO-0310,Philips Pressure Cooker,Home & Kitchen,Cookware,Philips,Ingram Micro India,27523.14,18548.48,2021-09-15,2021-09-15,2021-09-15
+311,HOM-COO-0311,Bajaj Non Stick Pan,Home & Kitchen,Cookware,Bajaj,Ingram Micro India,22537.06,18434.72,2024-10-23,2024-10-23,2024-10-23
+312,HOM-COO-0312,Philips Pressure Cooker 1,Home & Kitchen,Cookware,Philips,Delhivery Fulfillment,28106.26,18269.47,2025-06-10,2025-06-10,2025-06-10
+313,HOM-COO-0313,Philips Deluxe Cookware Set,Home & Kitchen,Cookware,Philips,TVS Supply Chain Solutions,21779.27,17934.58,2023-01-16,2023-01-16,2023-01-16
+314,HOM-COO-0314,Hawkins Steel Cookware Set,Home & Kitchen,Cookware,Hawkins,Tata Consumer Distribution,6135.38,4159.12,2022-09-03,2022-09-03,2022-09-03
+315,HOM-COO-0315,Philips Deluxe Cookware Set 1,Home & Kitchen,Cookware,Philips,Blue Dart Distribution,8257.3,6241.92,2023-11-08,2023-11-08,2023-11-08
+316,HOM-COO-0316,Prestige Steel Cookware Set,Home & Kitchen,Cookware,Prestige,Delhivery Fulfillment,20283.12,16257.92,2023-10-28,2023-10-28,2023-10-28
+317,HOM-COO-0317,Prestige Steel Cookware Set 1,Home & Kitchen,Cookware,Prestige,Future Retail Distribution,19961.95,15519.42,2022-07-07,2022-07-07,2022-07-07
+318,HOM-COO-0318,Ikea Pressure Cooker,Home & Kitchen,Cookware,Ikea,Blue Dart Distribution,13390.45,10426.98,2023-06-30,2023-06-30,2023-06-30
+319,HOM-COO-0319,Butterfly Steel Cookware Set,Home & Kitchen,Cookware,Butterfly,Delhivery Fulfillment,10490.34,8900.72,2022-10-18,2022-10-18,2022-10-18
+320,HOM-KIT-0320,Butterfly Induction Cooktop,Home & Kitchen,Kitchen Appliances,Butterfly,Reliance Retail Supply Chain,19554.87,13489.74,2022-07-28,2022-07-28,2022-07-28
+321,HOM-KIT-0321,Whirlpool Induction Cooktop,Home & Kitchen,Kitchen Appliances,Whirlpool,Metro Cash and Carry,26337.74,19486.47,2025-03-16,2025-03-16,2025-03-16
+322,HOM-KIT-0322,Prestige Microwave Oven,Home & Kitchen,Kitchen Appliances,Prestige,Delhivery Fulfillment,15513.71,11107.85,2022-04-16,2022-04-16,2022-04-16
+323,HOM-KIT-0323,Philips Microwave Oven,Home & Kitchen,Kitchen Appliances,Philips,Ingram Micro India,8792.02,5560.68,2021-07-22,2021-07-22,2021-07-22
+324,HOM-KIT-0324,Prestige Mixer Grinder,Home & Kitchen,Kitchen Appliances,Prestige,Tata Consumer Distribution,2225.77,1681.89,2025-04-24,2025-04-24,2025-04-24
+325,HOM-KIT-0325,Prestige Air Fryer,Home & Kitchen,Kitchen Appliances,Prestige,Redington India,9872.06,7471.25,2022-11-20,2022-11-20,2022-11-20
+326,HOM-KIT-0326,Butterfly Mixer Grinder,Home & Kitchen,Kitchen Appliances,Butterfly,Reliance Retail Supply Chain,8719.05,6740.28,2025-10-21,2025-10-21,2025-10-21
+327,HOM-KIT-0327,Butterfly Mixer Grinder 1,Home & Kitchen,Kitchen Appliances,Butterfly,Future Retail Distribution,26182.35,18012.18,2022-01-05,2022-01-05,2022-01-05
+328,HOM-KIT-0328,Nilkamal Air Fryer,Home & Kitchen,Kitchen Appliances,Nilkamal,Tata Consumer Distribution,4207.66,3072.98,2021-11-18,2021-11-18,2021-11-18
+329,HOM-KIT-0329,Butterfly Induction Cooktop 1,Home & Kitchen,Kitchen Appliances,Butterfly,Ingram Micro India,2740.66,1861.3,2022-05-01,2022-05-01,2022-05-01
+330,HOM-KIT-0330,Godrej Mixer Grinder,Home & Kitchen,Kitchen Appliances,Godrej,Aditya Birla Distribution,19972.4,13975.43,2026-06-03,2026-06-03,2026-06-03
+331,HOM-HOM-0331,Ikea Indoor Plant Pot,Home & Kitchen,Home Decor,Ikea,Mahindra Logistics,13171.26,8716.81,2021-11-08,2021-11-08,2021-11-08
+332,HOM-HOM-0332,Nilkamal Indoor Plant Pot,Home & Kitchen,Home Decor,Nilkamal,Blue Dart Distribution,15049.97,11564.04,2026-05-02,2026-05-02,2026-05-02
+333,HOM-HOM-0333,Prestige Wall Art,Home & Kitchen,Home Decor,Prestige,Tata Consumer Distribution,3361.12,2456.5,2024-05-03,2024-05-03,2024-05-03
+334,HOM-HOM-0334,Nilkamal Wall Art,Home & Kitchen,Home Decor,Nilkamal,Aditya Birla Distribution,29004.06,19212.51,2025-07-25,2025-07-25,2025-07-25
+335,HOM-HOM-0335,Bajaj Decor Lamp,Home & Kitchen,Home Decor,Bajaj,Safexpress Logistics,3744.32,2775.79,2024-10-30,2024-10-30,2024-10-30
+336,HOM-HOM-0336,Butterfly Indoor Plant Pot,Home & Kitchen,Home Decor,Butterfly,Metro Cash and Carry,5700.95,3954.64,2026-06-07,2026-06-07,2026-06-07
+337,HOM-HOM-0337,Prestige Decor Lamp,Home & Kitchen,Home Decor,Prestige,Ingram Micro India,10543.05,7828.14,2023-06-10,2023-06-10,2023-06-10
+338,HOM-HOM-0338,Whirlpool Photo Frame,Home & Kitchen,Home Decor,Whirlpool,Mahindra Logistics,11214.76,9249.91,2022-09-15,2022-09-15,2022-09-15
+339,HOM-HOM-0339,Whirlpool Decor Lamp,Home & Kitchen,Home Decor,Whirlpool,Redington India,15719.8,11540.01,2021-11-07,2021-11-07,2021-11-07
+340,HOM-HOM-0340,Pigeon Decor Lamp,Home & Kitchen,Home Decor,Pigeon,Redington India,28904.79,23681.6,2024-10-16,2024-10-16,2024-10-16
+341,HOM-HOM-0341,Pigeon Decor Lamp 1,Home & Kitchen,Home Decor,Pigeon,Reliance Retail Supply Chain,2393.73,1929.8,2022-08-14,2022-08-14,2022-08-14
+342,HOM-STO-0342,Whirlpool Drawer Unit,Home & Kitchen,Storage & Organization,Whirlpool,Aditya Birla Distribution,10672.31,8843.4,2023-10-15,2023-10-15,2023-10-15
+343,HOM-STO-0343,Pigeon Drawer Unit,Home & Kitchen,Storage & Organization,Pigeon,Redington India,8602.8,5234.72,2023-04-15,2023-04-15,2023-04-15
+344,HOM-STO-0344,Hawkins Wardrobe Organizer,Home & Kitchen,Storage & Organization,Hawkins,Ecom Express Supply Chain,15606.25,11572.44,2026-05-11,2026-05-11,2026-05-11
+345,HOM-STO-0345,Godrej Storage Box,Home & Kitchen,Storage & Organization,Godrej,Reliance Retail Supply Chain,22250.87,16403.39,2026-06-16,2026-06-16,2026-06-16
+346,HOM-STO-0346,Whirlpool Shoe Rack,Home & Kitchen,Storage & Organization,Whirlpool,Ingram Micro India,28785.18,21230.77,2022-10-19,2022-10-19,2022-10-19
+347,HOM-STO-0347,Godrej Drawer Unit,Home & Kitchen,Storage & Organization,Godrej,Delhivery Fulfillment,4143.7,3370.89,2021-07-06,2021-07-06,2021-07-06
+348,HOM-STO-0348,Whirlpool Drawer Unit 1,Home & Kitchen,Storage & Organization,Whirlpool,Reliance Retail Supply Chain,19591.41,13463.92,2023-02-21,2023-02-21,2023-02-21
+349,HOM-STO-0349,Butterfly Storage Box,Home & Kitchen,Storage & Organization,Butterfly,Ecom Express Supply Chain,11123.53,6860.71,2023-09-21,2023-09-21,2023-09-21
+350,HOM-STO-0350,Bajaj Storage Box,Home & Kitchen,Storage & Organization,Bajaj,Redington India,4505.41,3419.77,2025-04-05,2025-04-05,2025-04-05
+351,HOM-STO-0351,Pigeon Storage Box,Home & Kitchen,Storage & Organization,Pigeon,Snowman Logistics,1500.33,974.7,2022-12-23,2022-12-23,2022-12-23
+352,HOM-STO-0352,Hawkins Drawer Unit,Home & Kitchen,Storage & Organization,Hawkins,Future Retail Distribution,2969.4,1997.38,2026-02-05,2026-02-05,2026-02-05
+353,HOM-BED-0353,Bajaj Comforter,Home & Kitchen,Bedding,Bajaj,Ingram Micro India,20526.0,15089.3,2025-06-10,2025-06-10,2025-06-10
+354,HOM-BED-0354,Prestige Blanket,Home & Kitchen,Bedding,Prestige,TVS Supply Chain Solutions,15773.02,12414.15,2024-02-21,2024-02-21,2024-02-21
+355,HOM-BED-0355,Godrej Blanket,Home & Kitchen,Bedding,Godrej,Tata Consumer Distribution,5884.92,3713.37,2024-03-01,2024-03-01,2024-03-01
+356,HOM-BED-0356,Philips Bedsheet Set,Home & Kitchen,Bedding,Philips,Mahindra Logistics,8728.52,6797.79,2026-03-22,2026-03-22,2026-03-22
+357,HOM-BED-0357,Butterfly Pillow Set,Home & Kitchen,Bedding,Butterfly,Ecom Express Supply Chain,10738.9,8007.0,2026-02-04,2026-02-04,2026-02-04
+358,HOM-BED-0358,Ikea Comforter,Home & Kitchen,Bedding,Ikea,Delhivery Fulfillment,20765.98,15995.61,2021-11-18,2021-11-18,2021-11-18
+359,HOM-BED-0359,Hawkins Bedsheet Set,Home & Kitchen,Bedding,Hawkins,Ecom Express Supply Chain,9366.57,6890.15,2023-10-06,2023-10-06,2023-10-06
+360,HOM-BED-0360,Bajaj Comforter 1,Home & Kitchen,Bedding,Bajaj,Aditya Birla Distribution,3097.84,2423.82,2023-04-12,2023-04-12,2023-04-12
+361,HOM-BED-0361,Bajaj Bedsheet Set,Home & Kitchen,Bedding,Bajaj,Reliance Retail Supply Chain,17697.6,12514.53,2026-05-27,2026-05-27,2026-05-27
+362,HOM-BED-0362,Pigeon Pillow Set,Home & Kitchen,Bedding,Pigeon,Redington India,16614.84,13835.34,2024-01-21,2024-01-21,2024-01-21
+363,HOM-BED-0363,Ikea Bedsheet Set,Home & Kitchen,Bedding,Ikea,Metro Cash and Carry,23364.71,15923.88,2023-03-30,2023-03-30,2023-03-30
+364,HOM-DIN-0364,Prestige Dinner Set,Home & Kitchen,Dining Essentials,Prestige,Ingram Micro India,5011.49,3040.93,2022-05-24,2022-05-24,2022-05-24
+365,HOM-DIN-0365,Whirlpool Dinner Set,Home & Kitchen,Dining Essentials,Whirlpool,Allcargo Supply Chain,19225.12,13697.21,2023-05-21,2023-05-21,2023-05-21
+366,HOM-DIN-0366,Whirlpool Glass Set,Home & Kitchen,Dining Essentials,Whirlpool,TVS Supply Chain Solutions,14055.4,11116.92,2023-12-01,2023-12-01,2023-12-01
+367,HOM-DIN-0367,Whirlpool Cutlery Set,Home & Kitchen,Dining Essentials,Whirlpool,Snowman Logistics,26026.76,17810.04,2024-08-25,2024-08-25,2024-08-25
+368,HOM-DIN-0368,Godrej Glass Set,Home & Kitchen,Dining Essentials,Godrej,Ecom Express Supply Chain,14943.24,10162.14,2024-01-04,2024-01-04,2024-01-04
+369,HOM-DIN-0369,Ikea Serving Bowl,Home & Kitchen,Dining Essentials,Ikea,Future Retail Distribution,23607.53,14955.8,2026-01-05,2026-01-05,2026-01-05
+370,HOM-DIN-0370,Pigeon Cutlery Set,Home & Kitchen,Dining Essentials,Pigeon,Ingram Micro India,21087.55,16434.2,2024-11-06,2024-11-06,2024-11-06
+371,HOM-DIN-0371,Godrej Serving Bowl,Home & Kitchen,Dining Essentials,Godrej,Reliance Retail Supply Chain,17987.03,12965.49,2024-05-19,2024-05-19,2024-05-19
+372,HOM-DIN-0372,Hawkins Cutlery Set,Home & Kitchen,Dining Essentials,Hawkins,Allcargo Supply Chain,26511.49,18717.41,2025-01-07,2025-01-07,2025-01-07
+373,HOM-DIN-0373,Prestige Serving Bowl,Home & Kitchen,Dining Essentials,Prestige,Ingram Micro India,20985.03,16741.9,2022-12-10,2022-12-10,2022-12-10
+374,HOM-DIN-0374,Hawkins Dinner Set,Home & Kitchen,Dining Essentials,Hawkins,Delhivery Fulfillment,10435.9,8693.4,2026-01-30,2026-01-30,2026-01-30
+375,HOM-CLE-0375,Nilkamal Surface Cleaner,Home & Kitchen,Cleaning Supplies,Nilkamal,Delhivery Fulfillment,12024.54,7901.97,2026-04-24,2026-04-24,2026-04-24
+376,HOM-CLE-0376,Bajaj Floor Cleaner,Home & Kitchen,Cleaning Supplies,Bajaj,Delhivery Fulfillment,3736.63,2949.03,2022-07-19,2022-07-19,2022-07-19
+377,HOM-CLE-0377,Pigeon Surface Cleaner,Home & Kitchen,Cleaning Supplies,Pigeon,Aditya Birla Distribution,27240.15,22741.34,2021-10-28,2021-10-28,2021-10-28
+378,HOM-CLE-0378,Godrej Cleaning Kit,Home & Kitchen,Cleaning Supplies,Godrej,Delhivery Fulfillment,14263.01,12034.27,2026-06-18,2026-06-18,2026-06-18
+379,HOM-CLE-0379,Godrej Surface Cleaner,Home & Kitchen,Cleaning Supplies,Godrej,Mahindra Logistics,7783.02,5983.02,2022-08-25,2022-08-25,2022-08-25
+380,HOM-CLE-0380,Prestige Cleaning Kit,Home & Kitchen,Cleaning Supplies,Prestige,Safexpress Logistics,23136.21,18209.92,2025-08-22,2025-08-22,2025-08-22
+381,HOM-CLE-0381,Godrej Cleaning Kit 1,Home & Kitchen,Cleaning Supplies,Godrej,TVS Supply Chain Solutions,8964.62,6521.21,2023-03-13,2023-03-13,2023-03-13
+382,HOM-CLE-0382,Ikea Cleaning Kit,Home & Kitchen,Cleaning Supplies,Ikea,Redington India,24926.44,16498.95,2024-12-23,2024-12-23,2024-12-23
+383,HOM-CLE-0383,Pigeon Floor Cleaner,Home & Kitchen,Cleaning Supplies,Pigeon,TVS Supply Chain Solutions,3716.09,2669.34,2025-06-18,2025-06-18,2025-06-18
+384,HOM-CLE-0384,Pigeon Floor Cleaner 1,Home & Kitchen,Cleaning Supplies,Pigeon,Safexpress Logistics,7014.47,4661.28,2026-03-30,2026-03-30,2026-03-30
+385,HOM-CLE-0385,Ikea Floor Cleaner,Home & Kitchen,Cleaning Supplies,Ikea,Allcargo Supply Chain,29904.76,23053.55,2024-08-15,2024-08-15,2024-08-15
+386,SPO-FIT-0386,Reebok Treadmill,Sports & Fitness,Fitness Equipment,Reebok,Delhivery Fulfillment,3794.71,2759.89,2026-06-14,2026-06-14,2026-06-14
+387,SPO-FIT-0387,Yonex Resistance Bands,Sports & Fitness,Fitness Equipment,Yonex,Metro Cash and Carry,6303.32,4244.44,2023-12-25,2023-12-25,2023-12-25
+388,SPO-FIT-0388,Nivia Treadmill,Sports & Fitness,Fitness Equipment,Nivia,Aditya Birla Distribution,3336.06,2382.57,2025-12-27,2025-12-27,2025-12-27
+389,SPO-FIT-0389,Nivia Exercise Bike,Sports & Fitness,Fitness Equipment,Nivia,Ecom Express Supply Chain,6128.1,4802.32,2025-11-18,2025-11-18,2025-11-18
+390,SPO-FIT-0390,MRF Dumbbell Set,Sports & Fitness,Fitness Equipment,MRF,Future Retail Distribution,11836.43,7484.84,2021-11-24,2021-11-24,2021-11-24
+391,SPO-FIT-0391,Reebok Exercise Bike,Sports & Fitness,Fitness Equipment,Reebok,Redington India,13043.9,9237.49,2022-01-02,2022-01-02,2022-01-02
+392,SPO-FIT-0392,Yonex Exercise Bike,Sports & Fitness,Fitness Equipment,Yonex,TVS Supply Chain Solutions,2764.32,2321.06,2022-12-16,2022-12-16,2022-12-16
+393,SPO-FIT-0393,Reebok Exercise Bike 1,Sports & Fitness,Fitness Equipment,Reebok,Redington India,7300.86,5498.26,2023-07-15,2023-07-15,2023-07-15
+394,SPO-FIT-0394,SG Resistance Bands,Sports & Fitness,Fitness Equipment,SG,Reliance Retail Supply Chain,8820.21,6291.21,2024-05-12,2024-05-12,2024-05-12
+395,SPO-FIT-0395,Reebok Treadmill 1,Sports & Fitness,Fitness Equipment,Reebok,Reliance Retail Supply Chain,1356.55,915.63,2023-04-05,2023-04-05,2023-04-05
+396,SPO-FIT-0396,Nivia Exercise Bike 1,Sports & Fitness,Fitness Equipment,Nivia,Metro Cash and Carry,6295.76,4058.94,2025-08-19,2025-08-19,2025-08-19
+397,SPO-OUT-0397,Decathlon Basketball,Sports & Fitness,Outdoor Sports,Decathlon,Aditya Birla Distribution,13745.23,10404.62,2023-12-24,2023-12-24,2023-12-24
+398,SPO-OUT-0398,Yonex Volleyball,Sports & Fitness,Outdoor Sports,Yonex,TVS Supply Chain Solutions,469.2,375.26,2024-10-16,2024-10-16,2024-10-16
+399,SPO-OUT-0399,MRF Volleyball,Sports & Fitness,Outdoor Sports,MRF,Reliance Retail Supply Chain,2255.78,1442.22,2024-09-21,2024-09-21,2024-09-21
+400,SPO-OUT-0400,Nike Volleyball,Sports & Fitness,Outdoor Sports,Nike,Reliance Retail Supply Chain,9870.58,6974.76,2024-01-10,2024-01-10,2024-01-10
+401,SPO-OUT-0401,Nike Football,Sports & Fitness,Outdoor Sports,Nike,Aditya Birla Distribution,14091.5,8670.98,2021-08-05,2021-08-05,2021-08-05
+402,SPO-OUT-0402,SG Volleyball,Sports & Fitness,Outdoor Sports,SG,Future Retail Distribution,6921.07,4662.19,2023-05-12,2023-05-12,2023-05-12
+403,SPO-OUT-0403,Yonex Badminton Set,Sports & Fitness,Outdoor Sports,Yonex,Metro Cash and Carry,1312.72,820.84,2023-05-10,2023-05-10,2023-05-10
+404,SPO-OUT-0404,Nivia Volleyball,Sports & Fitness,Outdoor Sports,Nivia,Future Retail Distribution,10156.9,8046.54,2024-05-07,2024-05-07,2024-05-07
+405,SPO-OUT-0405,MRF Badminton Set,Sports & Fitness,Outdoor Sports,MRF,Allcargo Supply Chain,2459.28,1954.15,2025-10-11,2025-10-11,2025-10-11
+406,SPO-OUT-0406,MRF Volleyball 1,Sports & Fitness,Outdoor Sports,MRF,Mahindra Logistics,8019.6,5364.14,2023-11-29,2023-11-29,2023-11-29
+407,SPO-OUT-0407,Decathlon Basketball 1,Sports & Fitness,Outdoor Sports,Decathlon,Ingram Micro India,7888.84,5265.01,2025-02-10,2025-02-10,2025-02-10
+408,SPO-IND-0408,SG Ludo Set,Sports & Fitness,Indoor Games,SG,Metro Cash and Carry,2553.48,2164.79,2021-09-26,2021-09-26,2021-09-26
+409,SPO-IND-0409,MRF Table Tennis Set,Sports & Fitness,Indoor Games,MRF,Aditya Birla Distribution,5198.38,4034.51,2022-08-13,2022-08-13,2022-08-13
+410,SPO-IND-0410,Nike Chess Board,Sports & Fitness,Indoor Games,Nike,Redington India,3953.41,2979.23,2025-10-10,2025-10-10,2025-10-10
+411,SPO-IND-0411,Yonex Table Tennis Set,Sports & Fitness,Indoor Games,Yonex,Reliance Retail Supply Chain,1271.34,1010.13,2026-06-04,2026-06-04,2026-06-04
+412,SPO-IND-0412,Yonex Ludo Set,Sports & Fitness,Indoor Games,Yonex,Blue Dart Distribution,444.91,269.18,2023-02-19,2023-02-19,2023-02-19
+413,SPO-IND-0413,Reebok Ludo Set,Sports & Fitness,Indoor Games,Reebok,Blue Dart Distribution,13229.94,9696.81,2023-12-31,2023-12-31,2023-12-31
+414,SPO-IND-0414,Adidas Table Tennis Set,Sports & Fitness,Indoor Games,Adidas,Redington India,1891.27,1535.41,2025-04-22,2025-04-22,2025-04-22
+415,SPO-IND-0415,Adidas Carrom Board,Sports & Fitness,Indoor Games,Adidas,Delhivery Fulfillment,746.94,468.75,2023-09-07,2023-09-07,2023-09-07
+416,SPO-IND-0416,Decathlon Table Tennis Set,Sports & Fitness,Indoor Games,Decathlon,Allcargo Supply Chain,3098.8,1929.65,2023-02-09,2023-02-09,2023-02-09
+417,SPO-IND-0417,Yonex Carrom Board,Sports & Fitness,Indoor Games,Yonex,Ecom Express Supply Chain,14609.18,9653.19,2026-04-05,2026-04-05,2026-04-05
+418,SPO-IND-0418,Nike Table Tennis Set,Sports & Fitness,Indoor Games,Nike,Metro Cash and Carry,8803.58,5612.67,2026-04-16,2026-04-16,2026-04-16
+419,SPO-YOG-0419,Reebok Yoga Strap,Sports & Fitness,Yoga Accessories,Reebok,Ecom Express Supply Chain,2359.24,1741.36,2024-10-17,2024-10-17,2024-10-17
+420,SPO-YOG-0420,Yonex Yoga Block,Sports & Fitness,Yoga Accessories,Yonex,Ecom Express Supply Chain,8140.83,5969.74,2023-05-01,2023-05-01,2023-05-01
+421,SPO-YOG-0421,Decathlon Yoga Mat,Sports & Fitness,Yoga Accessories,Decathlon,Reliance Retail Supply Chain,10294.29,6618.48,2026-03-26,2026-03-26,2026-03-26
+422,SPO-YOG-0422,Cosco Yoga Strap,Sports & Fitness,Yoga Accessories,Cosco,Allcargo Supply Chain,13300.12,10816.74,2026-05-27,2026-05-27,2026-05-27
+423,SPO-YOG-0423,Yonex Meditation Cushion,Sports & Fitness,Yoga Accessories,Yonex,Future Retail Distribution,11297.01,7961.47,2026-05-30,2026-05-30,2026-05-30
+424,SPO-YOG-0424,Puma Yoga Strap,Sports & Fitness,Yoga Accessories,Puma,Delhivery Fulfillment,4651.39,3487.62,2024-09-03,2024-09-03,2024-09-03
+425,SPO-YOG-0425,MRF Meditation Cushion,Sports & Fitness,Yoga Accessories,MRF,Future Retail Distribution,14365.52,9679.21,2021-12-09,2021-12-09,2021-12-09
+426,SPO-YOG-0426,Reebok Yoga Strap 1,Sports & Fitness,Yoga Accessories,Reebok,Safexpress Logistics,8675.95,6973.76,2025-12-05,2025-12-05,2025-12-05
+427,SPO-YOG-0427,SG Yoga Strap,Sports & Fitness,Yoga Accessories,SG,Ingram Micro India,5654.99,4286.8,2024-09-04,2024-09-04,2024-09-04
+428,SPO-YOG-0428,Decathlon Yoga Block,Sports & Fitness,Yoga Accessories,Decathlon,Allcargo Supply Chain,12790.06,9233.99,2025-01-23,2025-01-23,2025-01-23
+429,SPO-YOG-0429,SG Yoga Strap 1,Sports & Fitness,Yoga Accessories,SG,Tata Consumer Distribution,9598.38,7179.08,2024-04-20,2024-04-20,2024-04-20
+430,SPO-CYC-0430,Cosco Bike Gloves,Sports & Fitness,Cycling,Cosco,Blue Dart Distribution,10495.35,8049.59,2024-03-06,2024-03-06,2024-03-06
+431,SPO-CYC-0431,Puma Mountain Bike,Sports & Fitness,Cycling,Puma,Delhivery Fulfillment,6594.6,4805.38,2021-11-03,2021-11-03,2021-11-03
+432,SPO-CYC-0432,MRF Mountain Bike,Sports & Fitness,Cycling,MRF,Redington India,4330.74,2683.5,2024-11-09,2024-11-09,2024-11-09
+433,SPO-CYC-0433,Decathlon Bike Gloves,Sports & Fitness,Cycling,Decathlon,Reliance Retail Supply Chain,1093.12,707.53,2024-12-15,2024-12-15,2024-12-15
+434,SPO-CYC-0434,Yonex Cycling Helmet,Sports & Fitness,Cycling,Yonex,Metro Cash and Carry,5738.65,4276.99,2025-01-28,2025-01-28,2025-01-28
+435,SPO-CYC-0435,Reebok Bike Gloves,Sports & Fitness,Cycling,Reebok,Snowman Logistics,7117.34,5403.97,2023-05-14,2023-05-14,2023-05-14
+436,SPO-CYC-0436,Reebok Bike Gloves 1,Sports & Fitness,Cycling,Reebok,Allcargo Supply Chain,9429.58,7090.49,2021-08-17,2021-08-17,2021-08-17
+437,SPO-CYC-0437,Reebok Bike Gloves 2,Sports & Fitness,Cycling,Reebok,Delhivery Fulfillment,9498.22,7856.56,2024-06-11,2024-06-11,2024-06-11
+438,SPO-CYC-0438,Nivia Mountain Bike,Sports & Fitness,Cycling,Nivia,Metro Cash and Carry,925.5,711.39,2023-07-26,2023-07-26,2023-07-26
+249,SPO-CYC-0439,MRF Mountain Bike 1,Sports & Fitness,Cycling,MRF,Redington India,5247.3,3814.59,2026-02-01,2026-02-01,2026-02-01
+440,SPO-CYC-0440,Nivia Cycling Helmet,Sports & Fitness,Cycling,Nivia,Future Retail Distribution,1320.78,845.08,2021-10-01,2021-10-01,2021-10-01
+441,SPO-RUN-0441,Decathlon Hydration Belt,Sports & Fitness,Running Gear,Decathlon,Ingram Micro India,699.54,426.88,2024-04-04,2024-04-04,2024-04-04
+442,SPO-RUN-0442,Adidas Running Shorts,Sports & Fitness,Running Gear,Adidas,Tata Consumer Distribution,10382.44,7890.39,2024-04-18,2024-04-18,2024-04-18
+443,SPO-RUN-0443,Nike Running Shorts,Sports & Fitness,Running Gear,Nike,Snowman Logistics,11719.8,7650.01,2023-06-25,2023-06-25,2023-06-25
+444,SPO-RUN-0444,SG Hydration Belt,Sports & Fitness,Running Gear,SG,Snowman Logistics,3746.6,2998.93,2024-09-30,2024-09-30,2024-09-30
+445,SPO-RUN-0445,Nike Sports Watch,Sports & Fitness,Running Gear,Nike,Safexpress Logistics,11121.9,6883.91,2023-02-16,2023-02-16,2023-02-16
+446,SPO-RUN-0446,MRF Running Shoes,Sports & Fitness,Running Gear,MRF,Blue Dart Distribution,11892.01,7402.06,2022-12-27,2022-12-27,2022-12-27
+447,SPO-RUN-0447,Adidas Sports Watch,Sports & Fitness,Running Gear,Adidas,Tata Consumer Distribution,2261.6,1493.88,2024-02-05,2024-02-05,2024-02-05
+448,SPO-RUN-0448,Yonex Running Shoes,Sports & Fitness,Running Gear,Yonex,Snowman Logistics,3154.77,2417.16,2022-01-20,2022-01-20,2022-01-20
+449,SPO-RUN-0449,SG Sports Watch,Sports & Fitness,Running Gear,SG,Delhivery Fulfillment,11467.71,9609.66,2022-11-03,2022-11-03,2022-11-03
+450,SPO-RUN-0450,Puma Running Shoes,Sports & Fitness,Running Gear,Puma,TVS Supply Chain Solutions,5471.51,4208.79,2021-10-31,2021-10-31,2021-10-31
+451,SPO-RUN-0451,Cosco Hydration Belt,Sports & Fitness,Running Gear,Cosco,TVS Supply Chain Solutions,3031.73,2485.11,2024-12-11,2024-12-11,2024-12-11
+452,SPO-CRI-0452,Yonex Batting Gloves,Sports & Fitness,Cricket Equipment,Yonex,TVS Supply Chain Solutions,6723.83,4595.93,2023-08-17,2023-08-17,2023-08-17
+453,SPO-CRI-0453,Yonex Helmet Pro,Sports & Fitness,Cricket Equipment,Yonex,Ecom Express Supply Chain,14659.7,11595.43,2025-06-25,2025-06-25,2025-06-25
+454,SPO-CRI-0454,MRF Cricket Kit,Sports & Fitness,Cricket Equipment,MRF,Aditya Birla Distribution,13459.86,10971.71,2021-12-07,2021-12-07,2021-12-07
+455,SPO-CRI-0455,Cosco Batting Gloves,Sports & Fitness,Cricket Equipment,Cosco,Mahindra Logistics,8314.13,6450.6,2024-06-03,2024-06-03,2024-06-03
+456,SPO-CRI-0456,Cosco Batting Gloves 1,Sports & Fitness,Cricket Equipment,Cosco,Future Retail Distribution,6292.81,5049.07,2022-08-01,2022-08-01,2022-08-01
+457,SPO-CRI-0457,Puma Cricket Kit,Sports & Fitness,Cricket Equipment,Puma,TVS Supply Chain Solutions,1690.59,1134.9,2022-07-07,2022-07-07,2022-07-07
+458,SPO-CRI-0458,SG English Willow Bat,Sports & Fitness,Cricket Equipment,SG,Ecom Express Supply Chain,5790.8,4731.03,2024-07-04,2024-07-04,2024-07-04
+459,SPO-CRI-0459,Nivia Cricket Kit,Sports & Fitness,Cricket Equipment,Nivia,Snowman Logistics,10770.46,7113.24,2021-11-08,2021-11-08,2021-11-08
+460,SPO-CRI-0460,Adidas English Willow Bat,Sports & Fitness,Cricket Equipment,Adidas,Future Retail Distribution,3749.99,2733.85,2023-06-14,2023-06-14,2023-06-14
+461,SPO-CRI-0461,Cosco Helmet Pro,Sports & Fitness,Cricket Equipment,Cosco,TVS Supply Chain Solutions,4091.36,3072.05,2021-08-21,2021-08-21,2021-08-21
+462,SPO-CRI-0462,Decathlon Batting Gloves,Sports & Fitness,Cricket Equipment,Decathlon,Aditya Birla Distribution,4047.25,3223.63,2021-12-22,2021-12-22,2021-12-22
+463,BEA-SKI-0463,Himalaya Sunscreen SPF50,Beauty & Personal Care,Skincare,Himalaya,Aditya Birla Distribution,3027.69,2108.05,2021-10-24,2021-10-24,2021-10-24
+464,BEA-SKI-0464,Nykaa Sunscreen SPF50,Beauty & Personal Care,Skincare,Nykaa,Ingram Micro India,1402.12,1096.12,2022-06-26,2022-06-26,2022-06-26
+465,BEA-SKI-0465,Ponds Sunscreen SPF50,Beauty & Personal Care,Skincare,Ponds,Future Retail Distribution,3210.88,2128.73,2025-04-05,2025-04-05,2025-04-05
+466,BEA-SKI-0466,Loreal Daily Moisturizer,Beauty & Personal Care,Skincare,Loreal,Delhivery Fulfillment,3328.79,2341.22,2025-08-20,2025-08-20,2025-08-20
+467,BEA-SKI-0467,Dove Aloe Vera Gel,Beauty & Personal Care,Skincare,Dove,Allcargo Supply Chain,1215.91,966.53,2024-01-19,2024-01-19,2024-01-19
+468,BEA-SKI-0468,Mamaearth Daily Moisturizer,Beauty & Personal Care,Skincare,Mamaearth,Aditya Birla Distribution,2261.8,1530.37,2022-07-24,2022-07-24,2022-07-24
+469,BEA-SKI-0469,Lakme Daily Moisturizer,Beauty & Personal Care,Skincare,Lakme,Ecom Express Supply Chain,3221.56,2083.25,2025-05-15,2025-05-15,2025-05-15
+470,BEA-SKI-0470,Mamaearth Vitamin C Face Wash,Beauty & Personal Care,Skincare,Mamaearth,Tata Consumer Distribution,299.13,189.56,2022-02-01,2022-02-01,2022-02-01
+471,BEA-SKI-0471,Nykaa Aloe Vera Gel,Beauty & Personal Care,Skincare,Nykaa,Safexpress Logistics,1587.11,1346.8,2024-11-07,2024-11-07,2024-11-07
+472,BEA-SKI-0472,Mamaearth Sunscreen SPF50,Beauty & Personal Care,Skincare,Mamaearth,Ecom Express Supply Chain,1329.59,1029.03,2025-12-07,2025-12-07,2025-12-07
+473,BEA-SKI-0473,Nykaa Sunscreen SPF50 1,Beauty & Personal Care,Skincare,Nykaa,Aditya Birla Distribution,1686.44,1278.54,2023-07-08,2023-07-08,2023-07-08
+474,BEA-HAI-0474,Nykaa Anti Hairfall Shampoo,Beauty & Personal Care,Haircare,Nykaa,Snowman Logistics,415.03,289.38,2025-09-01,2025-09-01,2025-09-01
+475,BEA-HAI-0475,Mamaearth Hair Serum,Beauty & Personal Care,Haircare,Mamaearth,Snowman Logistics,174.53,129.62,2024-10-22,2024-10-22,2024-10-22
+476,BEA-HAI-0476,Himalaya Hair Oil,Beauty & Personal Care,Haircare,Himalaya,Aditya Birla Distribution,416.87,282.48,2025-09-18,2025-09-18,2025-09-18
+477,BEA-HAI-0477,Mamaearth Anti Hairfall Shampoo,Beauty & Personal Care,Haircare,Mamaearth,Ingram Micro India,3049.63,2013.88,2023-10-10,2023-10-10,2023-10-10
+478,BEA-HAI-0478,Dove Anti Hairfall Shampoo,Beauty & Personal Care,Haircare,Dove,Mahindra Logistics,3096.63,2329.5,2025-04-17,2025-04-17,2025-04-17
+479,BEA-HAI-0479,Nivea Anti Hairfall Shampoo,Beauty & Personal Care,Haircare,Nivea,TVS Supply Chain Solutions,1710.84,1425.16,2024-09-30,2024-09-30,2024-09-30
+480,BEA-HAI-0480,Nykaa Conditioner Plus,Beauty & Personal Care,Haircare,Nykaa,Blue Dart Distribution,2720.24,2264.51,2022-11-08,2022-11-08,2022-11-08
+481,BEA-HAI-0481,Himalaya Anti Hairfall Shampoo,Beauty & Personal Care,Haircare,Himalaya,Redington India,3729.5,2516.74,2022-04-11,2022-04-11,2022-04-11
+482,BEA-HAI-0482,Ponds Conditioner Plus,Beauty & Personal Care,Haircare,Ponds,Snowman Logistics,946.58,579.78,2022-01-01,2022-01-01,2022-01-01
+483,BEA-HAI-0483,Himalaya Hair Serum,Beauty & Personal Care,Haircare,Himalaya,Metro Cash and Carry,3078.18,1884.74,2023-07-16,2023-07-16,2023-07-16
+484,BEA-HAI-0484,Lakme Conditioner Plus,Beauty & Personal Care,Haircare,Lakme,Aditya Birla Distribution,2247.83,1814.99,2021-07-01,2021-07-01,2021-07-01
+485,BEA-COS-0485,Maybelline Foundation Cream,Beauty & Personal Care,Cosmetics,Maybelline,Future Retail Distribution,2123.68,1634.27,2026-01-07,2026-01-07,2026-01-07
+486,BEA-COS-0486,Loreal Foundation Cream,Beauty & Personal Care,Cosmetics,Loreal,Allcargo Supply Chain,908.37,582.94,2024-11-12,2024-11-12,2024-11-12
+487,BEA-COS-0487,Nivea Eye Liner,Beauty & Personal Care,Cosmetics,Nivea,Metro Cash and Carry,3755.14,2787.44,2022-04-03,2022-04-03,2022-04-03
+488,BEA-COS-0488,Loreal Compact Powder,Beauty & Personal Care,Cosmetics,Loreal,Reliance Retail Supply Chain,3688.32,2488.03,2024-12-23,2024-12-23,2024-12-23
+489,BEA-COS-0489,Himalaya Matte Lipstick,Beauty & Personal Care,Cosmetics,Himalaya,Snowman Logistics,156.36,131.95,2024-04-06,2024-04-06,2024-04-06
+490,BEA-COS-0490,Dove Eye Liner,Beauty & Personal Care,Cosmetics,Dove,Safexpress Logistics,552.44,383.39,2021-09-27,2021-09-27,2021-09-27
+491,BEA-COS-0491,Dove Matte Lipstick,Beauty & Personal Care,Cosmetics,Dove,Ingram Micro India,1362.13,939.33,2021-12-10,2021-12-10,2021-12-10
+492,BEA-COS-0492,Ponds Compact Powder,Beauty & Personal Care,Cosmetics,Ponds,Snowman Logistics,3707.57,2859.51,2026-06-03,2026-06-03,2026-06-03
+493,BEA-COS-0493,Lakme Compact Powder,Beauty & Personal Care,Cosmetics,Lakme,Snowman Logistics,1024.82,720.56,2024-10-26,2024-10-26,2024-10-26
+494,BEA-COS-0494,Himalaya Eye Liner,Beauty & Personal Care,Cosmetics,Himalaya,Tata Consumer Distribution,1988.16,1408.94,2021-08-07,2021-08-07,2021-08-07
+495,BEA-COS-0495,Biotique Matte Lipstick,Beauty & Personal Care,Cosmetics,Biotique,Future Retail Distribution,2031.82,1382.6,2026-02-02,2026-02-02,2026-02-02
+496,BEA-FRA-0496,Nykaa Deodorant,Beauty & Personal Care,Fragrances,Nykaa,Safexpress Logistics,556.76,425.04,2023-03-13,2023-03-13,2023-03-13
+497,BEA-FRA-0497,Ponds Body Mist,Beauty & Personal Care,Fragrances,Ponds,Ecom Express Supply Chain,512.9,393.54,2025-05-14,2025-05-14,2025-05-14
+498,BEA-FRA-0498,Maybelline Body Mist,Beauty & Personal Care,Fragrances,Maybelline,Blue Dart Distribution,1323.89,851.12,2022-12-14,2022-12-14,2022-12-14
+499,BEA-FRA-0499,Loreal Perfume Spray,Beauty & Personal Care,Fragrances,Loreal,Mahindra Logistics,3181.17,2001.38,2025-07-21,2025-07-21,2025-07-21
+500,BEA-FRA-0500,Lakme Deodorant,Beauty & Personal Care,Fragrances,Lakme,Redington India,2779.81,1674.8,2024-05-12,2024-05-12,2024-05-12
