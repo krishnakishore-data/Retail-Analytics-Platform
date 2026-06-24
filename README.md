@@ -228,7 +228,7 @@ python scripts/generate_retail_data.py validate
 
 ### Upcoming
 
-➡ Next Phase
+➡ Next Phase: 
 ⬜ Phase 2 - Azure Environment Setup
 - Azure Resource Group
 - Azure Data Lake Storage Gen2
