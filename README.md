@@ -139,11 +139,11 @@ Implemented realistic source-system data quality issues directly during dataset 
 
 ### Phase 1.5 - Sprint 4 Completed
 
-#### Code Refactoring & Modularization
+### Code Refactoring & Modularization
 
 Project structure refactored into reusable modules to improve maintainability, readability, and production readiness.
 
-#### Project Structure Enhancements
+### Project Structure Enhancements
 
 * Centralized configuration framework
 * Utility and helper function modularization
@@ -155,7 +155,7 @@ Project structure refactored into reusable modules to improve maintainability, r
 * Project structure cleanup
 * Documentation updates
 
-#### New Modules
+### New Modules
 
 * `scripts/config/constants.py`
 * `scripts/utils/helpers.py`
@@ -165,14 +165,14 @@ Project structure refactored into reusable modules to improve maintainability, r
 * `scripts/logging_framework/logger.py`
 * `scripts/run_validations.py`
 
-#### Logging Framework
+### Logging Framework
 
 * Pipeline execution logging
 * Centralized log management
 * `pipeline.log` generation
 * Execution monitoring support
 
-#### Data Quality Reporting Enhancements
+### Data Quality Reporting Enhancements
 
 * Dataset-level quality metrics
 * Quality score calculation
@@ -180,7 +180,7 @@ Project structure refactored into reusable modules to improve maintainability, r
 * Overall platform quality score
 * Timestamped quality reports
 
-#### Validation Framework
+### Validation Framework
 
 Business Validations
 
