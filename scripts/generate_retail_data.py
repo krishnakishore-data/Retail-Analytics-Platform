@@ -2,10 +2,16 @@ import pandas as pd
 import numpy as np
 import random
 import sys
-import json
 from faker import Faker
 from pathlib import Path
 from datetime import datetime, timedelta
+
+from watermark.watermark_manager import *
+from utils.helpers import *
+from config.constants import *
+from config.data_quality_rules import *
+from logging_framework.logger import logger
+
 
 fake = Faker("en_IN")
 
@@ -19,758 +25,16 @@ MASTER_DIR.mkdir(parents=True, exist_ok=True)
 TRANSACTION_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-NUM_CUSTOMERS = 5000
-NUM_PRODUCTS = 500
-NUM_STORES = 50
-
-INITIAL_ORDERS = 50000
-MIN_INCREMENTAL_ORDERS = 3000
-MAX_INCREMENTAL_ORDERS = 8000
-
-MIN_ITEMS_PER_ORDER = 1
-MAX_ITEMS_PER_ORDER = 5
-
-# business dictionaries 
-
-PRODUCT_HIERARCHY = {
-
-    "Electronics": [
-        "Mobile Phone",
-        "Laptop",
-        "Tablet",
-        "Smart Watch",
-        "Headphone",
-        "Accessorie",
-        "Camera",
-        "Gaming Console"
-    ],
-
-    "Clothing": [
-        "Men T-Shirts",
-        "Men Shirts",
-        "Men Jeans",
-        "Men Trousers",
-        "Men Jackets",
-        "Men Ethnic Wear",
-        "Men Footwear",
-        "Men Sportswear",
-
-        "Women Dresses",
-        "Tops",
-        "Women Jeans",
-        "Kurtis",
-        "Sarees",
-        "Women Jackets",
-        "Women Footwear",
-        "Women Activewear",
-
-        "Kids Clothing",
-        "Kids Footwear",
-        "Kids Winter Wear"
-    ],
-
-    "Home & Kitchen": [
-        "Furniture",
-        "Cookware",
-        "Kitchen Appliances",
-        "Home Decor",
-        "Storage & Organization",
-        "Bedding",
-        "Dining Essentials",
-        "Cleaning Supplies"
-    ],
-
-    "Sports & Fitness": [
-        "Fitness Equipment",
-        "Outdoor Sports",
-        "Indoor Games",
-        "Yoga Accessories",
-        "Cycling",
-        "Running Gear",
-        "Cricket Equipment"
-    ],
-
-    "Beauty & Personal Care": [
-        "Skincare",
-        "Haircare",
-        "Cosmetics",
-        "Fragrances",
-        "Personal Hygiene",
-        "Men Grooming",
-        "Beauty Tools"
-    ]
-}
-
-PRODUCT_MODELS = {
-
-    # Electronics
-
-    "Mobile Phones": [
-        "Galaxy M35","Galaxy S24","iPhone 15","iPhone 16",
-        "OnePlus 13","Nord CE4","Redmi Note 14","Vivo V50",
-        "Realme GT","Pixel 9"
-    ],
-
-    "Laptops": [
-        "Inspiron 15","Pavilion 14","ThinkPad E14",
-        "Vivobook 15","Swift Go","MacBook Air M4",
-        "IdeaPad Slim","Zenbook 14","Latitude 5440",
-        "Aspire Lite"
-    ],
-
-    "Tablets": [
-        "Galaxy Tab S9","iPad Air","Pad 7",
-        "Tab M10","MatePad","Redmi Pad Pro"
-    ],
-
-    "Smart Watches": [
-        "Watch Ultra","Watch Fit","Fit Pro",
-        "Pulse Max","Active Watch","Smart Watch X"
-    ],
-
-    "Headphones": [
-        "Rockerz 255","AirPods Pro","WH1000XM5",
-        "Buds Air","Noise Pods","Neckband X"
-    ],
-
-    "Accessories": [
-        "Power Bank","Fast Charger","USB Hub",
-        "Wireless Charger","Bluetooth Adapter",
-        "Laptop Sleeve"
-    ],
-
-    "Cameras": [
-        "Alpha A6700","EOS R10","D7500",
-        "Insta360 X4","Hero 13","Mirrorless Pro"
-    ],
-
-    "Gaming Consoles": [
-        "PlayStation 5","Xbox Series X",
-        "Nintendo Switch","Gaming Console Pro"
-    ],
-
-    # Clothing - Men
-
-    "Men T-Shirts": [
-        "Crew Neck Tee","Graphic Tee",
-        "Polo Tee","Athletic Tee","Solid Tee"
-    ],
-
-    "Men Shirts": [
-        "Formal Shirt","Casual Shirt",
-        "Linen Shirt","Slim Fit Shirt",
-        "Checked Shirt"
-    ],
-
-    "Men Jeans": [
-        "Slim Fit Jeans","Regular Fit Jeans",
-        "Stretch Jeans","Skinny Jeans"
-    ],
-
-    "Men Trousers": [
-        "Formal Trouser","Chino Pants",
-        "Cotton Trouser","Stretch Trouser"
-    ],
-
-    "Men Jackets": [
-        "Bomber Jacket","Denim Jacket",
-        "Winter Jacket","Hooded Jacket"
-    ],
-
-    "Men Ethnic Wear": [
-        "Kurta Set","Sherwani",
-        "Ethnic Kurta","Nehru Jacket"
-    ],
-
-    "Men Footwear": [
-        "Running Shoes","Formal Shoes",
-        "Sneakers","Sports Shoes",
-        "Slip On Shoes"
-    ],
-
-    "Men Sportswear": [
-        "Track Pant","Training Shorts",
-        "Sports T-Shirt","Gym Vest"
-    ],
-
-    # Clothing - Women
-
-    "Women Dresses": [
-        "Summer Dress","Floral Dress",
-        "Party Dress","Maxi Dress"
-    ],
-
-    "Women Tops": [
-        "Casual Top","Printed Top",
-        "Crop Top","Cotton Top"
-    ],
-
-    "Women Jeans": [
-        "Skinny Jeans","Mom Fit Jeans",
-        "High Rise Jeans","Regular Jeans"
-    ],
-
-    "Women Kurtis": [
-        "Cotton Kurti","Printed Kurti",
-        "Anarkali Kurti","Straight Kurti"
-    ],
-
-    "Women Sarees": [
-        "Silk Saree","Cotton Saree",
-        "Designer Saree","Festive Saree"
-    ],
-
-    "Women Jackets": [
-        "Winter Jacket","Denim Jacket",
-        "Long Coat","Casual Jacket"
-    ],
-
-    "Women Footwear": [
-        "Sandals","Heels",
-        "Flats","Sports Shoes"
-    ],
-
-    "Women Activewear": [
-        "Yoga Pants","Sports Bra",
-        "Training Tights","Workout Top"
-    ],
-
-    # Kids
-
-    "Kids Clothing": [
-        "Kids T-Shirt","Kids Shirt",
-        "Kids Shorts","Kids Jeans"
-    ],
-
-    "Kids Footwear": [
-        "Kids Sneakers","Kids Sandals",
-        "Kids School Shoes"
-    ],
-
-    "Kids Winter Wear": [
-        "Kids Sweater","Kids Jacket",
-        "Kids Hoodie"
-    ],
-
-    # Home & Kitchen
-
-    "Furniture": [
-        "Office Chair","Dining Table",
-        "Sofa Set","Study Table"
-    ],
-
-    "Cookware": [
-        "Deluxe Cookware Set","Pressure Cooker",
-        "Non Stick Pan","Steel Cookware Set"
-    ],
-
-    "Kitchen Appliances": [
-        "Mixer Grinder","Air Fryer",
-        "Microwave Oven","Induction Cooktop"
-    ],
-
-    "Home Decor": [
-        "Wall Art","Decor Lamp",
-        "Indoor Plant Pot","Photo Frame"
-    ],
-
-    "Storage & Organization": [
-        "Storage Box","Wardrobe Organizer",
-        "Drawer Unit","Shoe Rack"
-    ],
-
-    "Bedding": [
-        "Bedsheet Set","Comforter",
-        "Blanket","Pillow Set"
-    ],
-
-    "Dining Essentials": [
-        "Dinner Set","Serving Bowl",
-        "Cutlery Set","Glass Set"
-    ],
-
-    "Cleaning Supplies": [
-        "Floor Cleaner","Cleaning Kit",
-        "Mop Set","Surface Cleaner"
-    ],
-
-    # Sports & Fitness
-
-    "Fitness Equipment": [
-        "Dumbbell Set","Exercise Bike",
-        "Treadmill","Resistance Bands"
-    ],
-
-    "Outdoor Sports": [
-        "Football","Basketball",
-        "Volleyball","Badminton Set"
-    ],
-
-    "Indoor Games": [
-        "Chess Board","Carrom Board",
-        "Table Tennis Set","Ludo Set"
-    ],
-
-    "Yoga Accessories": [
-        "Yoga Mat","Yoga Block",
-        "Yoga Strap","Meditation Cushion"
-    ],
-
-    "Cycling": [
-        "Mountain Bike","Road Bike",
-        "Cycling Helmet","Bike Gloves"
-    ],
-
-    "Running Gear": [
-        "Running Shoes","Running Shorts",
-        "Sports Watch","Hydration Belt"
-    ],
-
-    "Cricket Equipment": [
-        "English Willow Bat","Cricket Kit",
-        "Batting Gloves","Helmet Pro"
-    ],
-
-    # Beauty & Personal Care
-
-    "Skincare": [
-        "Vitamin C Face Wash",
-        "Daily Moisturizer",
-        "Sunscreen SPF50",
-        "Aloe Vera Gel"
-    ],
-
-    "Haircare": [
-        "Anti Hairfall Shampoo",
-        "Hair Serum",
-        "Hair Oil",
-        "Conditioner Plus"
-    ],
-
-    "Cosmetics": [
-        "Matte Lipstick",
-        "Foundation Cream",
-        "Compact Powder",
-        "Eye Liner"
-    ],
-
-    "Fragrances": [
-        "Body Mist",
-        "Perfume Spray",
-        "Deodorant",
-        "Luxury Perfume"
-    ],
-
-    "Personal Hygiene": [
-        "Hand Wash",
-        "Body Wash",
-        "Sanitizer",
-        "Soap Bar"
-    ],
-
-    "Men Grooming": [
-        "Beard Oil",
-        "Shaving Kit",
-        "Face Scrub",
-        "Trimmer Kit"
-    ],
-
-    "Beauty Tools": [
-        "Hair Dryer",
-        "Straightener",
-        "Makeup Brush Set",
-        "Facial Roller"
-    ]
-}
-
-#supporting lists
-STORE_TYPES = [
-    "Mall",
-    "Standalone",
-    "Online Fulfillment",
-    "Airport"
-]
-
-CUSTOMER_SEGMENTS = [
-    "Bronze",
-    "Silver",
-    "Gold",
-    "Platinum"
-]
-
-PAYMENT_METHODS = [
-    "UPI",
-    "Credit Card",
-    "Debit Card",
-    "Net Banking",
-    "Cash"
-]
-
-PAYMENT_METHOD_WEIGHTS = {
-    "UPI": 55,
-    "Credit Card": 18,
-    "Debit Card": 15,
-    "Net Banking": 8,
-    "Cash": 4
-}
-
-INVALID_PAYMENT_METHODS = [
-    "Crypto",
-    "Cheque",
-    "Voucher",
-    "WalletX",
-    "Test"
-]
-
-DISCOUNTS = [
-    0.00,
-    0.05,
-    0.10,
-    0.15,
-    0.20,
-    0.25,
-    0.30
-]
+def initialize_project():
+
+    LOG_DIR.mkdir(
+        exist_ok=True
+    )
 
 # ==========================================
-# DATA QUALITY SIMULATION CONFIGURATION
+# CUSTOMER GENERATION
 # ==========================================
 
-DATA_QUALITY_RULES = {
-
-    # Customer Issues
-    "null_email_pct": 0.02,
-    "duplicate_phone_pct": 0.01,
-    "missing_city_pct": 0.01,
-
-    # Product Issues
-    "negative_price_pct": 0.005,
-    "duplicate_product_id_pct": 0.002,
-
-    # Order Issues
-    "invalid_payment_method_pct": 0.01,
-    "future_order_date_pct": 0.005,
-    "missing_customer_id_pct": 0.005,
-
-    # Order Item Issues
-    "negative_quantity_pct": 0.005,
-    "invalid_product_id_pct": 0.005
-}
-
-def get_dq_sample_size(total_records, percentage):
-
-    return max(1,int(total_records * percentage))
-
-EMAIL_DOMAINS = [
-    "gmail.com",
-    "yahoo.com",
-    "outlook.com",
-    "hotmail.com"
-]
-
-LAST_NAMES = [
-    "Sharma",
-    "Reddy",
-    "Patel",
-    "Gupta",
-    "Singh",
-    "Verma",
-    "Rao",
-    "Nair",
-    "Iyer",
-    "Agarwal",
-    "Jain",
-    "Yadav",
-    "Mishra",
-    "Pandey",
-    "Kumar",
-    "Das",
-    "Mehta",
-    "Choudhary",
-    "Joshi",
-    "Kapoor",
-    "Bhat",
-    "Kulkarni",
-    "Pillai",
-    "Shetty",
-    "Chatterjee"
-]
-
-MALE_FIRST_NAMES = [
-"Rahul","Arjun","Vikram","Krishna","Sai",
-"Karthik","Pranav","Aditya","Akash","Rohit",
-"Abhishek","Ankit","Amit","Sandeep","Naveen",
-"Harsha","Varun","Tarun","Manoj","Rajesh",
-"Vivek","Deepak","Suresh","Ramesh","Ganesh",
-"Surya","Mahesh","Nikhil","Ashwin","Ajay",
-"Vijay","Raghav","Mohan","Lokesh","Naresh",
-"Vinay","Yash","Arnav","Dhruv","Shreyas",
-"Tejas","Ritik","Kunal","Pavan","Srinivas",
-"Balaji","Madhav","Anand","Shiva","Vamsi",
-"Satish","Prakash","Bhanu","Chandra","Rishi",
-"Pradeep","Ranjith","Gokul","Dinesh","Murali",
-"Jagadeesh","Kiran","Santosh","Ravindra","Rohit",
-"Rakesh","Siddharth","Uday","Venkat","Yogesh",
-"Zubair","Imran","Faizan","Ayaan","Rehan"
-]
-
-FEMALE_FIRST_NAMES = [
-"Priya","Ananya","Sneha","Pooja","Lakshmi",
-"Divya","Meera","Kavya","Aishwarya","Nandini",
-"Deepika","Shreya","Neha","Ritu","Swathi",
-"Harika","Bhavya","Sravani","Keerthana","Anusha",
-"Madhuri","Jyothi","Pallavi","Sushmita","Rashmi",
-"Preethi","Vaishnavi","Sowmya","Monika","Komal",
-"Ritika","Khushi","Ishita","Diya","Aditi",
-"Shruti","Pavithra","Amrutha","Chandana","Anjali",
-"Pragya","Rani","Mounika","Geetha","Sarika",
-"Sangeetha","Padma","Vani","Uma","Revathi",
-"Reshma","Niharika","Tanya","Madhavi","Manasa",
-"Anupama","Archana","Bindu","Harini","Kalyani",
-"Navya","Sanjana","Trisha","Yamini","Zara",
-"Farah","Ayesha","Sana","Nazia","Hina",
-"Rekha","Latha","Bhargavi","Tejaswini","Indu"
-]
-
-CITY_STATE_MAP = {
-
-    "Mumbai":"Maharashtra",
-    "Pune":"Maharashtra",
-    "Nagpur":"Maharashtra",
-    "Nashik":"Maharashtra",
-    "Aurangabad":"Maharashtra",
-
-    "Hyderabad":"Telangana",
-    "Warangal":"Telangana",
-    "Karimnagar":"Telangana",
-
-    "Bangalore":"Karnataka",
-    "Mysore":"Karnataka",
-    "Hubli":"Karnataka",
-    "Mangalore":"Karnataka",
-
-    "Chennai":"Tamil Nadu",
-    "Coimbatore":"Tamil Nadu",
-    "Madurai":"Tamil Nadu",
-    "Salem":"Tamil Nadu",
-
-    "Lucknow":"Uttar Pradesh",
-    "Kanpur":"Uttar Pradesh",
-    "Agra":"Uttar Pradesh",
-    "Varanasi":"Uttar Pradesh",
-
-    "Delhi":"Delhi",
-    "New Delhi":"Delhi",
-
-    "Jaipur":"Rajasthan",
-    "Udaipur":"Rajasthan",
-
-    "Ahmedabad":"Gujarat",
-    "Surat":"Gujarat",
-    "Vadodara":"Gujarat",
-
-    "Kolkata":"West Bengal",
-    "Howrah":"West Bengal",
-
-    "Bhopal":"Madhya Pradesh",
-    "Indore":"Madhya Pradesh",
-
-    "Patna":"Bihar",
-    "Ranchi":"Jharkhand",
-
-    "Bhubaneswar":"Odisha",
-    "Cuttack":"Odisha",
-
-    "Kochi":"Kerala",
-    "Thiruvananthapuram":"Kerala",
-
-    "Visakhapatnam":"Andhra Pradesh",
-    "Vijayawada":"Andhra Pradesh"
-}
-
-CATEGORY_BRANDS = {
-
-    "Electronics": [
-        "Samsung","Apple","OnePlus","Xiaomi",
-        "Realme","Oppo","Vivo","Lenovo",
-        "HP","Dell","Asus","Acer",
-        "Sony","LG","Boat"
-    ],
-
-    "Clothing": [
-        "Levis","Allen Solly","Peter England",
-        "Van Heusen","Louis Philippe",
-        "Wrogn","US Polo","Zara",
-        "H&M","Nike","Adidas",
-        "Puma","Roadster","Max",
-        "FabIndia"
-    ],
-
-    "Home & Kitchen": [
-        "Prestige","Pigeon","Butterfly",
-        "Hawkins","Ikea","Nilkamal",
-        "Godrej","Whirlpool",
-        "Philips","Bajaj"
-    ],
-
-    "Sports & Fitness": [
-        "Nike","Adidas","Puma",
-        "Reebok","Yonex",
-        "Cosco","Nivia",
-        "SG","MRF",
-        "Decathlon"
-    ],
-
-    "Beauty & Personal Care": [
-        "Lakme","Mamaearth",
-        "Biotique","Himalaya",
-        "Dove","Nivea",
-        "Loreal","Maybelline",
-        "Nykaa","Ponds"
-    ]
-}
-
-STORE_BRANDS = [
-    "RetailHub",
-    "SmartMart",
-    "UrbanCart",
-    "MegaStore",
-    "ShopSphere"
-]
-
-SUPPLIERS = [
-    "Reliance Retail Supply Chain",
-    "Tata Consumer Distribution",
-    "Aditya Birla Distribution",
-    "Metro Cash and Carry",
-    "Redington India",
-    "Ingram Micro India",
-    "TVS Supply Chain Solutions",
-    "Mahindra Logistics",
-    "Delhivery Fulfillment",
-    "Blue Dart Distribution",
-    "Ecom Express Supply Chain",
-    "Safexpress Logistics",
-    "Allcargo Supply Chain",
-    "Snowman Logistics",
-    "Future Retail Distribution"
-]
-
-#sku genertaor
-def generate_sku(category, subcategory, product_id):
-
-    category_code = {
-        "Electronics": "ELE",
-        "Clothing": "CLO",
-        "Home & Kitchen": "HOM",
-        "Sports & Fitness": "SPO",
-        "Beauty & Personal Care": "BEA"
-    }
-
-    subcategory_code = "".join(
-        word[:3].upper()
-        for word in subcategory.split()[:1]
-    )
-
-    return (
-        f"{category_code[category]}-"
-        f"{subcategory_code}-"
-        f"{str(product_id).zfill(4)}"
-    )
-
-#price generator
-def get_price_range(category):
-
-    ranges = {
-        "Electronics": (2000, 80000),
-        "Clothing": (300, 5000),
-        "Home & Kitchen": (500, 30000),
-        "Sports & Fitness": (200, 15000),
-        "Beauty & Personal Care": (100, 4000)
-    }
-
-    return ranges[category]
-
-#Weighted Order Status
-def get_order_status():
-
-    return random.choices(
-        population=[
-            "Delivered",
-            "Shipped",
-            "Processing",
-            "Cancelled",
-            "Returned"
-        ],
-        weights=[
-            75,
-            10,
-            8,
-            5,
-            2
-        ],
-        k=1
-    )[0]
-
-def get_payment_method():
-
-    return random.choices(
-        population=list(
-            PAYMENT_METHOD_WEIGHTS.keys()
-        ),
-        weights=list(
-            PAYMENT_METHOD_WEIGHTS.values()
-        ),
-        k=1
-    )[0]
-
-#helper functions
-def generate_order_timestamp():
-
-    start_date = datetime(
-        2024,
-        1,
-        1
-    )
-
-    end_date = datetime.now()
-
-    time_between = (
-        end_date - start_date
-    )
-
-    random_seconds = random.randint(
-        0,
-        int(time_between.total_seconds())
-    )
-
-    return (
-        start_date +
-        timedelta(
-            seconds=random_seconds
-        )
-    )
-
-def load_watermark(): #fetches the watermark.json file and displays load date
-
-    watermark_file = (LOG_DIR /"watermark.json")
-
-    if not watermark_file.exists():
-        return None
-
-    with open(watermark_file,"r") as f:
-
-        return json.load(f)
-
-def update_watermark(load_date):
-
-    watermark_file = (LOG_DIR /"watermark.json")
-
-    with open(watermark_file,"w") as f:
-
-        json.dump({"last_load_date":str(load_date)},f,indent=4)
-
-#generate_customers
 def generate_customers():
 
     customers = []
@@ -881,7 +145,8 @@ def generate_customers():
     #-------------------
     customers_df.to_csv(MASTER_DIR / "customers.csv",index=False)
 
-    print(f"Customers generated: {len(customers_df):,}")
+    #print(f"Customers generated: {len(customers_df):,}")
+    logger.info(f"Customers generated: {len(customers_df):,}")
 
 def generate_incremental_customers():
 
@@ -982,9 +247,13 @@ def generate_incremental_customers():
     updated_df = pd.concat([customers_df,incremental_df],ignore_index=True) #appends incremental file to master
     updated_df.to_csv(customers_file,index=False)
         
-    print(f"New Customers Generated: "f"{new_customer_count}")
+    #print(f"New Customers Generated: "f"{new_customer_count}")
+    logger.info(f"New Customers Generated: "f"{new_customer_count}")
     
-#generate products
+# ==========================================
+# PRODUCT GENERATION
+# ==========================================
+
 def generate_products():
 
     products = []
@@ -1158,7 +427,8 @@ def generate_products():
 
     products_df.to_csv(MASTER_DIR / "products.csv",index=False)
 
-    print(f"Products generated: "f"{len(products_df):,}")
+    #print(f"Products generated: "f"{len(products_df):,}")
+    logger.info(f"Products generated: {len(products_df):,}")
   
 #generate stores
 def generate_stores():
@@ -1262,10 +532,12 @@ def generate_stores():
         index=False
     )
 
-    print(
-        f"Stores generated: "
-        f"{len(stores_df):,}"
-    )
+    #print(f"Stores generated: "f"{len(stores_df):,}")
+    logger.info(f"Stores generated: "f"{len(stores_df):,}")
+
+# ==========================================
+# ORDER GENERATION
+# ==========================================
 
 def generate_incremental_orders():
 
@@ -1357,7 +629,8 @@ def generate_incremental_orders():
 
     updated_orders.to_csv(orders_file,index=False)
 
-    print(f"New Orders Generated: "f"{new_order_count:,}")
+    #print(f"New Orders Generated: "f"{new_order_count:,}")
+    logger.info(f"New Orders Generated: "f"{new_order_count:,}")
 
 def generate_incremental_order_items():
 
@@ -1466,155 +739,9 @@ def generate_incremental_order_items():
         index=False
     )
 
-    print(
-        f"New Order Items Generated: "
-        f"{len(incremental_items_df):,}"
-    )       
+    #print(f"New Order Items Generated: "f"{len(incremental_items_df):,}")
+    logger.info(f"New Order Items Generated: "f"{len(incremental_items_df):,}")       
 
-def run_validation():
-
-    customers_inc = pd.read_csv(MASTER_DIR /"customers_incremental.csv")
-
-    orders_inc = pd.read_csv(TRANSACTION_DIR /"orders_incremental.csv")
-
-    order_items_inc = pd.read_csv(TRANSACTION_DIR /"order_items_incremental.csv")
-
-    assert (customers_inc["customer_id"].isnull().sum()== 0)
-
-    assert (orders_inc["order_id"].is_unique)
-
-    assert (order_items_inc["order_item_id"].is_unique)
-
-    print("\nValidation Passed")
-
-def update_incremental_watermark():
-
-    watermark = (load_watermark())
-
-    last_load_date = (datetime.strptime(watermark["last_load_date"],"%Y-%m-%d").date())
-
-    next_load_date = (last_load_date+ timedelta(days=1))
-
-    update_watermark(next_load_date)
-
-    print(f"Watermark Updated: "f"{next_load_date}")
-
-def generate_data_quality_report():
-
-    customers_df = pd.read_csv(
-        MASTER_DIR / "customers.csv"
-    )
-
-    products_df = pd.read_csv(
-        MASTER_DIR / "products.csv"
-    )
-
-    orders_df = pd.read_csv(
-        TRANSACTION_DIR / "orders.csv"
-    )
-
-    order_items_df = pd.read_csv(
-        TRANSACTION_DIR / "order_items.csv"
-    )
-
-    null_emails = (
-        customers_df["email"]
-        .isna()
-        .sum()
-    )
-
-    duplicate_phones = (
-        customers_df["phone"]
-        .duplicated()
-        .sum()
-    )
-
-    missing_cities = (
-        customers_df["city"]
-        .isna()
-        .sum()
-    )
-
-    negative_prices = (
-        products_df["price"] < 0
-    ).sum()
-
-    duplicate_products = (
-        products_df["product_id"]
-        .duplicated()
-        .sum()
-    )
-
-    invalid_payments = (
-        ~orders_df["payment_method"]
-        .isin(PAYMENT_METHODS)
-    ).sum()
-
-    future_orders = (
-        pd.to_datetime(
-            orders_df["order_date"]
-        ).dt.date > datetime.today().date()
-    ).sum()
-
-    missing_customer_ids = (
-        orders_df["customer_id"]
-        .isna()
-        .sum()
-    )
-
-    negative_quantities = (
-        order_items_df["quantity"] < 0
-    ).sum()
-
-    valid_products = set(
-        products_df["product_id"]
-        .astype(str)
-    )
-
-    invalid_product_ids = (
-        ~order_items_df["product_id"]
-        .astype(str)
-        .isin(valid_products)
-    ).sum()
-
-    report = f"""
-    =================================
-    DATA QUALITY REPORT
-    =================================
-
-    Customers
-    ---------
-    Null Emails: {null_emails}
-    Duplicate Phones: {duplicate_phones}
-    Missing Cities: {missing_cities}
-
-    Products
-    --------
-    Negative Prices: {negative_prices}
-    Duplicate Product IDs: {duplicate_products}
-
-    Orders
-    ------
-    Invalid Payment Methods: {invalid_payments}
-    Future Order Dates: {future_orders}
-    Missing Customer IDs: {missing_customer_ids}
-
-    Order Items
-    -----------
-    Negative Quantities: {negative_quantities}
-    Invalid Product IDs: {invalid_product_ids}
-    """
-
-    report_file = LOG_DIR / "data_quality_report.txt"
-
-    with open(report_file, "w") as file:
-        file.write(report)
-
-    print(
-        "Data Quality Report Generated Successfully"
-    )
-
-#generate orders and items
 def generate_orders_and_items():
 
     customers_df = pd.read_csv(MASTER_DIR / "customers.csv")
@@ -1857,9 +984,285 @@ def generate_orders_and_items():
 
     order_items_df.to_csv(TRANSACTION_DIR /"order_items.csv",index=False)
 
-    print(f"Orders generated: "f"{len(orders_df):,}")
+    #print(f"Orders generated: "f"{len(orders_df):,}")
+    logger.info(f"Orders generated: {len(orders_df):,}")
 
-    print(f"Order Items generated: "f"{len(order_items_df):,}")
+    #print(f"Order Items generated: "f"{len(order_items_df):,}")
+    logger.info(f"Order Items generated: {len(order_items_df):,}")
+
+
+def run_validation():
+
+    customers_inc = pd.read_csv(MASTER_DIR /"customers_incremental.csv")
+
+    orders_inc = pd.read_csv(TRANSACTION_DIR /"orders_incremental.csv")
+
+    order_items_inc = pd.read_csv(TRANSACTION_DIR /"order_items_incremental.csv")
+
+    assert (customers_inc["customer_id"].isnull().sum()== 0)
+
+    assert (orders_inc["order_id"].is_unique)
+
+    assert (order_items_inc["order_item_id"].is_unique)
+
+    print("\nValidation Passed")
+
+def generate_data_quality_report():
+    from datetime import datetime
+
+    customers_df = pd.read_csv(MASTER_DIR / "customers.csv")
+    products_df = pd.read_csv(MASTER_DIR / "products.csv")
+    orders_df = pd.read_csv(TRANSACTION_DIR / "orders.csv")
+    order_items_df = pd.read_csv(TRANSACTION_DIR / "order_items.csv")
+
+
+    # ==========================================
+    # CUSTOMER METRICS
+    # ==========================================
+
+    null_emails = (customers_df["email"].isna().sum())
+    duplicate_phones = (customers_df["phone"].duplicated().sum())
+    missing_cities = (customers_df["city"].isna().sum())
+
+
+    # ==========================================
+    # PRODUCT METRICS
+    # ==========================================   
+
+    negative_prices = (products_df["price"] < 0).sum()
+
+    duplicate_products = (products_df["product_id"].duplicated().sum())
+
+    # ==========================================
+    # ORDER METRICS
+    # ==========================================
+
+    invalid_payments = (~orders_df["payment_method"].isin(PAYMENT_METHODS)).sum()
+
+    future_orders = (pd.to_datetime(orders_df["order_date"]).dt.date > datetime.today().date()).sum()
+
+    missing_customer_ids = (orders_df["customer_id"].isna().sum())
+
+    # ==========================================
+    # ORDER ITEM METRICS
+    # ==========================================
+
+    negative_quantities = (order_items_df["quantity"] < 0).sum()
+
+    valid_products = set(products_df["product_id"].astype(str))
+
+    invalid_product_ids = (~order_items_df["product_id"].astype(str).isin(valid_products)).sum()
+
+
+    customer_total = len(customers_df)
+    product_total = len(products_df)
+    order_total = len(orders_df)
+    order_item_total = len(order_items_df)
+    
+    customer_defects = (
+        null_emails
+        + duplicate_phones
+        + missing_cities
+    )
+
+    product_defects = (
+        negative_prices
+        + duplicate_products
+    )
+
+    order_defects = (
+        invalid_payments
+        + future_orders
+        + missing_customer_ids
+    )
+
+    order_item_defects = (
+        negative_quantities
+        + invalid_product_ids
+    )
+
+    customer_quality_score = round(
+        (
+            (customer_total - customer_defects)
+            / customer_total
+        ) * 100,
+        2
+    )
+
+    product_quality_score = round(
+        (
+            (product_total - product_defects)
+            / product_total
+        ) * 100,
+        2
+    )
+
+    order_quality_score = round(
+        (
+            (order_total - order_defects)
+            / order_total
+        ) * 100,
+        2
+    )
+
+    order_item_quality_score = round(
+        (
+            (order_item_total - order_item_defects)
+            / order_item_total
+        ) * 100,
+        2
+    )
+
+    customer_status = (
+        "PASS"
+        if customer_quality_score >= 95
+        else "FAIL"
+    )
+
+    product_status = (
+        "PASS"
+        if product_quality_score >= 95
+        else "FAIL"
+    )
+
+    order_status = (
+        "PASS"
+        if order_quality_score >= 95
+        else "FAIL"
+    )
+
+    order_item_status = (
+        "PASS"
+        if order_item_quality_score >= 95
+        else "FAIL"
+    )
+
+    # ==========================================
+    # OVERALL PLATFORM QUALITY
+    # ==========================================
+
+    overall_records = (
+        customer_total
+        + product_total
+        + order_total
+        + order_item_total
+    )
+
+    overall_defects = (
+        customer_defects
+        + product_defects
+        + order_defects
+        + order_item_defects
+    )
+
+    overall_quality_score = round(
+        (
+            (overall_records - overall_defects)
+            / overall_records
+        ) * 100,
+        2
+    )
+
+    overall_status = (
+        "PASS"
+        if overall_quality_score >= 95
+        else "FAIL"
+    )
+
+    # ==========================================
+    # REPORT
+    # ==========================================
+
+    report = f"""
+=====================================
+DATA QUALITY REPORT
+=====================================
+
+Report Generated:
+{datetime.now()}
+
+-------------------------------------
+CUSTOMERS
+-------------------------------------
+
+Total Records: {customer_total}
+
+Null Emails: {null_emails}
+Duplicate Phones: {duplicate_phones}
+Missing Cities: {missing_cities}
+
+Total Defects: {customer_defects}
+
+Quality Score: {customer_quality_score}%
+
+Status: {customer_status}
+
+-------------------------------------
+PRODUCTS
+-------------------------------------
+
+Total Records: {product_total}
+
+Negative Prices: {negative_prices}
+Duplicate Product IDs: {duplicate_products}
+
+Total Defects: {product_defects}
+
+Quality Score: {product_quality_score}%
+
+Status: {product_status}
+
+-------------------------------------
+ORDERS
+-------------------------------------
+
+Total Records: {order_total}
+
+Invalid Payment Methods: {invalid_payments}
+Future Order Dates: {future_orders}
+Missing Customer IDs: {missing_customer_ids}
+
+Total Defects: {order_defects}
+
+Quality Score: {order_quality_score}%
+
+Status: {order_status}
+
+-------------------------------------
+ORDER ITEMS
+-------------------------------------
+
+Total Records: {order_item_total}
+
+Negative Quantities: {negative_quantities}
+Invalid Product IDs: {invalid_product_ids}
+
+Total Defects: {order_item_defects}
+
+Quality Score: {order_item_quality_score}%
+
+Status: {order_item_status}
+
+=====================================
+OVERALL PLATFORM QUALITY
+=====================================
+
+Total Records: {overall_records}
+
+Total Defects: {overall_defects}
+
+Quality Score: {overall_quality_score}%
+
+Status: {overall_status}
+"""
+
+    report_file = LOG_DIR / "data_quality_report.txt"
+
+    with open(report_file, "w") as file:
+        file.write(report)
+
+    #print("Data Quality Report Generated Successfully")
+    logger.info("Data Quality Report Generated Successfully")
 
 def run_full_load():
     generate_customers()
@@ -1884,6 +1287,7 @@ def run_incremental_load():
 
 if __name__ == "__main__":
     #run_full_load()
+    initialize_project()
 
     mode = (
         sys.argv[1].lower()
@@ -1907,11 +1311,6 @@ if __name__ == "__main__":
 
     print("Data Quality Framework Loaded Successfully")
 
-    print(DATA_QUALITY_RULES)
+    #print(DATA_QUALITY_RULES)
 
-    print(
-        get_dq_sample_size(
-            5000,
-            DATA_QUALITY_RULES["null_email_pct"]
-        )
-    )
+    #print(get_dq_sample_size(5000,DATA_QUALITY_RULES["null_email_pct"]))

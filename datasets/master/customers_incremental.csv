@@ -1,0 +1,27 @@
+customer_id,first_name,last_name,email,phone,gender,date_of_birth,city,state,country,customer_segment,signup_date,created_date,updated_date
+5001,Pradeep,Patel,pradeeppatel600@gmail.com,9420158960,Male,1982-03-15,Bhopal,Madhya Pradesh,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5002,Reshma,Patel,reshmapatel356@gmail.com,9774302330,Female,1978-03-11,Mangalore,Karnataka,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5003,Surya,Kapoor,suryakapoor162@outlook.com,9919800619,Male,1971-12-31,Nashik,Maharashtra,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5004,Meera,Sharma,meerasharma286@hotmail.com,9531546450,Female,1979-10-13,Salem,Tamil Nadu,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5005,Madhuri,Verma,madhuriverma190@outlook.com,9136727372,Female,1965-09-11,Coimbatore,Tamil Nadu,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5006,Amit,Iyer,amitiyer991@hotmail.com,9876509380,Male,1974-02-13,Varanasi,Uttar Pradesh,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5007,Aishwarya,Choudhary,aishwaryachoudhary189@yahoo.com,9032549793,Female,1961-02-19,Bhubaneswar,Odisha,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5008,Sushmita,Pillai,sushmitapillai287@yahoo.com,9239391470,Female,1983-04-21,Warangal,Telangana,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5009,Sanjana,Reddy,sanjanareddy606@yahoo.com,9804628268,Female,1981-10-15,Chennai,Tamil Nadu,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5010,Naveen,Das,naveendas355@yahoo.com,9939813505,Male,1993-03-23,Lucknow,Uttar Pradesh,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5011,Divya,Rao,divyarao730@gmail.com,9091550695,Female,2006-02-04,Mangalore,Karnataka,India,Gold,2026-06-24,2026-06-24,2026-06-24
+5012,Sushmita,Jain,sushmitajain285@outlook.com,9018771373,Female,2007-09-18,Mangalore,Karnataka,India,Gold,2026-06-24,2026-06-24,2026-06-24
+5013,Navya,Gupta,navyagupta402@hotmail.com,9977325447,Female,1967-09-30,Thiruvananthapuram,Kerala,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5014,Komal,Reddy,komalreddy738@yahoo.com,9383813494,Female,1993-06-23,Hubli,Karnataka,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5015,Zara,Kulkarni,zarakulkarni837@yahoo.com,9701903728,Female,2004-08-05,Salem,Tamil Nadu,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5016,Harika,Singh,harikasingh952@outlook.com,9484268356,Female,1963-07-27,Indore,Madhya Pradesh,India,Platinum,2026-06-24,2026-06-24,2026-06-24
+5017,Pavithra,Verma,pavithraverma264@gmail.com,9204194887,Female,1966-06-28,Cuttack,Odisha,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5018,Rani,Nair,raninair969@yahoo.com,9715250389,Female,1995-10-18,Visakhapatnam,Andhra Pradesh,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5019,Yogesh,Mishra,yogeshmishra297@outlook.com,9115256665,Male,1993-03-10,Vadodara,Gujarat,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5020,Komal,Yadav,komalyadav691@gmail.com,9659926937,Female,1985-07-30,Nagpur,Maharashtra,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5021,Anupama,Kumar,anupamakumar710@yahoo.com,9976070930,Female,1994-03-11,Vadodara,Gujarat,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5022,Arnav,Patel,arnavpatel665@hotmail.com,9795556566,Male,1982-06-07,Mumbai,Maharashtra,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5023,Manasa,Rao,manasarao731@outlook.com,9818795569,Female,1986-09-16,Udaipur,Rajasthan,India,Bronze,2026-06-24,2026-06-24,2026-06-24
+5024,Lakshmi,Mishra,lakshmimishra987@hotmail.com,9175039331,Female,1996-11-02,Cuttack,Odisha,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5025,Abhishek,Agarwal,abhishekagarwal495@outlook.com,9276964890,Male,2006-06-28,Thiruvananthapuram,Kerala,India,Silver,2026-06-24,2026-06-24,2026-06-24
+5026,Pavan,Choudhary,pavanchoudhary927@hotmail.com,9417137773,Male,2002-02-01,Kanpur,Uttar Pradesh,India,Bronze,2026-06-24,2026-06-24,2026-06-24
