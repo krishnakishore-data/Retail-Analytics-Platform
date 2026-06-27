@@ -278,7 +278,7 @@ python scripts/generate_retail_data.py validate
 
 ✅ Phase 2 - Sprint 1 Story 1 - Azure Environment Setup
 
-✅ Phase 2 - Sprint 1 Story 2 - Azure Data Lake Storage Gen2
+✅ Phase 2 - Sprint 1 Story 2 - Azure Data Lake Storage Gen2 (ADLS Gen2)
 
 #### UpComing
 ⬜ Phase 2 - Sprint 1 Story 3 - Azure Data Factory
