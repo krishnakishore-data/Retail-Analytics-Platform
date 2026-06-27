@@ -251,11 +251,36 @@ python scripts/generate_retail_data.py validate
 * Resource Tags
 * Governance Standards
 
+--------------------------------------------------------------------------------
 
-### Upcoming
+## Phase 2 - Sprint 1 Story 2 Completed
 
-⬜ Phase 2 - Sprint 1 Story 2 - Azure Data Lake Storage Gen2
+### Azure Data Lake Storage Gen2
 
+- Azure Storage Account created
+- Hierarchical Namespace enabled
+- Azure Data Lake Storage Gen2 configured
+- Bronze container created
+- Silver container created
+- Gold container created
+- Archive container created
+- Metadata container created
+- Logs container created
+- Rejected container created
+- Enterprise folder hierarchy created
+- Medallion Architecture implemented 
+
+----------------------------------------------------------------------------------
+
+#### Current Project Status
+
+✅ Phase 1 Completed
+
+✅ Phase 2 - Sprint 1 Story 1 - Azure Environment Setup
+
+✅ Phase 2 - Sprint 1 Story 2 - Azure Data Lake Storage Gen2
+
+#### UpComing
 ⬜ Phase 2 - Sprint 1 Story 3 - Azure Data Factory
 
 ⬜ Phase 2 - Sprint 1 Story 4 - Azure Databricks
