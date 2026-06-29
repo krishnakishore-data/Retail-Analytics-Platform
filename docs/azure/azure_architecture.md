@@ -12,9 +12,9 @@ The Retail Analytics Platform follows the Medallion Architecture (Bronze, Silver
                     Local Machine
                            │
                            │
-          Retail Source System (Python)
+          Simulated Retail Source System (Python)
                            │
-       Historical + Incremental CSV Files
+       Full Load & Incremental CSV Exports
                            │
                            ▼
                 Azure Data Factory (ADF)

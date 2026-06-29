@@ -11,6 +11,7 @@ from utils.helpers import *
 from config.constants import *
 from config.data_quality_rules import *
 from logging_framework.logger import logger
+from utils.output_manager import save_dataset
 
 
 fake = Faker("en_IN")
@@ -143,7 +144,18 @@ def generate_customers():
 
     print(f"Missing Cities Injected: {missing_city_count}")
     #-------------------
-    customers_df.to_csv(MASTER_DIR / "customers.csv",index=False)
+    save_dataset(
+    customers_df,
+    dataset_name="customers",
+    destination="datasets"
+    )
+
+    save_dataset(
+        customers_df,
+        dataset_name="customers",
+        destination="retail_source",
+        load_type="full_load"
+    )
 
     #print(f"Customers generated: {len(customers_df):,}")
     logger.info(f"Customers generated: {len(customers_df):,}")
@@ -242,7 +254,20 @@ def generate_incremental_customers():
                 "updated_date"]
     )    
 
-    incremental_df.to_csv(MASTER_DIR /"customers_incremental.csv",index=False)  #save incremental file
+    #incremental_df.to_csv(MASTER_DIR /"customers_incremental.csv",index=False)
+    save_dataset(
+    incremental_df,
+    dataset_name="customers",
+    destination="datasets",
+    load_type="incremental"
+    )
+
+    save_dataset(
+        incremental_df,
+        dataset_name="customers",
+        destination="retail_source",
+        load_type="incremental"
+    )  #save incremental file
 
     updated_df = pd.concat([customers_df,incremental_df],ignore_index=True) #appends incremental file to master
     updated_df.to_csv(customers_file,index=False)
@@ -425,7 +450,18 @@ def generate_products():
 
 
 
-    products_df.to_csv(MASTER_DIR / "products.csv",index=False)
+    #products_df.to_csv(MASTER_DIR / "products.csv",index=False)
+    save_dataset(
+    products_df,
+    dataset_name="products",
+    destination="datasets"
+    )
+
+    save_dataset(
+        products_df,
+        dataset_name="products",
+        destination="retail_source"
+    )
 
     #print(f"Products generated: "f"{len(products_df):,}")
     logger.info(f"Products generated: {len(products_df):,}")
@@ -527,9 +563,20 @@ def generate_stores():
         stores
     )
 
-    stores_df.to_csv(
-        MASTER_DIR / "stores.csv",
-        index=False
+    # stores_df.to_csv(
+    #     MASTER_DIR / "stores.csv",
+    #     index=False
+    # )
+    save_dataset(
+    stores_df,
+    dataset_name="stores",
+    destination="datasets"
+    )
+
+    save_dataset(
+        stores_df,
+        dataset_name="stores",
+        destination="retail_source"
     )
 
     #print(f"Stores generated: "f"{len(stores_df):,}")
@@ -623,7 +670,20 @@ def generate_incremental_orders():
             "updated_timestamp"
         ])
     
-    incremental_df.to_csv(TRANSACTION_DIR /"orders_incremental.csv",index=False)
+    #incremental_df.to_csv(TRANSACTION_DIR /"orders_incremental.csv",index=False)
+    save_dataset(
+    incremental_df,
+    dataset_name="orders",
+    destination="datasets",
+    load_type="incremental"
+    )
+
+    save_dataset(
+        incremental_df,
+        dataset_name="orders",
+        destination="retail_source",
+        load_type="incremental"
+    )
 
     updated_orders = pd.concat([orders_df,incremental_df],ignore_index=True)
 
@@ -720,11 +780,11 @@ def generate_incremental_order_items():
         ]
     )
 
-    incremental_items_df.to_csv(
-        TRANSACTION_DIR /
-        "order_items_incremental.csv",
-        index=False
-    )
+    # incremental_items_df.to_csv(
+    #     TRANSACTION_DIR /
+    #     "order_items_incremental.csv",
+    #     index=False
+    # )
 
     updated_items_df = pd.concat(
         [
@@ -737,6 +797,20 @@ def generate_incremental_order_items():
     updated_items_df.to_csv(
         order_items_file,
         index=False
+    )
+
+    save_dataset(
+    incremental_items_df,
+    dataset_name="order_items",
+    destination="datasets",
+    load_type="incremental"
+    )
+
+    save_dataset(
+        incremental_items_df,
+        dataset_name="order_items",
+        destination="retail_source",
+        load_type="incremental"
     )
 
     #print(f"New Order Items Generated: "f"{len(incremental_items_df):,}")
@@ -980,9 +1054,34 @@ def generate_orders_and_items():
 
     order_items_df = pd.DataFrame(order_items)
 
-    orders_df.to_csv(TRANSACTION_DIR / "orders.csv",index=False)
+    #orders_df.to_csv(TRANSACTION_DIR / "orders.csv",index=False)
+    #order_items_df.to_csv(TRANSACTION_DIR /"order_items.csv",index=False)
 
-    order_items_df.to_csv(TRANSACTION_DIR /"order_items.csv",index=False)
+    save_dataset(
+    orders_df,
+    dataset_name="orders",
+    destination="datasets"
+    )
+
+    save_dataset(
+        orders_df,
+        dataset_name="orders",
+        destination="retail_source",
+        load_type="full_load"
+    )
+
+    save_dataset(
+    order_items_df,
+    dataset_name="order_items",
+    destination="datasets"
+    )
+
+    save_dataset(
+        order_items_df,
+        dataset_name="order_items",
+        destination="retail_source",
+        load_type="full_load"
+    )
 
     #print(f"Orders generated: "f"{len(orders_df):,}")
     logger.info(f"Orders generated: {len(orders_df):,}")

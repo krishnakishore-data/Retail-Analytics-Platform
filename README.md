@@ -270,6 +270,15 @@ python scripts/generate_retail_data.py validate
 - Enterprise folder hierarchy created
 - Medallion Architecture implemented 
 
+
+## Retail Source System Simulation
+
+The project simulates an enterprise retail environment where operational systems export CSV files into a dedicated Retail_Source directory outside the GitHub repository.
+
+Azure Data Factory (ADF) reads these files and copies them into the Bronze layer of Azure Data Lake Storage Gen2.
+
+The repository retains a copy of the datasets only as sample data for reproducibility.
+
 ----------------------------------------------------------------------------------
 
 #### Current Project Status
@@ -279,6 +288,8 @@ python scripts/generate_retail_data.py validate
 ✅ Phase 2 - Sprint 1 Story 1 - Azure Environment Setup
 
 ✅ Phase 2 - Sprint 1 Story 2 - Azure Data Lake Storage Gen2 (ADLS Gen2)
+
+✅ Phase 2 - Sprint 1 Story 3 - Retail Source System Simulation
 
 #### UpComing
 ⬜ Phase 2 - Sprint 1 Story 3 - Azure Data Factory
