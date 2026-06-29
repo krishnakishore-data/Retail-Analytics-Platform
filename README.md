@@ -43,6 +43,34 @@ Retail-Analytics-Platform
 └── docs
 
 
+## Simulated Retail Source System
+
+This project simulates a real-world retail environment by introducing a dedicated **Retail_Source** directory outside the GitHub repository.
+
+Instead of Azure Data Factory (ADF) reading directly from project files, it ingests data from this simulated source system, similar to how enterprise ERP, POS, CRM, and Inventory systems export daily files into a landing location.
+
+The Python data generation framework automatically writes datasets to both locations:
+
+* **`datasets/`** — Sample datasets stored in GitHub for reproducibility.
+* **`Retail_Source/`** — Simulated enterprise source system used by Azure Data Factory.
+
+The `Retail_Source` directory is intentionally excluded from GitHub because operational source systems are not part of application repositories in production environments.
+
+### Local Setup
+
+Create the following folder beside the project repository:
+
+```text
+Projects/
+│
+├── Retail-Analytics-Platform/
+└── Retail_Source/
+```
+
+Azure Data Factory will use the `Retail_Source` directory as the source for Bronze layer ingestion into Azure Data Lake Storage Gen2.
+
+
+
 ## Status
 Phase 1 - Project Initialization
 
@@ -271,14 +299,6 @@ python scripts/generate_retail_data.py validate
 - Medallion Architecture implemented 
 
 
-## Retail Source System Simulation
-
-The project simulates an enterprise retail environment where operational systems export CSV files into a dedicated Retail_Source directory outside the GitHub repository.
-
-Azure Data Factory (ADF) reads these files and copies them into the Bronze layer of Azure Data Lake Storage Gen2.
-
-The repository retains a copy of the datasets only as sample data for reproducibility.
-
 ----------------------------------------------------------------------------------
 
 #### Current Project Status
@@ -292,6 +312,6 @@ The repository retains a copy of the datasets only as sample data for reproducib
 ✅ Phase 2 - Sprint 1 Story 3 - Retail Source System Simulation
 
 #### UpComing
-⬜ Phase 2 - Sprint 1 Story 3 - Azure Data Factory
+⬜ Phase 2 - Sprint 1 Story 4 - Azure Data Factory
 
-⬜ Phase 2 - Sprint 1 Story 4 - Azure Databricks
+⬜ Phase 2 - Sprint 1 Story 5 - Azure Databricks
